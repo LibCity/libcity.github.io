@@ -1,0 +1,122 @@
+<template>
+  <div class="container">
+    <div class="header">
+      <div style="padding-top: 20px;color: white;">
+        <p style="margin: 20px 0 30px 130px; font-size: 60px">安装LibTraffic</p>
+        <p style="margin: 0px 0 20px 130px; font-size: 30px">
+          LibTraffic可以通过pip, Conda或源文件进行安装.
+        </p>
+      </div>
+    </div>
+
+    <div class="content">
+        <div>
+            <p class="title">系统要求</p>
+            <a-divider style="margin: 10px 0; background-image: linear-gradient(to right,  rgb(103, 179, 241),  rgb(103, 179, 241), #f6f6f6, #f6f6f6);"></a-divider>
+            <p>LibTraffic可以在以下几种系统上运行：</p>
+            <ul>
+                <li>Linux</li>
+                <li>Windows 10</li>
+                <li>macOS X</li>
+            </ul>
+            <p>LibTraffic要求torch版本在1.7.0及以上。如果你想在GPU上运行LibTraffic，请确保……。</p>
+            <br>
+
+            <p class="title">Conda</p>
+            <a-divider style="margin: 10px 0; background-image: linear-gradient(to right,  rgb(103, 179, 241),  rgb(103, 179, 241), #f6f6f6, #f6f6f6);"></a-divider>
+            <p>如果您使用Conda，可以通过以下命令安装：</p>
+            <div class="code">
+                <code data-lang="bash">
+                    # Best practice, create an environment rather than install in the base env<br>
+                    conda create -n toolkit<br>
+                    # Activate the environment<br>
+                    conda activate toolkit<br>
+                    # The actual install command<br>
+                    conda install numpy
+                </code>
+            </div>
+            <br>
+
+            <p class="title">Pip</p>
+            <a-divider style="margin: 10px 0; background-image: linear-gradient(to right,  rgb(103, 179, 241),  rgb(103, 179, 241), #f6f6f6, #f6f6f6);"></a-divider>
+            <p>如果您使用pip，可以通过以下命令安装：</p>
+            <div class="code">
+                <code data-lang="bash">pip install toolkit</code>
+            </div>
+            <br>
+            
+            <p class="title">源文件</p>
+            <a-divider style="margin: 10px 0; background-image: linear-gradient(to right,  rgb(103, 179, 241),  rgb(103, 179, 241), #f6f6f6, #f6f6f6);"></a-divider>
+            <p>您可以先通过以下指令从GitHub上下载源文件：</p>
+            <div class="code">
+                <code data-lang="bash">
+                    git clone https://github.com/WenMellors/Bigscity-TrafficDL<br>
+                    cd libtraffic
+                </code>
+            </div>
+            <p>然后，您可以通过以下命令安装LibTraffic：</p>
+            <div class="code">
+                <code data-lang="bash">
+                    pip install ....
+                </code>
+            </div>
+            <br>
+        </div>
+    </div>
+  </div>
+</template>
+
+<script>
+    export default {
+        data() {
+            return {
+            };
+        },
+        components: {
+        }
+    };
+</script>
+
+<style scoped>
+.container {
+  margin: auto;
+  width: 100%;
+  height: auto;
+  /* border: red solid 1px; */
+}
+.header {
+  width: 100%;
+  min-height: 250px;
+  background:  rgb(27, 140, 233) linear-gradient(to right,  rgb(27, 140, 233), rgb(11, 247, 188));
+  /* border: blue solid 1px; */
+}
+.content {
+    width: 80%;
+    height: auto;
+    margin: 50px auto 0px auto;
+    font-size: 20px;
+    line-height: 36px;
+    color: black;
+    font-family: 'Open Sans', 'Microsoft YaHei', Arial, Helvetica, sans-serif;
+    /* border: blue solid 3px; */
+}
+.title {
+    font-size: 32px;
+    font-weight: 700;
+    font-family: 'Open Sans', 'Microsoft YaHei', Arial, Helvetica, sans-serif;
+    margin-bottom: 0;
+}
+.code {
+    color: #f8f8f2;
+    background-color: #272822;
+    tab-size: 4;
+    overflow: auto;
+    width: 100%;
+    padding: 10px 20px;
+    margin: 0px 0px 16px 0px;
+    text-align: left;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    line-height: 1.5;
+}
+</style>
