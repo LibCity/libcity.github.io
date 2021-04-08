@@ -61,6 +61,8 @@ export default {
       yearCheckedList: [],
       yearIndeterminate: true,
       yearCheckAll: false,
+
+      paperFindList: [],
     };
   },
   components: {
@@ -70,11 +72,40 @@ export default {
     this.taskCheckedList = this.taskOptions;
     this.publicationCheckedList = this.publicationOptions;
     this.yearCheckedList = this.yearOptions;
+    this.paperFind();
   },
   methods: {
+    paperFind() {
+      this.$axios({
+        method: "post",
+        url: "api/paperlib/paper_retrieve/",
+        params: {},
+        headers: {},
+        data: {
+          task: this.taskCheckedList,
+          publication: this.publicationCheckedList,
+          year: this.yearCheckedList,
+          searchtext: ""
+        },
+      }).then((res) => {
+        if (res.data.code == 200) {
+          this.paperFindList = res.data.data;
+          this.paperFindList.forEach((item)=>{
+            item.year += ", " + item.publication + ", " + item.task;
+          })
+          this.$emit("paperFindList", this.paperFindList);
+          this.$emit("taskCheckedList", this.taskCheckedList);
+          this.$emit("yearCheckedList", this.yearCheckedList);
+          this.$emit("publicationCheckedList", this.publicationCheckedList);
+        } else {
+        }
+      });
+    },
+
     onTaskChange(taskCheckedList) {
       this.taskIndeterminate = !!taskCheckedList.length && taskCheckedList.length < this.taskOptions.length;
       this.taskCheckAll = taskCheckedList.length === this.taskOptions.length;
+      this.paperFind();
     },
     onTaskCheckAllChange(e) {
       Object.assign(this, {
@@ -82,11 +113,13 @@ export default {
         taskIndeterminate: false,
         taskCheckAll: e.target.checked,
       });
+      this.paperFind();
     },
 
     onPublicationChange(publicationCheckedList) {
       this.publicationIndeterminate = !!publicationCheckedList.length && publicationCheckedList.length < this.publicationOptions.length;
       this.publicationCheckAll = publicationCheckedList.length === this.publicationOptions.length;
+      this.paperFind();
     },
     onPublicationCheckAllChange(e) {
       Object.assign(this, {
@@ -94,11 +127,13 @@ export default {
         publicationIndeterminate: false,
         publicationCheckAll: e.target.checked,
       });
+      this.paperFind();
     },
 
     onYearChange(yearCheckedList) {
       this.yearIndeterminate = !!yearCheckedList.length && yearCheckedList.length < this.yearOptions.length;
       this.yearCheckAll = yearCheckedList.length === this.yearOptions.length;
+      this.paperFind();
     },
     onYearCheckAllChange(e) {
       Object.assign(this, {
@@ -106,6 +141,7 @@ export default {
         yearIndeterminate: false,
         yearCheckAll: e.target.checked,
       });
+      this.paperFind();
     },
   }
 };

@@ -4,122 +4,39 @@
       <div style="padding-top: 20px;color: white;">
         <p style="margin: 20px 0 30px 130px; font-size: 60px">Paper Library</p>
         <p style="margin: 0px 0 20px 130px; font-size: 30px">
-          This library contains more than 100 research papers <br>on spatio-temporal data mining from top conferences or journals.
+          This library contains more than 200 research papers <br>on spatio-temporal data mining from top conferences or journals.
         </p>
       </div>
     </div>
 
     <div class="content">
         <div class="sidebar-filter">
-            <cate></cate>
+            <cate @paperFindList="handlePaperFind" @taskCheckedList="handleTaskChecked" @publicationCheckedList="handlePublicationChecked" @yearCheckedList="handleYearChecked"></cate>
         </div>
         <div class="paper-result">
             <div class="search-box">
-                <search-in style="display: inline-block; float: left;"></search-in>
+                <a-input-search placeholder="input search text" :loading="paperLoading" v-model="inputValue"  @search="onSearch" style="width: 300px; display: inline-block; float: left;" enterButton />
+                <a-popover>
+                    <template slot="content">
+                    <p style="font-size: 14px; font-family: 'Nunito', 'Microsoft YaHei', Arial, Helvetica, sans-serif; line-height: 14px;">The result of searching is based on the result of filtering.</p>
+                    <p  style="font-size: 14px; font-family: 'Nunito', 'Microsoft YaHei', Arial, Helvetica, sans-serif; line-height: 14px;">Please type in the keyword of title, author or abstract.</p>
+                    </template>
+                    <a-button style="margin-left: 20px; margin-top: 4px;" size="small" shape="circle" icon="question" />
+                </a-popover>
             </div>
             <div class="paper-box">
-                <paper-item class="paper" v-model="isOpen[0]" :default-height="defaultHeight">
-                    <h2 class="title">{{titleText}}</h2>
-                    <div class="author"><strong>Author: </strong>{{authorText}}</div>
-                    <div class="tag"><strong>Tag: </strong>{{tagText}}</div>
-                    <div class="abstract"><strong>Abstract: </strong>{{abstractText}}</div>
+                <paper-item class="paper" v-for="(item,i) in this.paperFindList.slice(this.pageNumber*6-5, this.pageNumber*6)" :key="i" v-model="isOpen[i]" :default-height="defaultHeight" >
+                    <h2 class="title">{{item.title}}</h2>
+                    <div class="author"><strong>Author: </strong>{{item.author}}</div>
+                    <div class="tag"><strong>Tag: </strong>{{item.year}}</div>
+                    <div class="abstract"><strong>Abstract: </strong>{{item.abstract}}</div>
                     <a-button type="primary" icon="file" style="width: 120px; font-size: 20px; font-weight: 700; margin-top: 10px;">
-                        <a :href="paperLink" target="_blank" style="text-decoration:none; color:white"> Paper</a>
-                    </a-button>
-                </paper-item>
-
-                <paper-item class="paper" v-model="isOpen[1]" :default-height="defaultHeight">
-                    <h2 class="title">{{titleText}}</h2>
-                    <div class="author"><strong>Author: </strong>{{authorText}}</div>
-                    <div class="tag"><strong>Tag: </strong>{{tagText}}</div>
-                    <div class="abstract"><strong>Abstract: </strong>{{abstractText}}</div>
-                    <a-button type="primary" icon="file" style="width: 120px; font-size: 20px; font-weight: 700; margin-top: 10px;">
-                        <a :href="paperLink" target="_blank" style="text-decoration:none; color:white"> Paper</a>
-                    </a-button>
-                </paper-item>
-
-                <paper-item class="paper" v-model="isOpen[2]" :default-height="defaultHeight">
-                    <h2 class="title">{{titleText}}</h2>
-                    <div class="author"><strong>Author: </strong>{{authorText}}</div>
-                    <div class="tag"><strong>Tag: </strong>{{tagText}}</div>
-                    <div class="abstract"><strong>Abstract: </strong>{{abstractText}}</div>
-                    <a-button type="primary" icon="file" style="width: 120px; font-size: 20px; font-weight: 700; margin-top: 10px;">
-                        <a :href="paperLink" target="_blank" style="text-decoration:none; color:white"> Paper</a>
-                    </a-button>
-                </paper-item>
-
-                <paper-item class="paper" v-model="isOpen[3]" :default-height="defaultHeight">
-                    <h2 class="title">{{titleText}}</h2>
-                    <div class="author"><strong>Author: </strong>{{authorText}}</div>
-                    <div class="tag"><strong>Tag: </strong>{{tagText}}</div>
-                    <div class="abstract"><strong>Abstract: </strong>{{abstractText}}</div>
-                    <a-button type="primary" icon="file" style="width: 120px; font-size: 20px; font-weight: 700; margin-top: 10px;">
-                        <a :href="paperLink" target="_blank" style="text-decoration:none; color:white"> Paper</a>
-                    </a-button>
-                </paper-item>
-
-                <paper-item class="paper" v-model="isOpen[4]" :default-height="defaultHeight">
-                    <h2 class="title">{{titleText}}</h2>
-                    <div class="author"><strong>Author: </strong>{{authorText}}</div>
-                    <div class="tag"><strong>Tag: </strong>{{tagText}}</div>
-                    <div class="abstract"><strong>Abstract: </strong>{{abstractText}}</div>
-                    <a-button type="primary" icon="file" style="width: 120px; font-size: 20px; font-weight: 700; margin-top: 10px;">
-                        <a :href="paperLink" target="_blank" style="text-decoration:none; color:white"> Paper</a>
-                    </a-button>
-                </paper-item>
-
-                <paper-item class="paper" v-model="isOpen[5]" :default-height="defaultHeight">
-                    <h2 class="title">{{titleText}}</h2>
-                    <div class="author"><strong>Author: </strong>{{authorText}}</div>
-                    <div class="tag"><strong>Tag: </strong>{{tagText}}</div>
-                    <div class="abstract"><strong>Abstract: </strong>{{abstractText}}</div>
-                    <a-button type="primary" icon="file" style="width: 120px; font-size: 20px; font-weight: 700; margin-top: 10px;">
-                        <a :href="paperLink" target="_blank" style="text-decoration:none; color:white"> Paper</a>
-                    </a-button>
-                </paper-item>
-
-                <paper-item class="paper" v-model="isOpen[6]" :default-height="defaultHeight">
-                    <h2 class="title">{{titleText}}</h2>
-                    <div class="author"><strong>Author: </strong>{{authorText}}</div>
-                    <div class="tag"><strong>Tag: </strong>{{tagText}}</div>
-                    <div class="abstract"><strong>Abstract: </strong>{{abstractText}}</div>
-                    <a-button type="primary" icon="file" style="width: 120px; font-size: 20px; font-weight: 700; margin-top: 10px;">
-                        <a :href="paperLink" target="_blank" style="text-decoration:none; color:white"> Paper</a>
-                    </a-button>
-                </paper-item>
-
-                <paper-item class="paper" v-model="isOpen[7]" :default-height="defaultHeight">
-                    <h2 class="title">{{titleText}}</h2>
-                    <div class="author"><strong>Author: </strong>{{authorText}}</div>
-                    <div class="tag"><strong>Tag: </strong>{{tagText}}</div>
-                    <div class="abstract"><strong>Abstract: </strong>{{abstractText}}</div>
-                    <a-button type="primary" icon="file" style="width: 120px; font-size: 20px; font-weight: 700; margin-top: 10px;">
-                        <a :href="paperLink" target="_blank" style="text-decoration:none; color:white"> Paper</a>
-                    </a-button>
-                </paper-item>
-
-                <paper-item class="paper" v-model="isOpen[8]" :default-height="defaultHeight">
-                    <h2 class="title">{{titleText}}</h2>
-                    <div class="author"><strong>Author: </strong>{{authorText}}</div>
-                    <div class="tag"><strong>Tag: </strong>{{tagText}}</div>
-                    <div class="abstract"><strong>Abstract: </strong>{{abstractText}}</div>
-                    <a-button type="primary" icon="file" style="width: 120px; font-size: 20px; font-weight: 700; margin-top: 10px;">
-                        <a :href="paperLink" target="_blank" style="text-decoration:none; color:white"> Paper</a>
-                    </a-button>
-                </paper-item>
-
-                <paper-item class="paper" v-model="isOpen[9]" :default-height="defaultHeight">
-                    <h2 class="title">{{titleText}}</h2>
-                    <div class="author"><strong>Author: </strong>{{authorText}}</div>
-                    <div class="tag"><strong>Tag: </strong>{{tagText}}</div>
-                    <div class="abstract"><strong>Abstract: </strong>{{abstractText}}</div>
-                    <a-button type="primary" icon="file" style="width: 120px; font-size: 20px; font-weight: 700; margin-top: 10px;">
-                        <a :href="paperLink" target="_blank" style="text-decoration:none; color:white"> Paper</a>
+                        <a :href="item.link" target="_blank" style="text-decoration:none; color:white"> Paper</a>
                     </a-button>
                 </paper-item>
             </div>
             <div style="padding-left: 150px; padding-bottom: 50px;">
-                <pagination></pagination> 
+                <a-pagination show-quick-jumper :default-current="1" :pageSize="6" :total="this.paperNumber" @change="onChange" /> 
             </div>
         </div>
     </div>
@@ -128,28 +45,106 @@
 
 <script>
 import Cate from "./paper/categoryCollapse.vue";
-import searchIn from "./paper/searchInput.vue";
+// import searchIn from "./paper/searchInput.vue";
 import paperItem from "./paper/paperItemCollapse.vue";
-import pagination from "./paper/paperPagination.vue";
+// import pagination from "./paper/paperPagination.vue";
 
 export default {
   data() {
     return {
+      paperFindList:[],
+      pageNumber: 1,
+      paperNumber: 0,
       focus: 0,
-      isOpen: [false, false, false, false, false, false, false, false, false, false],
+      isOpen: [],
       defaultHeight: 210,
-      titleText: "A Force-directed Approach to Seeking Route Recommendation in Ride-on-demand Service Using Multi-source Urban Data",
-      authorText: "S. Guo, C. Chen, J. Wang, Y. Ding, Y. Liu, X. Ke, Z. Yu, and D. Zhang",
-      tagText: "2020, IEEE TMC, Route Planning",
-      abstractText: "The rapidly-growing business of ride-on-demand (RoD) service such as Uber, Lyft and Didi proves the effectiveness of theirnew service model – using mobile apps and dynamic pricing to coordinate between drivers, passengers and the service provider, tomanipulate the supply and demand, and to improve service responsiveness as well as quality. Despite its success, dynamic pricingcreates a new problem for drivers: how to seek for passengers to maximize revenue under dynamic prices. Seeking routerecommendation has already been studied extensively in traditional taxi service, but most studies do not consider the effects of taxisand passengers on the seeking taxi simultaneously. Further, in RoD service it is necessary to consider more factors such as dynamicprices, the status of other transportation services, etc. In this paper, we employ a force-directed approach to model, by analogy, therelationship between vacant cars and passengers as that between positive and negative charges in electrostatic field. We extractfeatures from multi-source urban data to describe dynamic prices, the status of RoD, taxi and public transportation services, andincorporate them into our model. The model is then used in route recommendation in every intersection so that a driver in a vacantRoD car knows which road segment to take next. We conduct extensive experiments based on our multi-source urban data, includingRoD service operational data, taxi GPS trajectory data and public transportation distribution data, and results not only show that ourapproach outperforms existing baselines, but also justify the need to incorporate multi-source urban data and dynamic prices.",
-      paperLink: "https://ieeexplore.ieee.org/abstract/document/9238459"
+      paperLoading: false,
+      inputValue: '',
+
+      taskCheckedList: [],
+      yearCheckedList: [],
+      publicationCheckedList: []
     };
   },
   components: {
       Cate,
-      searchIn,
+    //   searchIn,
       paperItem,
-      pagination
+    //   pagination
+  },
+  mounted () {
+    this.openNotification();  
+  },
+  methods: {
+      openNotification() {
+        this.$notification.open({
+            style: 'font-weight: 700',
+            duraion: 5,
+            message: 'Notification',
+            description:
+            'Please wait for a few seconds for loading data. Thank you very much!',
+        });
+      },
+      onChange(pageNumber) {
+        this.pageNumber = pageNumber;
+        // console.log('Page: ', pageNumber);
+      },
+      onSearch(value) {
+        //设置加载中状态
+        this.paperLoading=true;
+        this.paperSearchList = [];
+        this.$axios({
+            method: "post",
+            url: "api/paperlib/paper_retrieve/",
+            params: {},
+            headers: {},
+            data: {
+                task: this.taskCheckedList,
+                publication: this.publicationCheckedList,
+                year: this.yearCheckedList,
+                searchtext: value
+            },
+        }).then((res) => {
+            if (res.data.code == 200) {
+                this.paperSearchList = res.data.data;
+                this.paperSearchList.forEach((item)=>{
+                    item.year += ", " + item.publication + ", " + item.task;
+                })
+                this.paperFindList = this.paperSearchList;
+                this.paperNumber = this.paperFindList.length;
+                this.isOpen = [];
+                this.paperFindList.forEach(()=>{
+                    this.isOpen.push(false);
+                 })
+                // this.handlePaperFind(this.paperSearchList);
+            } else {
+            }
+        });
+        this.paperLoading = false;
+        // setTimeout(function(){
+        //     this.paperLoading=false;
+        // },3000);
+      },
+      handlePaperFind(paperFindList) {
+          this.inputValue = '';
+          this.paperFindList = paperFindList;
+          this.paperNumber = paperFindList.length;
+          this.isOpen = []
+          this.paperFindList.forEach(()=>{
+            this.isOpen.push(false);
+          })
+        //   console.log(paperFindList);
+      },
+      handleTaskChecked(taskCheckedList) {
+          this.taskCheckedList = taskCheckedList;
+      },
+      handlePublicationChecked(publicationCheckedList) {
+          this.publicationCheckedList = publicationCheckedList;
+        //   console.log(this.publicationCheckedList);
+      },
+      handleYearChecked(yearCheckedList) {
+          this.yearCheckedList = yearCheckedList;
+      }
   }
 };
 </script>

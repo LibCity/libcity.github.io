@@ -5,7 +5,7 @@
         <div class="pcard-cn">
             <a-card title="标准赛道"  :bordered="true" style="border-radius: 5px">
                 <p style="margin-top:10px; margin-bottom: 0px; height: 105px">LibTraffic为每个支持的时空数据挖掘任务实现了一套标准流水线（赛道），提高不同模型的性能可比性。</p>
-                <a-button style="padding-left: 220px; margin-top: 5px; font-size: 15px;" type="link" :size="size" @click="toTask">详情 >></a-button>
+                <a-button style="padding-left: 220px; margin-top: 5px; font-size: 15px;" type="link" @click="toTask">详情 >></a-button>
             </a-card>
         </div>
       </a-col>
@@ -13,7 +13,7 @@
         <div class="pcard-cn">
             <a-card title="论文库"  :bordered="true" style="border-radius: 5px">
                 <p style="margin-top:10px; margin-bottom: 0px; height: 105px">LibTraffic提供了超过100篇来自顶级期刊或会议的时空数据挖掘领域的研究论文，并支持条件筛选和搜索功能。</p>
-                <a-button style="padding-left: 220px; margin-top: 5px; font-size: 15px;" type="link" :size="size" @click="toPaper">详情 >></a-button>
+                <a-button style="padding-left: 220px; margin-top: 5px; font-size: 15px;" type="link" @click="toPaper">详情 >></a-button>
             </a-card>
         </div>
       </a-col>
@@ -21,7 +21,7 @@
         <div class="pcard-cn">
             <a-card title="排行榜"  :bordered="true" style="border-radius: 5px">
                 <p style="margin-top:10px; margin-bottom: 0px; height: 105px">LibTraffic在不同的数据集上测试了现有模型并展示了这些模型在每个数据集上的性能和排名。</p>
-                <a-button style="padding-left: 220px; margin-top: 5px; font-size: 15px;" type="link" :size="size" @click="toRanking">详情 >></a-button>
+                <a-button style="padding-left: 220px; margin-top: 5px; font-size: 15px;" type="link" @click="toRanking">详情 >></a-button>
             </a-card>
         </div>
       </a-col>

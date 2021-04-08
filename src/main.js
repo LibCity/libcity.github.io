@@ -1,6 +1,7 @@
 import Vue from "vue";
 import App from "./App.vue";
 import router from "./router";
+import axios from 'axios';
 import store from "./store";
 import echarts from "echarts";
 import Antd from "ant-design-vue";
@@ -15,6 +16,26 @@ Vue.use(echarts);
 Vue.prototype.$api = api;
 Vue.prototype.$urlPath = path;
 Vue.config.productionTip = false;
+Vue.prototype.$axios = axios;
+
+const axiosInstance = axios.create({
+  baseURL : "http://112.124.28.130:8088/",
+  headers: {
+    "content-type": "application/json",
+  },
+  timeout: 600000,
+});
+
+axiosInstance.interceptors.response.use(
+  (response) => {
+    return response;
+  },
+  (error) => {
+    return Promise.reject(error);
+  }
+);
+export { axiosInstance };
+Vue.prototype.$axios = axiosInstance;
 
 new Vue({
   router,

@@ -5,34 +5,138 @@
         <a-icon type="caret-right" :rotate="props.isActive ? 90 : 0" />
       </template>
       <a-collapse-panel key="1" header="任务类型" :style="customStyle">
-        <cate-checkbox-cn :plain-options="taskOptions"></cate-checkbox-cn>
+        <div>
+          <div :style="{ borderBottom: '1px solid #E9E9E9' }">
+            <a-checkbox :indeterminate="taskIndeterminate" :checked="taskCheckAll" @change="onTaskCheckAllChange">全选</a-checkbox>
+          </div>
+          <a-checkbox-group v-model="taskCheckedList" :options="taskOptions" @change="onTaskChange" style="display:flex; flex-direction:column;">
+          </a-checkbox-group>
+        </div>
+        <!-- <cate-checkbox :plain-options="taskOptions"></cate-checkbox> -->
       </a-collapse-panel>
-      <a-collapse-panel key="2" header="顶级会议/期刊" :style="customStyle">
-        <cate-checkbox-cn :plain-options="refOptions"></cate-checkbox-cn>
+      <a-collapse-panel key="2" header="顶级期刊/会议" :style="customStyle">
+        <div>
+          <div :style="{ borderBottom: '1px solid #E9E9E9' }">
+            <a-checkbox :indeterminate="publicationIndeterminate" :checked="publicationCheckAll" @change="onPublicationCheckAllChange">全选</a-checkbox>
+          </div>
+          <a-checkbox-group v-model="publicationCheckedList" :options="publicationOptions" @change="onPublicationChange" style="display:flex; flex-direction:column;">
+          </a-checkbox-group>
+        </div>
+        <!-- <cate-checkbox :plain-options="refOptions"></cate-checkbox> -->
       </a-collapse-panel>
       <a-collapse-panel key="3" header="年份" :style="customStyle">
-        <cate-checkbox-cn :plain-options="yearOptions"></cate-checkbox-cn>
+        <div>
+          <div :style="{ borderBottom: '1px solid #E9E9E9' }">
+            <a-checkbox :indeterminate="yearIndeterminate" :checked="yearCheckAll" @change="onYearCheckAllChange">全选</a-checkbox>
+          </div>
+          <a-checkbox-group v-model="yearCheckedList" :options="yearOptions" @change="onYearChange" style="display:flex; flex-direction:column;">
+          </a-checkbox-group>
+        </div>
+        <!-- <cate-checkbox :plain-options="yearOptions"></cate-checkbox> -->
       </a-collapse-panel>
     </a-collapse>
   </div>
 </template>
 
 <script>
-import cateCheckboxCn from "./collapseCheckboxCN.vue"
+// import cateCheckboxCn from "./collapseCheckboxCN.vue"
 
 export default {
     name: 'CateCn',
   data() {
     return {
-      customStyle:
-        'background-color: #f7f7f7;border-radius: 4px;margin-bottom: 24px;border: 0;overflow: hidden',
-        taskOptions: ['交通位置预测', '交通流量预测', '交通速度预测', '按需服务预测', '出行时间预测', '交通事故预测', '综述'],
-        refOptions: ['AAAI', 'IJCAI', 'KDD', 'ICDM', 'CIKM', 'WWW', 'SDM', 'SIGSPATIAL', 'IEEE TKDE', 'IEEE TMC', 'ACM TISI'],
-        yearOptions: ['2021', '2020', '2019', '2018', '2017', '2016及以前']
+      customStyle: 'background-color: #f7f7f7;border-radius: 4px;margin-bottom: 24px;border: 0;overflow: hidden',
+      taskOptions: ['轨迹下一跳预测', '交通流量预测', '交通速度预测', '交通需求量预测', '出行时间预测', '交通事故预测', '路径规划', '综述', '其他'],
+      publicationOptions: ['AAAI', 'IJCAI', 'KDD', 'ICDM', 'CIKM', 'WWW', 'SDM', 'SIGSPATIAL', 'IEEE TKDE', 'IEEE TMC', 'ACM TISI', '其他'],
+      yearOptions: ['2021', '2020', '2019', '2018', '2017', '2016及以前'],
+
+      taskCheckedList: [],
+      taskIndeterminate: true,
+      taskCheckAll: false,
+
+      publicationCheckedList: [],
+      publicationIndeterminate: true,
+      publicationCheckAll: false,
+
+      yearCheckedList: [],
+      yearIndeterminate: true,
+      yearCheckAll: false,
+
+      paperFindList: [],
     };
   },
   components: {
-      cateCheckboxCn,
+      // cateCheckboxCn,
+  },
+  mounted(){
+    this.taskCheckedList = this.taskOptions;
+    this.publicationCheckedList = this.publicationOptions;
+    this.yearCheckedList = this.yearOptions;
+  },
+  methods: {
+    paperFind() {
+      this.$axios({
+        method: "post",
+        url: "api/paperlib/paper_retrieve/",
+        params: {},
+        headers: {},
+        data: {
+          task: this.taskCheckedList,
+          publication: this.publicationCheckedList,
+          year: this.yearCheckedList,
+          searchtext: ""
+        },
+      }).then((res) => {
+        if (res.data.code == 200) {
+          this.paperFindList = res.data.data;
+          this.$emit("paperFindList", this.paperFindList);
+          // console.log(this.paperFindList);
+        } else {
+        }
+      });
+    },
+
+    onTaskChange(taskCheckedList) {
+      this.taskIndeterminate = !!taskCheckedList.length && taskCheckedList.length < this.taskOptions.length;
+      this.taskCheckAll = taskCheckedList.length === this.taskOptions.length;
+      this.paperFind();
+    },
+    onTaskCheckAllChange(e) {
+      Object.assign(this, {
+        taskCheckedList: e.target.checked ? this.taskOptions : [],
+        taskIndeterminate: false,
+        taskCheckAll: e.target.checked,
+      });
+      this.paperFind();
+    },
+
+    onPublicationChange(publicationCheckedList) {
+      this.publicationIndeterminate = !!publicationCheckedList.length && publicationCheckedList.length < this.publicationOptions.length;
+      this.publicationCheckAll = publicationCheckedList.length === this.publicationOptions.length;
+      this.paperFind();
+    },
+    onPublicationCheckAllChange(e) {
+      Object.assign(this, {
+        publicationCheckedList: e.target.checked ? this.publicationOptions : [],
+        publicationIndeterminate: false,
+        publicationCheckAll: e.target.checked,
+      });
+      this.paperFind();
+    },
+
+    onYearChange(yearCheckedList) {
+      this.yearIndeterminate = !!yearCheckedList.length && yearCheckedList.length < this.yearOptions.length;
+      this.yearCheckAll = yearCheckedList.length === this.yearOptions.length;
+      this.paperFind();
+    },
+    onYearCheckAllChange(e) {
+      Object.assign(this, {
+        yearCheckedList: e.target.checked ? this.yearOptions : [],
+        yearIndeterminate: false,
+        yearCheckAll: e.target.checked,
+      });
+      this.paperFind();
+    },
   }
 };
 </script>
@@ -52,5 +156,14 @@ export default {
         color:white;
         font-size:16px;
         font-weight:700;
+    }
+
+    .ant-checkbox-wrapper {
+        font-weight: 700;
+    }
+
+    .ant-checkbox-group-item {
+        margin-top: 5px;
+        font-weight: 700;
     }
 </style>
