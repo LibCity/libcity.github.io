@@ -20,7 +20,7 @@
         }"
       >
         <a-menu-item key="1" @click="menuItemClick('Home')">
-          <div class="logo" />
+          <img class="logo" src="./assets/img/logo.png"/>
         </a-menu-item>
 
         <a-menu-item
@@ -28,9 +28,9 @@
           style="width: 135px; font-size: 20px; textalign: center"
         >
           <a-dropdown>
-            <a class="ant-dropdown-link" @click="e => e.preventDefault()">
+            <span class="ant-dropdown-link">
               Get Started <a-icon type="down" />
-            </a>
+            </span>
             <a-menu slot="overlay" style="width:130px">
               <a-menu-item @click="menuItemClick('InstallLibTraffic')" style="font-size:16px; line-height:24px">
                 <a href="javascript:;">Install LibTraffic</a>
@@ -55,9 +55,9 @@
           style="width: 80px; font-size: 20px; textalign: center"
         >
           <a-dropdown>
-            <a class="ant-dropdown-link" @click="e => e.preventDefault()">
+            <span class="ant-dropdown-link">
               Toolkit <a-icon type="down" />
-            </a>
+            </span>
             <a-menu slot="overlay" style="width:100px">
               <a-menu-item @click="menuItemClick('Data')" style="font-size:16px; line-height:24px" >
                 <a href="javascript:;">Data</a>
@@ -95,12 +95,20 @@
           Ranking
         </a-menu-item>
 
-        <a-menu-item
+        <!-- <a-menu-item
           key="8"
           style="width: 80px; font-size: 20px; textalign: center"
           @click="menuItemClick('About')"
         >
           About
+        </a-menu-item>
+        frb替换为以下内容 -->
+        <a-menu-item
+          key="8"
+          style="width: 80px; font-size: 20px; textalign: center"
+          @click="menuItemClick('Chart')"
+        >
+          Visual
         </a-menu-item>
 
         <a-menu-item
@@ -135,7 +143,7 @@
         }"
       >
         <a-menu-item key="1" @click="menuItemClick('HomeCN')">
-          <div class="logo" />
+          <img class="logo" src="./assets/img/logo.png"/>
         </a-menu-item>
 
         <a-menu-item
@@ -210,12 +218,20 @@
           排行榜
         </a-menu-item>
 
-        <a-menu-item
+        <!-- <a-menu-item
           key="8"
           style="width: 80px; font-size: 20px; textalign: center"
           @click="menuItemClick('AboutCN')"
         >
           关于
+        </a-menu-item> -->
+        <!-- frb替换为以下内容 -->
+        <a-menu-item
+          key="8"
+          style="width: 80px; font-size: 20px; textalign: center"
+          @click="menuItemClick('Chart')"
+        >
+          可视化
         </a-menu-item>
 
         <a-menu-item
@@ -251,10 +267,11 @@
         <div style="display:inline-block; border: red solid 0px; width:160px; height: 160px; vertical-align: top;">
         </div>
         <div style="display:block;float: right; width:150px; height: 160px;">
-          <h3 style="color: rgb(27, 140, 233)">Useful Links</h3>
+          <!-- frb 隐藏下面内容 -->
+          <!-- <h3 style="color: rgb(27, 140, 233)">Useful Links</h3>
           <dl>
             <dt><a-button class="footer-btn" type="link"><a style="font-size: 16px;" href="https://www.bigscity.com/">BIGSCity</a></a-button></dt>
-          </dl>
+          </dl> -->
         </div>
         <div style="display:block;float: right;  width:150px; height: 160px; vertical-align: top;">
           <h3 style="color: rgb(27, 140, 233)">Resources</h3>
@@ -262,7 +279,8 @@
             <dt><a-button class="footer-btn" type="link"><a style="font-size: 16px;" href="https://aptx1231.github.io/Bigscity-TrafficDL-Docs/">Document</a></a-button></dt>
             <dt><a-button class="footer-btn" type="link"><a style="font-size: 16px;" href="#">Github</a></a-button></dt>
             <dt><a-button class="footer-btn" type="link" style="font-size: 16px;" @click="toPaper">Paper Library</a-button></dt>
-            <dt><a-button class="footer-btn" type="link" style="font-size: 16px;" @click="toAbout">About Us</a-button></dt>
+            <!-- frb 隐藏下面这行内容 -->
+            <!-- <dt><a-button class="footer-btn" type="link" style="font-size: 16px;" @click="toAbout">About Us</a-button></dt> -->
           </dl>
         </div>
         <div style="text-align: center; font-size: 16px; color: black; margin-top:20px">
@@ -276,11 +294,12 @@
       <div style="width: 80%; margin: auto;min-width: 1000px;">
         <div style="display:inline-block; border: red solid 0px; width:160px; height: 160px; vertical-align: top;">
         </div>
-        <div style="display:block;float: right;  height: 160px;">
-          <h3 style="color: rgb(27, 140, 233)">友情链接</h3>
+        <div style="display:block;float: right; width:150px; height: 160px;">
+          <!-- frb 隐藏下面内容 -->
+          <!-- <h3 style="color: rgb(27, 140, 233)">友情链接</h3>
           <dl>
             <dt><a-button class="footer-btn" type="link"><a style="font-size: 16px;" href="https://www.bigscity.com/">BIGSCity</a></a-button></dt>
-          </dl>
+          </dl> -->
         </div>
         <div style="display:block;float: right;  width:150px; height: 160px; vertical-align: top;">
           <h3 style="color: rgb(27, 140, 233)">资源</h3>
@@ -288,7 +307,8 @@
             <dt><a-button class="footer-btn" type="link"><a style="font-size: 16px;" href="https://aptx1231.github.io/Bigscity-TrafficDL-Docs/">文档</a></a-button></dt>
             <dt><a-button class="footer-btn" type="link"><a style="font-size: 16px;" href="#">Github</a></a-button></dt>
             <dt><a-button class="footer-btn" type="link" style="font-size: 16px;" @click="toPaper">论文库</a-button></dt>
-            <dt><a-button class="footer-btn" type="link" style="font-size: 16px;" @click="toAbout">关于我们</a-button></dt>
+            <!-- frb 隐藏下面这行内容 -->
+            <!-- <dt><a-button class="footer-btn" type="link" style="font-size: 16px;" @click="toAbout">关于我们</a-button></dt> -->
           </dl>
         </div>
         
@@ -305,13 +325,21 @@
 #components-layout-demo-fixed .logo {
   width: 150px;
   height: 50px;
-  background: rgba(255, 255, 255, 0.2);
+  /* background: rgba(255, 255, 255, 0.2); */
   margin: 0px 24px 15px 0;
   float: left;
 }
 .ant-menu.ant-menu-dark .ant-menu-item-selected,
 .ant-menu-submenu-popup.ant-menu-dark .ant-menu-item-selected {
   background-color: rgba(255, 255, 255, 0) !important;
+}
+
+.ant-menu-dark .ant-menu-item-selected {
+  color: rgba(255, 255, 255, 0.65) !important;
+}
+
+.ant-menu-item .ant-menu-item-active {
+  color: rgba(255, 255, 255, 0.65) !important;
 }
 
 .footer-btn {

@@ -19,7 +19,7 @@
       <p>This script will run the DeepMove model on the Foursquare-TKY dataset for trajectory next-location prediction task. Furthermore, the script supports the input of command line parameters to adjust the parameter settings of the pipeline.Here are some simple examples for reference.</p> 
       <p>If you want to run the DCRNN model on the METR_LA dataset for traffic state prediction task, just run the script by setting relevant command parameters:</p>
       <div class="code">
-        <code data-lang="bash">python run_model.py --task traffic_state_pred --model DCRNN --METR_LA</code>
+        <code data-lang="bash">python run_model.py --task traffic_state_pred --model DCRNN --dataset METR_LA</code>
       </div>
       <p>You will obtain some output like:</p>
       <div class="code" style="font-size: 16px">
@@ -66,8 +66,8 @@
       </div>
       <p>All supporting parameters and more details can be found in <a href="https://aptx1231.github.io/Bigscity-TrafficDL-Docs/get_started/quick_start.html">Document</a>.</p>
 
-      <p class="title">Quick Start From API</p>
-      <a-divider style="margin: 10px 0; background-image: linear-gradient(to right,  rgb(103, 179, 241),  rgb(103, 179, 241), #f6f6f6, #f6f6f6);"></a-divider>
+      <!-- <p class="title">Quick Start From API</p>
+      <a-divider style="margin: 10px 0; background-image: linear-gradient(to right,  rgb(103, 179, 241),  rgb(103, 179, 241), #f6f6f6, #f6f6f6);"></a-divider> -->
     </div>
     
   </div>

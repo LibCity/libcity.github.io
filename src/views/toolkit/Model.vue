@@ -5,7 +5,7 @@
                 <p style="margin: 20px 0 30px 130px; font-size: 60px">Model</p>
                 <p style="margin: 0px 0 20px 130px; font-size: 30px">
                     LibTraffic supports 4 mainstream spatio-temporal data mining tasks <br> 
-                    and implements 53 commonly used intelligence algorithms.
+                    and implements 18 commonly used intelligence algorithms.
                 </p>
             </div>
         </div>
@@ -14,22 +14,30 @@
             <div>
                 <p class="title">Model List</p>
                 <a-divider style="margin: 10px 0; background-image: linear-gradient(to right,  rgb(103, 179, 241),  rgb(103, 179, 241), #f6f6f6, #f6f6f6);"></a-divider>
-                <p>Up to now, LibTraffic supports 4 mainstream spatio-temporal data mining tasks: Trajectory Next-Location Prediction, Traffic Speed Prediction, Traffic Flow Prediction and On-Demand Service Prediction. Besides, LibTraffic has already implemented 53 commonly used intelligence algorithms. We summary the models in the following tables: </p>
+                <p>Up to now, LibTraffic supports 4 mainstream spatio-temporal data mining tasks: Traffic Flow Prediction, Traffic Speed Prediction, On-Demand Service Prediction and Trajectory Next-Location Prediction. Besides, LibTraffic has already implemented 18 commonly used intelligence algorithms. We summary the models in the following tables: </p>
 
-                <a-divider style="font-size: 24px">Trajectory Next-Location Prediction</a-divider>
-                <model-table :content="location"></model-table>
+                <!-- <a-divider style="font-size: 24px">Traffic Flow Prediction</a-divider>
+                <model-table :content="flow"></model-table>
                 <br>
 
                 <a-divider style="font-size: 24px">Traffic Speed Prediction</a-divider>
                 <model-table :content="speed"></model-table>
                 <br>
 
-                <a-divider style="font-size: 24px">Traffic Flow Prediction</a-divider>
-                <model-table :content="flow"></model-table>
-                <br>
-
                 <a-divider style="font-size: 24px">On-Demand Service Prediction</a-divider>
                 <model-table :content="demand"></model-table>
+                <br>
+
+                <a-divider style="font-size: 24px">Trajectory Next-Location Prediction</a-divider>
+                <model-table :content="location"></model-table>
+                <br>
+                frb隐藏以上内容 -->
+                <a-divider style="font-size: 24px">Traffic State Prediction</a-divider>
+                <model-table :content="state"></model-table>
+                <br>
+
+                <a-divider style="font-size: 24px">Trajectory Next-Location Prediction</a-divider>
+                <model-table :content="location"></model-table>
                 <br>
             </div>
         </div>
@@ -39,23 +47,130 @@
 <script>
     import modelTable from './modelTable.vue'
 
+    // const location = [
+    //     {
+    //         model: 'STAN',
+    //         mlink: '#',
+    //         from: 'WWW',
+    //         year: '2021',
+    //         paper: 'STAN: Spatio-Temporal Attention Network for Next Location Recommendation',
+    //         plink: 'https://arxiv.org/pdf/2102.04095v1.pdf'
+    //     },
+    //     {
+    //         model: 'GeoSAN',
+    //         mlink: '#',
+    //         from: 'SIGKDD',
+    //         year: '2020',
+    //         paper: 'Geography-Aware Sequential Location Recommendation',
+    //         plink: 'https://dl.acm.org/doi/pdf/10.1145/3394486.3403252'
+    //     },
+    //     {
+    //         model: 'LSTPM',
+    //         mlink: '#',
+    //         from: 'AAAI',
+    //         year: '2020',
+    //         paper: 'Where to Go Next: Modeling Long- and Short-Term User Preferences for Point-of-Interest Recommendation',
+    //         plink: 'https://ojs.aaai.org//index.php/AAAI/article/view/5353'
+    //     },
+    //     {
+    //         model: 'Flashback(RNN)',
+    //         mlink: '#',
+    //         from: 'IJCAI',
+    //         year: '2020',
+    //         paper: 'Location Prediction over Sparse User Mobility Traces Using RNNs: Flashback in Hidden States',
+    //         plink: 'https://www.ijcai.org/Proceedings/2020/0302.pdf'
+    //     },
+    //     {
+    //         model: 'TEMN',
+    //         mlink: '#',
+    //         from: 'SIGKDD',
+    //         year: '2019',
+    //         paper: 'Topic-enhanced memory networks for personalised point-of-interest recommendation',
+    //         plink: 'https://dl.acm.org/doi/10.1145/3292500.3330781'
+    //     },
+    //     {
+    //         model: 'ATST-LSTM',
+    //         mlink: '#',
+    //         from: 'IEEE TSC',
+    //         year: '2019',
+    //         paper: 'An Attention-based Spatiotemporal LSTM Network for Next POI Recommendation',
+    //         plink: 'https://ieeexplore.ieee.org/abstract/document/8723186'
+    //     },
+    //     {
+    //         model: 'DeepMove',
+    //         mlink: '#',
+    //         from: 'WWW',
+    //         year: '2018',
+    //         paper: 'DeepMove: Predicting Human Mobility with Attentional Recurrent Networks',
+    //         plink: 'https://dl.acm.org/doi/10.1145/3178876.3186058'
+    //     },
+    //     {
+    //         model: 'HST-LSTM',
+    //         mlink: '#',
+    //         from: 'IJCAI',
+    //         year: '2018',
+    //         paper: 'HST-LSTM: A Hierarchical Spatial-Temporal Long-Short Term Memory Network for Location Prediction',
+    //         plink: 'https://www.ijcai.org/Proceedings/2018/0324.pdf'
+    //     },
+    //     {
+    //         model: 'CAPE',
+    //         mlink: '#',
+    //         from: 'IJCAI',
+    //         year: '2018',
+    //         paper: 'Content-Aware Hierarchical Point-of-Interest Embedding Model for Successive POI Recommendation',
+    //         plink: 'https://www.ijcai.org/Proceedings/2018/0458.pdf'
+    //     },
+    //     {
+    //         model: 'TMCA',
+    //         mlink: '#',
+    //         from: 'ICDM',
+    //         year: '2018',
+    //         paper: 'Next point-of-interest recommendation with temporal and multi-level context attention',
+    //         plink: 'https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8594953'
+    //     },
+    //     {
+    //         model: 'CARA',
+    //         mlink: '#',
+    //         from: 'SIGIR',
+    //         year: '2018',
+    //         paper: 'A Contextual Attention Recurrent Architecture for Context-Aware Venue Recommendation',
+    //         plink: 'http://vigir.missouri.edu/~gdesouza/Research/Conference_CDs/IEEE_SSCI_2016/pdf/SSCI16_paper_377.pdf'
+    //     },
+    //     {
+    //         model: 'Serm',
+    //         mlink: '#',
+    //         from: 'CIKM',
+    //         year: '2017',
+    //         paper: 'SERM: A Recurrent Model for Next Location Prediction in Semantic Trajectories',
+    //         plink: 'https://dl.acm.org/doi/10.1145/3132847.3133056'
+    //     },
+    //     {
+    //         model: 'ST-RNN',
+    //         mlink: '#',
+    //         from: 'AAAI',
+    //         year: '2016',
+    //         paper: 'Predicting the Next Location: A Recurrent Model with Spatial and Temporal Contexts',
+    //         plink: 'https://www.aaai.org/ocs/index.php/AAAI/AAAI16/paper/viewPDFInterstitial/11900/11583'
+    //     },
+    //     {
+    //         model: 'STF-RNN',
+    //         mlink: '#',
+    //         from: 'SSCI',
+    //         year: '2016',
+    //         paper: 'STF-RNN: Space Time Features-based Recurrent Neural Network for Predicting People Next Location',
+    //         plink: 'http://vigir.missouri.edu/~gdesouza/Research/Conference_CDs/IEEE_SSCI_2016/pdf/SSCI16_paper_377.pdf'
+    //     },
+    //     {
+    //         model: 'FPMC',
+    //         mlink: '#',
+    //         from: 'WWW',
+    //         year: '2010',
+    //         paper: 'Factorizing Personalized Markov Chains for Next-Basket Recommendation',
+    //         plink: 'https://dl.acm.org/doi/10.1145/1772690.1772773'
+    //     },
+    // ]
+    // frb替换为以下内容
     const location = [
-        {
-            model: 'STAN',
-            mlink: '#',
-            from: 'WWW',
-            year: '2021',
-            paper: 'STAN: Spatio-Temporal Attention Network for Next Location Recommendation',
-            plink: 'https://arxiv.org/pdf/2102.04095v1.pdf'
-        },
-        {
-            model: 'GeoSAN',
-            mlink: '#',
-            from: 'SIGKDD',
-            year: '2020',
-            paper: 'Geography-Aware Sequential Location Recommendation',
-            plink: 'https://dl.acm.org/doi/pdf/10.1145/3394486.3403252'
-        },
         {
             model: 'LSTPM',
             mlink: '#',
@@ -65,68 +180,12 @@
             plink: 'https://ojs.aaai.org//index.php/AAAI/article/view/5353'
         },
         {
-            model: 'Flashback(RNN)',
-            mlink: '#',
-            from: 'IJCAI',
-            year: '2020',
-            paper: 'Location Prediction over Sparse User Mobility Traces Using RNNs: Flashback in Hidden States',
-            plink: 'https://www.ijcai.org/Proceedings/2020/0302.pdf'
-        },
-        {
-            model: 'TEMN',
-            mlink: '#',
-            from: 'SIGKDD',
-            year: '2019',
-            paper: 'Topic-enhanced memory networks for personalised point-of-interest recommendation',
-            plink: 'https://dl.acm.org/doi/10.1145/3292500.3330781'
-        },
-        {
-            model: 'ATST-LSTM',
-            mlink: '#',
-            from: 'IEEE TSC',
-            year: '2019',
-            paper: 'An Attention-based Spatiotemporal LSTM Network for Next POI Recommendation',
-            plink: 'https://ieeexplore.ieee.org/abstract/document/8723186'
-        },
-        {
             model: 'DeepMove',
             mlink: '#',
             from: 'WWW',
             year: '2018',
             paper: 'DeepMove: Predicting Human Mobility with Attentional Recurrent Networks',
             plink: 'https://dl.acm.org/doi/10.1145/3178876.3186058'
-        },
-        {
-            model: 'HST-LSTM',
-            mlink: '#',
-            from: 'IJCAI',
-            year: '2018',
-            paper: 'HST-LSTM: A Hierarchical Spatial-Temporal Long-Short Term Memory Network for Location Prediction',
-            plink: 'https://www.ijcai.org/Proceedings/2018/0324.pdf'
-        },
-        {
-            model: 'CAPE',
-            mlink: '#',
-            from: 'IJCAI',
-            year: '2018',
-            paper: 'Content-Aware Hierarchical Point-of-Interest Embedding Model for Successive POI Recommendation',
-            plink: 'https://www.ijcai.org/Proceedings/2018/0458.pdf'
-        },
-        {
-            model: 'TMCA',
-            mlink: '#',
-            from: 'ICDM',
-            year: '2018',
-            paper: 'Next point-of-interest recommendation with temporal and multi-level context attention',
-            plink: 'https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8594953'
-        },
-        {
-            model: 'CARA',
-            mlink: '#',
-            from: 'SIGIR',
-            year: '2018',
-            paper: 'A Contextual Attention Recurrent Architecture for Context-Aware Venue Recommendation',
-            plink: 'http://vigir.missouri.edu/~gdesouza/Research/Conference_CDs/IEEE_SSCI_2016/pdf/SSCI16_paper_377.pdf'
         },
         {
             model: 'Serm',
@@ -145,20 +204,20 @@
             plink: 'https://www.aaai.org/ocs/index.php/AAAI/AAAI16/paper/viewPDFInterstitial/11900/11583'
         },
         {
-            model: 'STF-RNN',
-            mlink: '#',
-            from: 'SSCI',
-            year: '2016',
-            paper: 'STF-RNN: Space Time Features-based Recurrent Neural Network for Predicting People Next Location',
-            plink: 'http://vigir.missouri.edu/~gdesouza/Research/Conference_CDs/IEEE_SSCI_2016/pdf/SSCI16_paper_377.pdf'
-        },
-        {
             model: 'FPMC',
             mlink: '#',
             from: 'WWW',
             year: '2010',
             paper: 'Factorizing Personalized Markov Chains for Next-Basket Recommendation',
             plink: 'https://dl.acm.org/doi/10.1145/1772690.1772773'
+        },
+        {
+            model: 'RNN',
+            mlink: '#',
+            from: '-',
+            year: '-',
+            paper: '-',
+            plink: '-'
         },
     ]
 
@@ -376,7 +435,7 @@
         },
         {
             model: 'AGCRN',
-            mlink: '#',
+            mlink: 'https://aptx1231.github.io/Bigscity-TrafficDL-Docs/user_guide/model/Traffic_Flow_Prediction/AGCRN.html',
             from: 'NIPS',
             year: '2020',
             paper: 'Adaptive Graph Convolutional Recurrent Network for Traffic Forecasting',
@@ -488,7 +547,7 @@
         },
         {
             model: 'ASTGCN',
-            mlink: '#',
+            mlink: 'https://aptx1231.github.io/Bigscity-TrafficDL-Docs/user_guide/model/Traffic_Flow_Prediction/ASTGCN.html',
             from: 'AAAI',
             year: '2019',
             paper: 'Attention based spatial-temporal graph convolutional networks for traffic flow forecasting',
@@ -579,13 +638,113 @@
         },
     ]
 
+    const state = [
+        {
+            model: 'AGCRN',
+            mlink: '#',
+            from: 'NIPS',
+            year: '2020',
+            paper: 'Adaptive Graph Convolutional Recurrent Network for Traffic Forecasting',
+            plink: 'https://arxiv.org/abs/2007.02842'
+        },
+        {
+            model: 'MSTGCN',
+            mlink: '#',
+            from: 'AAAI',
+            year: '2019',
+            paper: 'Attention based spatial-temporal graph convolutional networks for traffic flow forecasting',
+            plink: 'https://www.aaai.org/ojs/index.php/AAAI/article/view/3881'
+        },
+        {
+            model: 'ASTGCN',
+            mlink: '#',
+            from: 'AAAI',
+            year: '2019',
+            paper: 'Attention based spatial-temporal graph convolutional networks for traffic flow forecasting',
+            plink: 'https://www.aaai.org/ojs/index.php/AAAI/article/view/3881'
+        },
+        {
+            model: 'MTGNN',
+            mlink: '#',
+            from: 'SIGKDD',
+            year: '2020',
+            paper: 'Connecting the Dots: Multivariate Time Series Forecasting with Graph Neural Networks',
+            plink: 'https://arxiv.org/abs/2005.11650' 
+        },
+        {
+            model: 'TGC-LSTM',
+            mlink: '#',
+            from: 'TITS',
+            year: '2020',
+            paper: 'Traffic Graph Convolutional Recurrent Neural Network: A Deep Learning Framework for Network-Scale Traffic Learning and Forecasting',
+            plink: 'https://ieeexplore.ieee.org/abstract/document/8917706'
+        },
+        {
+            model: 'T-GCN',
+            mlink: '#',
+            from: 'TITS',
+            year: '2020',
+            paper: 'T-gcn: A temporal graph convolutional network for traffic prediction',
+            plink: 'https://ieeexplore.ieee.org/abstract/document/8809901/'
+        },
+        {
+            model: 'Graph WaveNet',
+            mlink: '#',
+            from: 'IJCAI',
+            year: '2019',
+            paper: 'Graph wavenet for deep spatial-temporal graph modeling',
+            plink: 'https://arxiv.org/abs/1906.00121' 
+        },
+        {
+            model: 'STGCN',
+            mlink: '#',
+            from: 'IJCAI',
+            year: '2018',
+            paper: 'Spatio-temporal graph convolutional networks: A deep learning framework for traffic forecasting',
+            plink: 'https://www.ijcai.org/Proceedings/2018/0505' 
+        },
+        {
+            model: 'DCRNN',
+            mlink: '#',
+            from: 'ICLR',
+            year: '2018',
+            paper: 'Diffusion convolutional recurrent neural network: Data-driven traffic forecasting',
+            plink: 'https://arxiv.org/abs/1707.01926' 
+        },
+        {
+            model: 'ACFM',
+            mlink: '#',
+            from: 'ACM Multimedia Conference',
+            year: '2018',
+            paper: 'Attentive Crowd Flow Machines',
+            plink: 'https://dl.acm.org/doi/10.1145/3240508.3240681' 
+        },
+        {
+            model: 'ST-ResNet',
+            mlink: '#',
+            from: 'AAAI',
+            year: '2017',
+            paper: 'Deep Spatio-Temporal Residual Networks for Citywide Crowd Flows Prediction',
+            plink: 'https://arxiv.org/abs/1610.00081' 
+        },
+        {
+            model: 'RNN',
+            mlink: '#',
+            from: 'YAC',
+            year: '2016',
+            paper: 'Using LSTM and GRU neural network methods for traffic flow prediction',
+            plink: 'https://ieeexplore.ieee.org/abstract/document/7804912' 
+        },
+    ]
+
     export default {
         data() {
             return {
                 location,
-                speed,
-                flow,
-                demand
+                // speed,
+                // flow,
+                // demand,
+                state
             };
         },
         components: {

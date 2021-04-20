@@ -1,29 +1,38 @@
 <template>
   <table>
-      <thead>
+      <thead  style="font-size: 16px">
           <tr>
-              <th>DATASET</th>
-              <th>BEST METHOD</th>
-              <th>PAPER</th>
-              <th>COMAPRE</th>
+              <th>排名</th>
+              <th>模型</th>
+              <th>论文</th>
+              <th>年份</th>
+              <th>3 STEP</th>
+              <th>6 STEP</th>
+              <th>9 STEP</th>
+              <th>12 STEP</th>
           </tr>
       </thead>
       <tbody>
-          <tr v-for="item in rankdata" :key="item.dataset">
-              <td width="15%"><a :href="item.datasetlink" class="dataset">{{item.dataset}}</a></td>
-              <td width="15%"><a-icon type="crown" style="color: gold; font-size: 20px;"/><a :href="item.mlink" class="model">{{item.best}}</a></td>
-              <td width="55%"><a class="paper" :href="item.plink">{{item.paper}}</a></td>
-              <td width="15%"><a-button type="primary" shape="round" @click="toDatasetRanking(item.dlink)">See All</a-button></td>
+          <tr v-for="item in speedModel" :key="item.model">
+              <td width="6%">{{item.rank}}</td>
+              <td width="10%"><a :href="item.mlink">{{item.model}}</a></td>
+              <td width="43%"><a :href="item.plink" class="paper">{{item.paper}}</a></td>
+              <td width="5%">{{item.year}}</td>
+              <td width="9%">{{item.step3}}</td>
+              <td width="9%">{{item.step6}}</td>
+              <td width="9%">{{item.step9}}</td>
+              <td width="9%">{{item.step12}}</td>
           </tr>
       </tbody>
   </table>
 </template>
 
 <script>
+
 export default {
   name: 'table',
   props: {
-      rankdata: {
+      speedModel: {
           type: Array,
           required: true
       }
@@ -31,13 +40,6 @@ export default {
   data() {
     return {
     };
-  },
-  methods: {
-      toDatasetRanking(dlink) {
-        this.$router.push({
-            name: dlink,
-        });
-      }
   }
 };
 </script>
@@ -89,22 +91,10 @@ td {
     font-size: 15px;
     font-family: Nunito, 'Microsoft YaHei', Arial, Helvetica, sans-serif;
 }
-.dataset {
-    color:rgb(27, 140, 233)
-}
-/* .dataset:hover {
-    color:rgb(27, 140, 233)
-} */
-.model {
-    color: black
-}
-.model:hover {
-    color:rgb(27, 140, 233)
-}
 .paper {
-    color: black
+    color: black;
 }
 .paper:hover {
-    color:rgb(27, 140, 233)
+    color:rgb(27, 140, 233);
 }
 </style>

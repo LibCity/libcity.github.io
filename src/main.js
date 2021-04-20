@@ -20,9 +20,6 @@ Vue.prototype.$axios = axios;
 
 const axiosInstance = axios.create({
   baseURL : "http://112.124.28.130:8088/",
-  headers: {
-    "content-type": "application/json",
-  },
   timeout: 600000,
 });
 
@@ -43,8 +40,8 @@ new Vue({
   render: (h) => h(App),
 }).$mount("#app");
 
-new Vue({
-  router,
-  store,
-  render: (h) => h(App),
-}).$mount("#app");
+// new Vue({
+//   router,
+//   store,
+//   render: (h) => h(App),
+// }).$mount("#app");

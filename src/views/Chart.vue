@@ -2,28 +2,37 @@
   <div class="main">
     <div class="left">
       <div class="title-one">PARAMETERS</div>
-      <a-divider ></a-divider>
+      <a-divider style="margin: 5px 0 10px 0;"></a-divider>
+      <!-- <a-divider></a-divider> -->
       <div class="basic">
         <div class="basic-header">BASIC</div>
-        <a-form-model style="width:800px;margin:20px auto" :model="form" :label-col="labelCol" :wrapper-col="wrapperCol">
+        <a-form-model style="width:800px;margin:20px auto; font-weight: 700;font-family: 'Nunito', 'Microsoft YaHei', Arial, Helvetica, sans-serif" :model="form" :label-col="labelCol" :wrapper-col="wrapperCol">
           <a-form-model-item label="Task">
-           <a-select :default-value="taskData[0]" style="width: 280px;" @change="handleTaskChange" v-model="form.task">
+           <a-select :default-value="taskData[0]" style="width: 280px; font-weight: 400;" @change="handleTaskChange" v-model="form.task">
               <a-select-option v-for="task in taskData" :key="task">
                 {{ task }}
               </a-select-option>
             </a-select>
         </a-form-model-item>
         <a-form-model-item label="Dataset">
-           <a-select v-model="form.dataset" style="width: 150px">
+           <a-select v-model="form.dataset" style="width: 280px; font-weight: 400;">
               <a-select-option v-for="dataset in datasetData" :key="dataset">
                 {{ dataset}}
               </a-select-option>
             </a-select>
         </a-form-model-item>
         <a-form-model-item label="Model">
-           <a-select v-model="form.model" style="width: 150px">
+           <a-select v-model="form.model" style="width: 280px; font-weight: 400;">
               <a-select-option v-for="model in modelData" :key="model">
                 {{ model }}
+              </a-select-option>
+            </a-select>
+        </a-form-model-item>
+        <!-- </a-form-model> -->
+        <a-form-model-item label="Metrics">
+           <a-select v-model="form.metrics" style="width: 280px; font-weight: 400;">
+              <a-select-option v-for="metrics in metricsData" :key="metrics">
+                {{ metrics }}
               </a-select-option>
             </a-select>
         </a-form-model-item>
@@ -32,37 +41,37 @@
       <div class="middle">
         <div class="data">
           <div class="data-header">DATA</div>
-          <a-form-model style="width:750px;margin:20px auto;" :model="dataform" :label-col="labelCol" :wrapper-col="wrapperCol">
+          <a-form-model style="width:750px;margin:20px auto;font-weight: 700;font-family: 'Nunito', 'Microsoft YaHei', Arial, Helvetica, sans-serif" :model="dataform" :label-col="labelCol" :wrapper-col="wrapperCol">
             <a-form-model-item label="batch_size">
-            <a-select v-model="dataform.batch_size" style="width: 70px;" >
+            <a-select v-model="dataform.batch_size" style="width: 70px;font-weight: 400;" >
                 <a-select-option v-for="batch_size in batch_sizeData" :key="batch_size">
                   {{ batch_size}}
                 </a-select-option>
               </a-select>
           </a-form-model-item>
-          <a-form-model-item label="inout_window">
-            <a-select v-model="dataform.input_window" style="width: 70px">
+          <a-form-model-item label="in_window">
+            <a-select v-model="dataform.input_window" style="width: 70px;font-weight: 400;">
                 <a-select-option v-for="input_window in input_windowData" :key="input_window">
                   {{ input_window}}
                 </a-select-option>
               </a-select>
           </a-form-model-item>
-          <a-form-model-item label="output_window">
-            <a-select v-model="dataform.output_window" style="width: 70px">
+          <a-form-model-item label="out_window">
+            <a-select v-model="dataform.output_window" style="width: 70px;font-weight: 400;">
                 <a-select-option v-for="output_window in output_windowData" :key="output_window">
                   {{ output_window }}
                 </a-select-option>
               </a-select>
           </a-form-model-item>
           <a-form-model-item label="train_rate">
-            <a-select v-model="dataform.train_rate" style="width: 70px">
+            <a-select v-model="dataform.train_rate" style="width: 70px;font-weight: 400;">
                 <a-select-option v-for="train_rate in train_rateData" :key="train_rate">
                   {{ train_rate }}
                 </a-select-option>
               </a-select>
           </a-form-model-item>
           <a-form-model-item label="eval_rate">
-            <a-select v-model="dataform.eval_rate" style="width: 70px">
+            <a-select v-model="dataform.eval_rate" style="width: 70px;font-weight: 400;">
                 <a-select-option v-for="eval_rate in eval_rateData" :key="eval_rate">
                   {{ eval_rate }}
                 </a-select-option>
@@ -72,44 +81,44 @@
           </div>
         <div class="executor">
           <div class="executor-header">EXECUTOR</div>
-          <a-form-model style="width:720px;margin:20px auto" :model="executorform" :label-col="labelCol" :wrapper-col="wrapperCol">
+          <a-form-model style="width:720px;margin:20px auto;font-weight: 700;font-family: 'Nunito', 'Microsoft YaHei', Arial, Helvetica, sans-serif" :model="executorform" :label-col="labelCol" :wrapper-col="wrapperCol">
             <a-form-model-item label="max_epoch">
-            <a-select v-model="executorform.max_epoch" style="width: 80px;" >
+            <a-select v-model="executorform.max_epoch" style="width: 110px;font-weight: 400;" >
                 <a-select-option v-for="max_epoch in max_epochData" :key="max_epoch">
                   {{ max_epoch}}
                 </a-select-option>
               </a-select>
           </a-form-model-item>
           <a-form-model-item label="learner">
-            <a-select v-model="executorform.learner" style="width: 110px">
+            <a-select v-model="executorform.learner" style="width: 110px;font-weight: 400;">
                 <a-select-option v-for="learner in learnerData" :key="learner">
                   {{ learner}}
                 </a-select-option>
               </a-select>
           </a-form-model-item>
           <a-form-model-item label="learning_rate">
-            <a-select v-model="executorform.learning_rate" style="width: 80px">
+            <a-select v-model="executorform.learning_rate" style="width: 110px;font-weight: 400;">
                 <a-select-option v-for="learning_rate in learning_rateData" :key="learning_rate">
                   {{ learning_rate }}
                 </a-select-option>
               </a-select>
           </a-form-model-item>
           <a-form-model-item label="lr_scheduler">
-            <a-select v-model="executorform.lr_scheduler" style="width: 110px">
+            <a-select v-model="executorform.lr_scheduler" style="width: 110px;;font-weight: 400;">
                 <a-select-option v-for="lr_scheduler in lr_schedulerData" :key="lr_scheduler">
                   {{ lr_scheduler }}
                 </a-select-option>
               </a-select>
           </a-form-model-item>
           <a-form-model-item label="step_size">
-            <a-select v-model="executorform.step_size" style="width: 80px">
+            <a-select v-model="executorform.step_size" style="width: 110px;;font-weight: 400;">
                 <a-select-option v-for="step_size in step_sizeData" :key="step_size">
                   {{ step_size }}
                 </a-select-option>
               </a-select>
           </a-form-model-item>
           <a-form-model-item label="lr_decay_ratio">
-            <a-select v-model="executorform.lr_decay_ratio" style="width: 80px">
+            <a-select v-model="executorform.lr_decay_ratio" style="width: 110px;font-weight: 400;">
                 <a-select-option v-for="lr_decay_ratio in lr_decay_ratioData" :key="lr_decay_ratio">
                   {{ lr_decay_ratio }}
                 </a-select-option>
@@ -118,7 +127,7 @@
           </a-form-model>
           </div>
         </div>
-        <div class="evaluator">
+        <!-- <div class="evaluator">
         <div class="basic-header">EVALUATOR</div>
         <a-form-model style="width:800px;margin:20px auto" :model="evaluatorform" :label-col="labelCol" :wrapper-col="wrapperCol">
         <a-form-model-item label="metrics">
@@ -129,11 +138,11 @@
             </a-select>
         </a-form-model-item>
         </a-form-model>
-    </div>  
+    </div>   -->
     </div>
     <div class="right" > 
       <div class="title-one">RESULTS</div>
-      <a-divider ></a-divider>
+      <a-divider style="margin: 5px 0 10px 0;"></a-divider>
        <a-button  class="redo-btn" type="primary" >
          <a-icon type="reload" :style="{ fontSize: '20px'} "/>
         </a-button>
@@ -158,6 +167,8 @@ export default {
       datasetData:dat.basic.dataset[0],
       modelAllData:dat.basic.model,
       modelData:dat.basic.model[0],
+      metricsAllData:dat.basic.metrics,
+      metricsData:dat.basic.metrics[0],
       batch_sizeData:dat.data.batch_size,
         input_windowData:dat.data.input_window,
         output_windowData:dat.data.output_window,
@@ -175,11 +186,12 @@ export default {
         lr_scheduler: dat.executor.lr_scheduler,
         step_size:dat.executor.step_size,
         lr_decay_ratio: dat.executor.lr_decay_ratio,
-        metricsData:dat.evaluator.metrics,
+        // metricsData:dat.evaluator.metrics,
       form:{
         task:dat.basic.task[0],
         dataset:dat.basic.dataset[0][0],
-        model:dat.basic.model[0][0]
+        model:dat.basic.model[0][0],
+        metrics:dat.basic.metrics[0][0]
       },
       dataform:{
         batch_size:dat.data.batch_size[0],
@@ -196,9 +208,9 @@ export default {
         step_size:dat.executor.step_size[0],
         lr_decay_ratio: dat.executor.lr_decay_ratio[0],
       },
-      evaluatorform:{
-        metrics:dat.evaluator.metrics[0]
-      },
+      // evaluatorform:{
+      //   metrics:dat.evaluator.metrics[0]
+      // },
       option :{
         tooltip: {
             trigger: 'axis',
@@ -287,15 +299,17 @@ export default {
     handleTaskChange(value) {
       console.log(value);
       if(value == "Trajectory Next-Location Prediction"){
-        value = 0;
-      }else if(value == "Traffic State Prediction"){
         value = 1;
+      }else if(value == "Traffic State Prediction"){
+        value = 0;
       }
       this.form.task = this.taskData[value];
       this.datasetData = this.datasetAllData[value];
       this.form.dataset = this.datasetData[0];
       this.modelData = this.modelAllData[value];
       this.form.model = this.modelData[0];
+      this.metricsData = this.metricsAllData[value];
+      this.form.metrics = this.metricsData[0];
     },
     // onSubmit(){
     //   if(this.form.type[0] == 1){
@@ -422,7 +436,7 @@ export default {
   display: block;
   float: left;
   width:220px;
-  height:400px;
+  height:450px;
   margin:auto;
   /* border:1px red solid; */
 }
@@ -436,17 +450,18 @@ export default {
   box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
   background-color: transparent;
 }
-.evaluator{
+/* .evaluator{
   width:500px;
   height:130px;
   margin:10px auto;
-  /* border:1px red solid; */
   box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
   background-color: transparent;
-}
+} */
 .title-one{
   padding-top:10px;
   font-size:24px;
   margin-left: 50px;
+  font-weight: 700;
+  font-family: 'Nunito', 'Microsoft YaHei', Arial, Helvetica, sans-serif;
 }
 </style>

@@ -19,7 +19,7 @@
       <p style="text-indent: 2em">这个例子将会在Foursquare-TKY这个数据集上使用DeepMove模型执行轨迹下一跳预测任务。并且，该脚本还支持通过命令行来设置参数。下面将给出几个例子作为参考。</p>
       <p style="text-indent: 2em">如果您想在METR_LA这个数据集上使用DCRNN模型执行交通状态预测任务，只需通过设定相关参数运行脚本：</p>
       <div class="code">
-        <code data-lang="bash">python run_model.py --task traffic_state_pred --model DCRNN --METR_LA</code>
+        <code data-lang="bash">python run_model.py --task traffic_state_pred --model DCRNN --dataset METR_LA</code>
       </div>
       <p style="text-indent: 2em">您会得到一些类似下面的输出：</p>
       <div class="code" style="font-size: 16px">
@@ -63,10 +63,11 @@
       <div class="code">
         <code data-lang="bash">python run_model.py --learning_rate 0.001</code>
       </div>
-      <p>所有支持的参数和更多的细节可见<a href="https://aptx1231.github.io/Bigscity-TrafficDL-Docs/get_started/quick_start.html">文档</a>。</p>
-
-      <p class="title">从API快速上手</p>
-      <a-divider style="margin: 10px 0; background-image: linear-gradient(to right,  rgb(103, 179, 241),  rgb(103, 179, 241), #f6f6f6, #f6f6f6);"></a-divider>
+      <p>所有支持的参数和更多的细节可见<a target="_blank" href="https://aptx1231.github.io/Bigscity-TrafficDL-Docs/get_started/quick_start.html">文档</a>。</p>
+      <br>
+      <!-- frb 隐藏下面内容 -->
+      <!-- <p class="title">从API快速上手</p> -->
+      <!-- <a-divider style="margin: 10px 0; background-image: linear-gradient(to right,  rgb(103, 179, 241),  rgb(103, 179, 241), #f6f6f6, #f6f6f6);"></a-divider> -->
     </div>
   </div>
 </template>

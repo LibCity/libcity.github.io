@@ -16,11 +16,6 @@ const routes = [
     component: () => import("../views/Paper.vue")
   },
   {
-    path: "/chart",
-    name: "Chart",
-    component: () => import("../views/Chart.vue")
-  },
-  {
     path: "/ranking",
     name: "Ranking",
     component: () => import("../views/Ranking.vue")
@@ -59,6 +54,11 @@ const routes = [
     path: "/ranking/METR-LA",
     name: "METR-LA",
     component: () => import("../views/ranking/speed/METR-LA.vue")
+  },
+  {
+    path: "/ranking/PEMS-BAY",
+    name: "PEMS-BAY",
+    component: () => import("../views/ranking/speed/PEMS-BAY.vue")
   },
   {
     path: "/about",
@@ -121,6 +121,16 @@ const routes = [
     path: "/cn/paper",
     name: "PaperCN",
     component: () => import("../views/cn/PaperCN.vue")
+  },
+  {
+    path: "/cn/ranking",
+    name: "RankingCN",
+    component: () => import("../views/cn/RankingCN.vue")
+  },
+  {
+    path: "/cn/ranking/METR-LA",
+    name: "METR-LACN",
+    component: () => import("../views/cn/ranking/speed/METR-LACN.vue")
   },
   {
     path: "/cn/news",

@@ -7,7 +7,7 @@
                 <div style="text-align: center">
                   <img src="../../assets/img/data.png" alt="data"  height="80" style="margin-bottom: 10px"/>
                   <h3 style="font-size: 20px;">Comprehensive Datasets and Unified Data Structures</h3>
-                  <p style="text-align: left">LibTraffic provides more than 40 spatio-temporal datasets and introduces unified data structures to format representations of datas and the input of algorithms.</p>
+                  <p style="text-align: left">LibTraffic provides 29 spatio-temporal datasets and introduces unified data structures to format representations of datas and the input of algorithms.</p>
                 </div>
             </a-card>
         </div>
@@ -18,7 +18,7 @@
               <div style="text-align: center">
                 <img src="../../assets/img/algorithm.png" alt="algorithm"  height="80" style="margin-bottom: 10px"/>
                 <h3 style="font-size: 20px;">Mainstream Tasks and Intelligence Algorithms</h3>
-                <p style="text-align: left">LibTraffic supports 4 mainstream spatio-temporal data mining tasks and implements 53 commonly used intelligence algorithms.</p>
+                <p style="text-align: left">LibTraffic supports 4 mainstream spatio-temporal data mining tasks and implements 18 commonly used intelligence algorithms.</p>
               </div>
             </a-card>
         </div>

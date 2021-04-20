@@ -46,7 +46,7 @@ export default {
   data() {
     return {
       customStyle: 'background-color: #f7f7f7;border-radius: 4px;margin-bottom: 24px;border: 0;overflow: hidden',
-      taskOptions: ['Trajectory Next-Location Prediction', 'Traffic Flow Prediction', 'Traffic Speed Prediction', 'On-Demand Service Prediction', 'Travel Time Prediction', 'Traffic Accident Prediction', 'Route Planning', 'Survey', 'Others'],
+      taskOptions: ['Traffic Flow Prediction', 'Traffic Speed Prediction', 'On-Demand Service Prediction', 'Trajectory Next-Location Prediction', 'Travel Time Prediction', 'Traffic Accident Prediction', 'Route Planning', 'Survey', 'Others'],
       publicationOptions: ['AAAI', 'IJCAI', 'KDD', 'ICDM', 'CIKM', 'WWW', 'SDM', 'SIGSPATIAL', 'IEEE TKDE', 'IEEE TMC', 'ACM TISI', 'Others'],
       yearOptions: ['2021', '2020', '2019', '2018', '2017', '2016 and before'],
 
@@ -88,10 +88,11 @@ export default {
           searchtext: ""
         },
       }).then((res) => {
+        console.log(res.data.code);
         if (res.data.code == 200) {
           this.paperFindList = res.data.data;
           this.paperFindList.forEach((item)=>{
-            item.year += ", " + item.publication + ", " + item.task;
+            item.year = item.task + ", " + item.publication + ", " + item.year;
           })
           this.$emit("paperFindList", this.paperFindList);
           this.$emit("taskCheckedList", this.taskCheckedList);
@@ -101,7 +102,6 @@ export default {
         }
       });
     },
-
     onTaskChange(taskCheckedList) {
       this.taskIndeterminate = !!taskCheckedList.length && taskCheckedList.length < this.taskOptions.length;
       this.taskCheckAll = taskCheckedList.length === this.taskOptions.length;
@@ -115,7 +115,6 @@ export default {
       });
       this.paperFind();
     },
-
     onPublicationChange(publicationCheckedList) {
       this.publicationIndeterminate = !!publicationCheckedList.length && publicationCheckedList.length < this.publicationOptions.length;
       this.publicationCheckAll = publicationCheckedList.length === this.publicationOptions.length;

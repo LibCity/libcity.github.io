@@ -1,11 +1,11 @@
 <template>
   <table>
-      <thead>
+      <thead style="font-size: 16px">
           <tr>
-              <th>DATASET</th>
-              <th>BEST METHOD</th>
-              <th>PAPER</th>
-              <th>COMAPRE</th>
+              <th>数据集</th>
+              <th>最佳方法</th>
+              <th>论文</th>
+              <th>模型比较</th>
           </tr>
       </thead>
       <tbody>
@@ -13,7 +13,7 @@
               <td width="15%"><a :href="item.datasetlink" class="dataset">{{item.dataset}}</a></td>
               <td width="15%"><a-icon type="crown" style="color: gold; font-size: 20px;"/><a :href="item.mlink" class="model">{{item.best}}</a></td>
               <td width="55%"><a class="paper" :href="item.plink">{{item.paper}}</a></td>
-              <td width="15%"><a-button type="primary" shape="round" @click="toDatasetRanking(item.dlink)">See All</a-button></td>
+              <td width="15%"><a-button type="primary" shape="round" @click="toDatasetRankingCN(item.dlink)">See All</a-button></td>
           </tr>
       </tbody>
   </table>
@@ -33,9 +33,9 @@ export default {
     };
   },
   methods: {
-      toDatasetRanking(dlink) {
+      toDatasetRankingCN(dlink) {
         this.$router.push({
-            name: dlink,
+            name: dlink + "CN",
         });
       }
   }

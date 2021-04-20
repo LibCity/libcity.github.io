@@ -26,10 +26,6 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Trajectory Next-Location Prediction</td>
-                            <td>TopK</td>
-                        </tr>
-                        <tr>
                             <td>Traffic Flow Prediction</td>
                             <td>MAE、MSE、RMSE、MAPE、R2、EVAR</td>
                         </tr>
@@ -41,8 +37,13 @@
                             <td>On-Demand Service Predition</td>
                             <td>MAE、MSE、RMSE、MAPE、R2、EVAR</td>
                         </tr>
+                        <tr>
+                            <td>Trajectory Next-Location Prediction</td>
+                            <td>TopK</td>
+                        </tr>
                     </tbody>
                 </table>
+                <br>
 
             </div>
         </div>
@@ -97,12 +98,11 @@ table {
     list-style: none;
     font-feature-settings: 'tnum';
     display: table;
-    border-color: grey;
     width: 100%;
-    text-align: left;
-    border-radius: 4px 4px 0 0;
-    border-collapse: separate;
+    text-align: center;
+    border-collapse: collapse;
     border-spacing: 0;
+    border: 0.1px solid #1890ff;
 }
 thead {
     display: table-header-group;
@@ -117,11 +117,10 @@ tbody {
 th {
     display: table-cell;
     vertical-align: inherit;
-    text-align: left;
-    border-bottom: 1px solid #e8e8e8;
     overflow-wrap: break-word;
     padding: 16px 16px;
     background: #97b9f7;
+    border: 0.1px solid #1890ff;
     color: white;
     font-weight: 700;
     font-family: Nunito, 'Microsoft YaHei', Arial, Helvetica, sans-serif;
@@ -129,15 +128,12 @@ th {
 td {
     display: table-cell;
     vertical-align: inherit;
-    border-bottom: 1px solid #e8e8e8;
     padding: 16px 16px;
     overflow-wrap: break-word;
     background: white;
     color: black;
+    border: 0.1px solid #1890ff;
     font-size: 15px;
     font-family: Nunito, 'Microsoft YaHei', Arial, Helvetica, sans-serif;
-}
-th:last-child td:last-child {
-    border-top-right-radius: 4px;
 }
 </style>

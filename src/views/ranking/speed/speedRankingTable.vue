@@ -13,15 +13,15 @@
           </tr>
       </thead>
       <tbody>
-          <tr v-for="item in speedModel">
-              <td>{{item.rank}}</td>
-              <td><a :href="item.mlink">{{item.model}}</a></td>
-              <td><a :href="item.plink" style="color:black;">{{item.paper}}</a></td>
-              <td>{{item.year}}</td>
-              <td>{{item.step3}}</td>
-              <td>{{item.step6}}</td>
-              <td>{{item.step9}}</td>
-              <td>{{item.step12}}</td>
+          <tr v-for="item in speedModel" :key="item.model">
+              <td width="6%">{{item.rank}}</td>
+              <td width="10%"><a :href="item.mlink">{{item.model}}</a></td>
+              <td width="43%"><a :href="item.plink" class="paper">{{item.paper}}</a></td>
+              <td width="5%">{{item.year}}</td>
+              <td width="9%">{{item.step3}}</td>
+              <td width="9%">{{item.step6}}</td>
+              <td width="9%">{{item.step9}}</td>
+              <td width="9%">{{item.step12}}</td>
           </tr>
       </tbody>
   </table>
@@ -53,12 +53,11 @@ table {
     list-style: none;
     font-feature-settings: 'tnum';
     display: table;
-    border-color: grey;
     width: 100%;
-    text-align: left;
-    border-radius: 4px 4px 0 0;
-    border-collapse: separate;
+    text-align: center;
+    border-collapse: collapse;
     border-spacing: 0;
+    border: 0.1px solid #1890ff;
 }
 thead {
     display: table-header-group;
@@ -73,11 +72,10 @@ tbody {
 th {
     display: table-cell;
     vertical-align: inherit;
-    text-align: left;
-    border-bottom: 1px solid #e8e8e8;
     overflow-wrap: break-word;
     padding: 16px 16px;
     background: #97b9f7;
+    border: 0.1px solid #1890ff;
     color: white;
     font-weight: 700;
     font-family: Nunito, 'Microsoft YaHei', Arial, Helvetica, sans-serif;
@@ -85,15 +83,18 @@ th {
 td {
     display: table-cell;
     vertical-align: inherit;
-    border-bottom: 1px solid #e8e8e8;
     padding: 16px 16px;
     overflow-wrap: break-word;
     background: white;
     color: black;
+    border: 0.1px solid #1890ff;
     font-size: 15px;
     font-family: Nunito, 'Microsoft YaHei', Arial, Helvetica, sans-serif;
 }
-th:last-child td:last-child {
-    border-top-right-radius: 4px;
+.paper {
+    color: black;
+}
+.paper:hover {
+    color:rgb(27, 140, 233);
 }
 </style>

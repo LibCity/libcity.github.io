@@ -25,7 +25,7 @@
       </div>
       <div class="toolkit">
         <div class="news-header">
-        <span class="block-title">TOOLKIT</span>
+        <span class="block-title">FRAMEWORK</span>
         </div>
         <div style="width: 80%; margin: 10px auto 20px auto; text-align: center">
           <img src="../assets/img/toolkit.png" alt="toolkit" height="550"/>

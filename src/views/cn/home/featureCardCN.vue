@@ -7,7 +7,7 @@
                 <div style="text-align: center">
                   <img src="../../../assets/img/data.png" alt="data"  height="80" style="margin-bottom: 15px"/>
                   <h3 style="font-size: 19px; font-weight: 700">详尽的数据集和统一的数据结构</h3>
-                  <p style="text-align: left; margin-top: 15px">LibTraffic提供了40余个时空数据集，并引入了统一的数据结构来格式化数据和算法的输入。</p>
+                  <p style="text-align: left; margin-top: 15px">LibTraffic提供了29个时空数据集，并引入了统一的数据结构来格式化数据和算法的输入。</p>
                 </div>
             </a-card>
         </div>
@@ -18,7 +18,7 @@
               <div style="text-align: center">
                 <img src="../../../assets/img/algorithm.png" alt="algorithm"  height="80" style="margin-bottom: 15px"/>
                 <h3 style="font-size: 19px; font-weight: 700">主流任务和智能算法</h3>
-                <p style="text-align: left; margin-top: 15px">LibTraffic支持4类主流的时空数据挖掘任务，并实现了53个常用的智能算法。</p>
+                <p style="text-align: left; margin-top: 15px">LibTraffic支持4类主流的时空数据挖掘任务，并实现了18个常用的智能算法。</p>
               </div>
             </a-card>
         </div>

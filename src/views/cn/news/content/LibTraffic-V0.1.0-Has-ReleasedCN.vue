@@ -2,7 +2,7 @@
   <div class="container">
     <div class="header">
       <div style="padding-top: 20px;color: white;">
-        <p style="margin: 20px 0 0 130px; font-size: 18px">2021年3月1日</p>
+        <p style="margin: 20px 0 0 130px; font-size: 18px">2021年4月12日</p>
         <p style="margin: 0 0 10px 130px; font-size: 60px">LibTraffic 0.1.0版本正式发布</p>
       </div>
     </div>

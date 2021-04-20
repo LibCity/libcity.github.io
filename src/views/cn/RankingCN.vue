@@ -2,25 +2,25 @@
   <div class="container">
     <div class="header">
       <div style="padding-top: 20px;color: white;">
-        <p style="margin: 20px 0 30px 130px; font-size: 60px">Ranking</p>
+        <p style="margin: 20px 0 30px 130px; font-size: 60px">排行榜</p>
         <p style="margin: 0px 0 20px 130px; font-size: 30px">
-          LibTraffic tests existing models on different datasets <br>
-          and shows performances and rankings of these models for each dataset.
+          LibTraffic在不同的数据集上测试了现有模型，<br>
+          并展示了这些模型在每个数据集上的性能和排名。
         </p>
       </div>
     </div>
 
     <div class="content">
         <div class="task-ranking">
-            <p class="task-name">Traffic Speed Prediction</p>
+            <p class="task-name">交通速度预测</p>
             <a-divider style="margin: 10px 0; background-image: linear-gradient(to right,  rgb(103, 179, 241),  rgb(103, 179, 241), #f6f6f6, #f6f6f6);"></a-divider>
-            <rank-table :rankdata="speed"></rank-table>
+            <rank-table-cn :rankdata="speed"></rank-table-cn>
             <br>
             <br>
 
-            <p class="task-name">Trajectory Next-Location Prediction</p>
+            <p class="task-name">轨迹下一跳预测</p>
             <a-divider style="margin: 10px 0; background-image: linear-gradient(to right,  rgb(103, 179, 241),  rgb(103, 179, 241), #f6f6f6, #f6f6f6);"></a-divider>
-            <rank-table :rankdata="location"></rank-table>
+            <rank-table-cn :rankdata="location"></rank-table-cn>
             <br>
             <br>
         </div>
@@ -29,7 +29,7 @@
 </template>
 
 <script>
-    import rankTable from "./ranking/rankingTable"
+    import rankTableCn from "./ranking/rankingTableCN"
 
     const speed = [
     {
@@ -47,8 +47,8 @@
         paper: 'Spatio-Temporal Graph Structure Learning for Traffic Forecasting',
         datasetlink: 'https://aptx1231.github.io/Bigscity-TrafficDL-Docs/user_guide/data/raw_data.html#metr-la',
         mlink: '#',
-        plink: 'https://arxiv.org/abs/2005.11650',
-        dlink: 'PEMS-BAY'
+        plink: '#',
+        dlink: '#'
     },
     {
         dataset: 'PEMSD7(M)',
@@ -97,7 +97,7 @@
             };
         },
         components: {
-            rankTable
+            rankTableCn
         }
     };
 </script>

@@ -42,13 +42,14 @@
 // import cateCheckboxCn from "./collapseCheckboxCN.vue"
 
 export default {
-    name: 'CateCn',
+  name: 'CateCn',
   data() {
     return {
       customStyle: 'background-color: #f7f7f7;border-radius: 4px;margin-bottom: 24px;border: 0;overflow: hidden',
-      taskOptions: ['轨迹下一跳预测', '交通流量预测', '交通速度预测', '交通需求量预测', '出行时间预测', '交通事故预测', '路径规划', '综述', '其他'],
+      taskOptions: ['交通流量预测', '交通速度预测', '交通需求量预测', '轨迹下一跳预测', '出行时间预测', '交通事故预测', '路径规划', '综述', '其他'],
       publicationOptions: ['AAAI', 'IJCAI', 'KDD', 'ICDM', 'CIKM', 'WWW', 'SDM', 'SIGSPATIAL', 'IEEE TKDE', 'IEEE TMC', 'ACM TISI', '其他'],
       yearOptions: ['2021', '2020', '2019', '2018', '2017', '2016及以前'],
+      taskC2E: new Map([['轨迹下一跳预测', 'Trajectory Next-Location Prediction'], ['交通流量预测', 'Traffic Flow Prediction'], ['交通速度预测', 'Traffic Speed Prediction'], ['交通需求量预测', 'On-Demand Service Prediction'], ['出行时间预测', 'Travel Time Prediction'], ['交通事故预测', 'Traffic Accident Prediction'], ['路径规划', 'Route Planning'], ['综述', 'Survey'], ['其他', 'Others']]),
 
       taskCheckedList: [],
       taskIndeterminate: true,
@@ -72,25 +73,45 @@ export default {
     this.taskCheckedList = this.taskOptions;
     this.publicationCheckedList = this.publicationOptions;
     this.yearCheckedList = this.yearOptions;
+    this.paperFind();
   },
   methods: {
     paperFind() {
+      var taskCheckedListEN = this.taskCheckedList;
+      for (var i=0; i < taskCheckedListEN.length; i++) {
+        if (this.taskC2E.has(taskCheckedListEN[i])) {
+          taskCheckedListEN[i] = this.taskC2E.get(taskCheckedListEN[i]);
+        }
+      }
+      var publicationCheckedListEN = this.publicationCheckedList;
+      if (publicationCheckedListEN.length >= 1 && publicationCheckedListEN[publicationCheckedListEN.length - 1] == '其他') {
+        publicationCheckedListEN[publicationCheckedListEN.length - 1] = 'Others'
+      }
+      var yearCheckedListEN = this.yearCheckedList;
+      if (yearCheckedListEN.length >= 1 && yearCheckedListEN[yearCheckedListEN.length - 1] == '2016及以前') {
+        yearCheckedListEN[yearCheckedListEN.length - 1] = '2016 and before'
+      }
       this.$axios({
         method: "post",
         url: "api/paperlib/paper_retrieve/",
         params: {},
         headers: {},
         data: {
-          task: this.taskCheckedList,
-          publication: this.publicationCheckedList,
-          year: this.yearCheckedList,
+          task: taskCheckedListEN,
+          publication: publicationCheckedListEN,
+          year: yearCheckedListEN,
           searchtext: ""
         },
       }).then((res) => {
         if (res.data.code == 200) {
           this.paperFindList = res.data.data;
+          this.paperFindList.forEach((item)=>{
+            item.year += "，" + item.publication + "，" + item.task;
+          })
           this.$emit("paperFindList", this.paperFindList);
-          // console.log(this.paperFindList);
+          this.$emit("taskCheckedList", taskCheckedListEN);
+          this.$emit("yearCheckedList", yearCheckedListEN);
+          this.$emit("publicationCheckedList", publicationCheckedListEN);
         } else {
         }
       });

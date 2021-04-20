@@ -15,7 +15,8 @@ module.exports = {
       },
     },
   },
-  publicPath: process.env.NODE_ENV === 'production'
-     ? '/LibTraffic'
-    : '/',
+  publicPath: './',
+  // publicPath: process.env.NODE_ENV === 'production'
+  //    ? '/'
+  //   : '/',
 };

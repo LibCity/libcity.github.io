@@ -1,29 +1,31 @@
 <template>
   <table>
-      <thead>
+      <thead style="font-size: 16px">
           <tr>
               <th>DATASET</th>
-              <th>BEST METHOD</th>
-              <th>PAPER</th>
-              <th>COMAPRE</th>
+              <th>PLACE</th>
+              <th>DURATION</th>
+              <th>VEHICLE</th>
+              <th>LINK</th>
           </tr>
       </thead>
       <tbody>
-          <tr v-for="item in rankdata" :key="item.dataset">
-              <td width="15%"><a :href="item.datasetlink" class="dataset">{{item.dataset}}</a></td>
-              <td width="15%"><a-icon type="crown" style="color: gold; font-size: 20px;"/><a :href="item.mlink" class="model">{{item.best}}</a></td>
-              <td width="55%"><a class="paper" :href="item.plink">{{item.paper}}</a></td>
-              <td width="15%"><a-button type="primary" shape="round" @click="toDatasetRanking(item.dlink)">See All</a-button></td>
+          <tr v-for="item in content" :key="item.dataset">
+              <td width="20%"><a :href="item.plink">{{item.dataset}}</a></td>
+              <td width="25%">{{item.place}}</td>
+              <td width="30%">{{item.duration}}</td>
+              <td width="5%">{{item.vehicle}}</td>
+              <td width="20%"><a-button type="primary" shape="round"><a :href="item.source">Source</a></a-button></td>
           </tr>
       </tbody>
   </table>
 </template>
 
 <script>
+
 export default {
-  name: 'table',
   props: {
-      rankdata: {
+      content: {
           type: Array,
           required: true
       }
@@ -32,13 +34,6 @@ export default {
     return {
     };
   },
-  methods: {
-      toDatasetRanking(dlink) {
-        this.$router.push({
-            name: dlink,
-        });
-      }
-  }
 };
 </script>
 
@@ -88,23 +83,5 @@ td {
     border: 0.1px solid #1890ff;
     font-size: 15px;
     font-family: Nunito, 'Microsoft YaHei', Arial, Helvetica, sans-serif;
-}
-.dataset {
-    color:rgb(27, 140, 233)
-}
-/* .dataset:hover {
-    color:rgb(27, 140, 233)
-} */
-.model {
-    color: black
-}
-.model:hover {
-    color:rgb(27, 140, 233)
-}
-.paper {
-    color: black
-}
-.paper:hover {
-    color:rgb(27, 140, 233)
 }
 </style>

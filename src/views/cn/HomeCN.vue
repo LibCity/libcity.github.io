@@ -24,7 +24,7 @@
         <new-card class="news"></new-card>
       </div>
       <div class="toolkit">
-        <div class="news-header"> <span class="block-title">工具包</span></div>
+        <div class="news-header"> <span class="block-title">框架</span></div>
         <div style="width: 80%; margin: 10px auto 20px auto; text-align: center">
           <img src="../../assets/img/toolkit-CN.png" alt="toolkit" height="550"/>
         </div>

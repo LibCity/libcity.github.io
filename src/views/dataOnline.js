@@ -1,8 +1,9 @@
 const dat = {
   basic:{
-    task:["Trajectory Next-Location Prediction","Traffic State Prediction"],
-    dataset:[["foursquare_tky","gowalla"],["METR_LA","PEMS_BAY"]],
-    model:[["DeepMove"],["DCRNN","AGCRN"]]
+    task:["Traffic State Prediction", "Trajectory Next-Location Prediction"],
+    dataset:[["METR_LA","PEMS_BAY"], ["foursquare_tky","gowalla"]],
+    model: [["DCRNN", "AGCRN"], ["DeepMove"]],
+    metrics: [["MAE", "MSE", "RMSE", "MAPE", "R2", "EVAR"], ["TopK"]]
   },
   data:{
     batch_size:["64","128"],
@@ -19,9 +20,9 @@ const dat = {
     step_size:["20"],
     lr_decay_ratio: ["0.1","0.7"],
   },
-  evaluator:{
-    metrics: ["MAE","MAPE","MSE","RMSE","masked_MAE","masked_MSE","masked_RMSE","masked_MAPE","R2","EVAR"]
-  }
+  // evaluator:{
+  //   metrics: ["MAE","MAPE","MSE","RMSE","masked_MAE","masked_MSE","masked_RMSE","masked_MAPE","R2","EVAR"]
+  // }
 }
 
 export default dat;

@@ -4,14 +4,10 @@
             <a-col :span="8">
                 <div>
                     <a-card class="newscard">
-                        <img
-                        slot="cover"
-                        alt="example"
-                        src="../../../assets/img/smart_city.jpg"
-                        />
-                        <a-card-meta title="... 0.1.0版本发布！">
+                        <img slot="cover" alt="example" src="../../../assets/img/smart_city.jpg"/>
+                        <a-card-meta title="LibTraffic 0.1.0版本发布！">
                         <template slot="description">
-                            今天...
+                            今天，我们正式发布了LibTraffic 0.1.0版本。
                         </template>
                         </a-card-meta>
                     </a-card>

@@ -7,9 +7,9 @@
     </div>
 
     <div class="content">
-        <speed-metric></speed-metric>
+        <speed-metric-cn></speed-metric-cn>
         <div class="model-ranking">
-            <speed-rank-table :speedModel="speedModelMAE"></speed-rank-table>
+            <speed-rank-table-cn :speedModel="speedModelMAE"></speed-rank-table-cn>
         </div>
         <br>
         <br>
@@ -18,8 +18,8 @@
 </template>
 
 <script>
-    import speedMetric from './speedMetricChoose'
-    import speedRankTable from "./speedRankingTable"
+    import speedMetricCn from './speedMetricChooseCN'
+    import speedRankTableCn from "./speedRankingTableCN"
 
     const speedModelMAE = [
     {
@@ -127,8 +127,8 @@
             };
         },
         components: {
-            speedRankTable,
-            speedMetric
+            speedRankTableCn,
+            speedMetricCn
         }
     };
 </script>

@@ -5,9 +5,9 @@
         <p style="margin: 20px 0 0 130px; font-size: 18px">Featured Post</p>
         <p style="margin: 0 0 10px 130px; font-size: 60px">LibTraffic 0.1.0版本正式发布</p>
         <p style="margin: 0 0 20px 130px; font-size: 22px">
-          Today, we are announcing ...
+          今天，我们正式发布了LibTraffic 0.1.0版本。
         </p>
-        <a-button class="readmore-btn" value="large" style="margin: 5px 0 0 130px; background-color: white;" @click="toNamedNews('LibTraffic-V0.1.0-Has-Released')">
+        <a-button class="readmore-btn" value="large" style="margin: 5px 0 0 130px; background-color: white;" @click="toNamedNews('LibTraffic-V0.1.0-Has-ReleasedCN')">
           详情<a-icon type="right" style="color: red;"/>
         </a-button>
       </div>
@@ -15,9 +15,9 @@
 
     <div class="content">
         <div id="hermes-v0.1.0-has-released">
-            <p class="news-date">March 1, 2021</p>
-            <h2 class="news-title" @click="toNamedNews('LibTraffic-V0.1.0-Has-Released')" style="cursor:pointer">LibTraffic v0.1.0 Has Released</h2>
-            <p class="news-summary">Today, we are announcing ...</p>
+            <p class="news-date">2021年4月12日</p>
+            <h2 class="news-title" @click="toNamedNews('LibTraffic-V0.1.0-Has-ReleasedCN')" style="cursor:pointer">LibTraffic 0.1.0版本正式发布</h2>
+            <p class="news-summary">今天，我们正式发布了LibTraffic 0.1.0版本。</p>
         </div>
         <a-divider style="background-image: linear-gradient(to right,  rgb(103, 179, 241),  rgb(103, 179, 241), #f6f6f6, #f6f6f6);"/>
     </div>

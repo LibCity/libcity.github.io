@@ -24,18 +24,20 @@
                     <a-button style="margin-left: 20px; margin-top: 4px;" size="small" shape="circle" icon="question" />
                 </a-popover>
             </div>
+            <a-spin :spinning="spinning">
             <div class="paper-box">
                 <paper-item class="paper" v-for="(item,i) in this.paperFindList.slice(this.pageNumber*6-5, this.pageNumber*6)" :key="i" v-model="isOpen[i]" :default-height="defaultHeight" >
-                    <h2 class="title">{{item.title}}</h2>
+                    <h2><a :href="item.link" class="title" target="_blank">{{item.title}}</a></h2>
                     <div class="author"><strong>Author: </strong>{{item.author}}</div>
                     <div class="tag"><strong>Tag: </strong>{{item.year}}</div>
                     <div class="abstract"><strong>Abstract: </strong>{{item.abstract}}</div>
-                    <a-button type="primary" icon="file" style="width: 120px; font-size: 20px; font-weight: 700; margin-top: 10px;">
+                    <!-- <a-button type="primary" icon="file" style="width: 120px; font-size: 20px; font-weight: 700; margin-top: 10px;">
                         <a :href="item.link" target="_blank" style="text-decoration:none; color:white"> Paper</a>
-                    </a-button>
+                    </a-button> -->
                 </paper-item>
             </div>
-            <div style="padding-left: 150px; padding-bottom: 50px;">
+             </a-spin>
+            <div style="padding-left: 150px; padding-bottom: 50px;" v-if="!spinning">
                 <a-pagination show-quick-jumper :default-current="1" :pageSize="6" :total="this.paperNumber" @change="onChange" /> 
             </div>
         </div>
@@ -52,6 +54,7 @@ import paperItem from "./paper/paperItemCollapse.vue";
 export default {
   data() {
     return {
+      spinning:true,
       paperFindList:[],
       pageNumber: 1,
       paperNumber: 0,
@@ -72,19 +75,16 @@ export default {
       paperItem,
     //   pagination
   },
-  mounted () {
-    this.openNotification();  
-  },
   methods: {
-      openNotification() {
-        this.$notification.open({
-            style: 'font-weight: 700',
-            duraion: 5,
-            message: 'Notification',
-            description:
-            'Please wait for a few seconds for loading data. Thank you very much!',
-        });
-      },
+      // openNotification() {
+      //   this.$notification.open({
+      //       style: 'font-weight: 700',
+      //       duraion: 5,
+      //       message: 'Notification',
+      //       description:
+      //       'Please wait for a few seconds for loading data. Thank you very much!',
+      //   });
+      // },
       onChange(pageNumber) {
         this.pageNumber = pageNumber;
         // console.log('Page: ', pageNumber);
@@ -108,7 +108,7 @@ export default {
             if (res.data.code == 200) {
                 this.paperSearchList = res.data.data;
                 this.paperSearchList.forEach((item)=>{
-                    item.year += ", " + item.publication + ", " + item.task;
+                    item.year = item.task + ", " + item.publication + ", " + item.year;
                 })
                 this.paperFindList = this.paperSearchList;
                 this.paperNumber = this.paperFindList.length;
@@ -126,6 +126,7 @@ export default {
         // },3000);
       },
       handlePaperFind(paperFindList) {
+        this.spinning = true;
           this.inputValue = '';
           this.paperFindList = paperFindList;
           this.paperNumber = paperFindList.length;
@@ -133,6 +134,7 @@ export default {
           this.paperFindList.forEach(()=>{
             this.isOpen.push(false);
           })
+          this.spinning = false;
         //   console.log(paperFindList);
       },
       handleTaskChecked(taskCheckedList) {
@@ -190,6 +192,7 @@ export default {
 .paper-box {
     width: 100%;
     height: auto;
+    min-height: 200px;
     padding: 20px 150px 50px 20px;
     /* border: purple solid 2px; */
 }
@@ -204,8 +207,12 @@ export default {
     box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.2);
 }
 .title {
-    font-weight: 700;
-    font-family: 'Nunito', 'Microsoft YaHei', Arial, Helvetica, sans-serif;
+  color: black;
+  font-weight: 700;
+  font-family: 'Nunito', 'Microsoft YaHei', Arial, Helvetica, sans-serif;
+}
+.title:hover {
+  color: rgb(27, 140, 233)
 }
 .author, .tag, .abstract {
     font-size: 16px;
