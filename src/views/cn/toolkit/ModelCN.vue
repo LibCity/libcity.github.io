@@ -31,7 +31,7 @@
                 <model-table-cn :content="state"></model-table-cn>
                 <br>
 
-                <a-divider style="font-size: 24px">轨迹下一跳预测</a-divider>
+                <a-divider style="font-size: 24px">轨迹位置预测</a-divider>
                 <model-table-cn :content="location"></model-table-cn>
                 <br>
             </div>
@@ -330,7 +330,7 @@
     //         plink: 'https://arxiv.org/abs/2007.07559' 
     //     },
     //     {
-    //         model: 'Graph WaveNet',
+    //         model: 'GWNET',
     //         mlink: '#',
     //         from: 'IJCAI',
     //         year: '2019',
@@ -338,7 +338,7 @@
     //         plink: 'https://arxiv.org/abs/1906.00121' 
     //     },
     //     {
-    //         model: 'Graph WaveNet-V2',
+    //         model: 'GWNET-V2',
     //         mlink: '#',
     //         from: 'arXiv',
     //         year: '2019',
@@ -405,7 +405,7 @@
             plink: 'https://ieeexplore.ieee.org/abstract/document/8809901/'
         },
         {
-            model: 'Graph WaveNet',
+            model: 'GWNET',
             mlink: '#',
             from: 'IJCAI',
             year: '2019',
@@ -761,7 +761,7 @@
             plink: 'https://ieeexplore.ieee.org/abstract/document/8809901/'
         },
         {
-            model: 'Graph WaveNet',
+            model: 'GWNET',
             mlink: '#',
             from: 'IJCAI',
             year: '2019',
@@ -787,7 +787,7 @@
         {
             model: 'ACFM',
             mlink: '#',
-            from: 'ACM Multimedia Conference',
+            from: 'ACM MM',
             year: '2018',
             paper: 'Attentive Crowd Flow Machines',
             plink: 'https://dl.acm.org/doi/10.1145/3240508.3240681' 

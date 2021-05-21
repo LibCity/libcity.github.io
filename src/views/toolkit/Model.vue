@@ -343,7 +343,7 @@
             plink: 'https://arxiv.org/abs/2007.07559' 
         },
         {
-            model: 'Graph WaveNet',
+            model: 'GWNET',
             mlink: '#',
             from: 'IJCAI',
             year: '2019',
@@ -351,7 +351,7 @@
             plink: 'https://arxiv.org/abs/1906.00121' 
         },
         {
-            model: 'Graph WaveNet-V2',
+            model: 'GWNET-V2',
             mlink: '#',
             from: 'arXiv',
             year: '2019',
@@ -688,7 +688,7 @@
             plink: 'https://ieeexplore.ieee.org/abstract/document/8809901/'
         },
         {
-            model: 'Graph WaveNet',
+            model: 'GWNET',
             mlink: '#',
             from: 'IJCAI',
             year: '2019',
@@ -714,7 +714,7 @@
         {
             model: 'ACFM',
             mlink: '#',
-            from: 'ACM Multimedia Conference',
+            from: 'ACM MM',
             year: '2018',
             paper: 'Attentive Crowd Flow Machines',
             plink: 'https://dl.acm.org/doi/10.1145/3240508.3240681' 

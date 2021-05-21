@@ -16,7 +16,7 @@
       <div class="code">
         <code data-lang="bash">python run_model.py</code>
       </div>
-      <p style="text-indent: 2em">这个例子将会在Foursquare-TKY这个数据集上使用DeepMove模型执行轨迹下一跳预测任务。并且，该脚本还支持通过命令行来设置参数。下面将给出几个例子作为参考。</p>
+      <p style="text-indent: 2em">这个例子将会在Foursquare-TKY这个数据集上使用DeepMove模型执行轨迹位置预测任务。并且，该脚本还支持通过命令行来设置参数。下面将给出几个例子作为参考。</p>
       <p style="text-indent: 2em">如果您想在METR_LA这个数据集上使用DCRNN模型执行交通状态预测任务，只需通过设定相关参数运行脚本：</p>
       <div class="code">
         <code data-lang="bash">python run_model.py --task traffic_state_pred --model DCRNN --dataset METR_LA</code>

@@ -76,7 +76,7 @@
           key="5"
           style="width: 110px; font-size: 20px; textalign: center; margin-left: 10px;"
         >
-          <a href="https://aptx1231.github.io/Bigscity-TrafficDL-Docs/">Document</a>
+          <a href="https://aptx1231.github.io/Bigscity-TrafficDL-Docs/" target="_blank">Document</a>
         </a-menu-item>
 
         <a-menu-item
@@ -199,7 +199,7 @@
           key="5"
           style="width: 75px; font-size: 20px; textalign: center; margin-left: 10px;"
         >
-          <a href="https://aptx1231.github.io/Bigscity-TrafficDL-Docs/">文档</a>
+          <a href="https://aptx1231.github.io/Bigscity-TrafficDL-Docs/" target="_blank">文档</a>
         </a-menu-item>
 
         <a-menu-item

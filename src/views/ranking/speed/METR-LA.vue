@@ -60,7 +60,7 @@
     },
     {
         rank: '4',
-        model: 'Graph Wavenet',
+        model: 'GWNET',
         mlink: '#',
         paper: 'Graph wavenet for deep spatial-temporal graph modeling',
         plink: 'https://arxiv.org/abs/1906.00121',

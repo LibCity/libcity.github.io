@@ -28,11 +28,11 @@
             <div class="code">
                 <code data-lang="bash">
                     # Best practice, create an environment rather than install in the base env<br>
-                    conda create -n toolkit<br>
+                    conda create -n libtraffic<br>
                     # Activate the environment<br>
-                    conda activate toolkit<br>
+                    conda activate libtraffic<br>
                     # The actual install command<br>
-                    conda install numpy
+                    conda install libtraffic
                 </code>
             </div>
             <br>
@@ -41,7 +41,7 @@
             <a-divider style="margin: 10px 0; background-image: linear-gradient(to right,  rgb(103, 179, 241),  rgb(103, 179, 241), #f6f6f6, #f6f6f6);"></a-divider>
             <p>如果您使用pip，可以通过以下命令安装：</p>
             <div class="code">
-                <code data-lang="bash">pip install toolkit</code>
+                <code data-lang="bash">pip install libtraffic</code>
             </div>
             <br>
             
@@ -55,7 +55,7 @@
                 </code> -->
                 <!-- frb替换以上内容 -->
                 <code data-lang="bash">
-                    git clone https://github.com/WenMellors/LibTraffic.git<br>
+                    git clone https://github.com/LibTraffic-at-git/LibTraffic.git<br>
                     cd LibTraffic
                 </code>
             </div>

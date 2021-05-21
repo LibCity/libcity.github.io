@@ -18,7 +18,7 @@
             <br>
             <br>
 
-            <p class="task-name">轨迹下一跳预测</p>
+            <p class="task-name">轨迹位置预测</p>
             <a-divider style="margin: 10px 0; background-image: linear-gradient(to right,  rgb(103, 179, 241),  rgb(103, 179, 241), #f6f6f6, #f6f6f6);"></a-divider>
             <rank-table-cn :rankdata="location"></rank-table-cn>
             <br>

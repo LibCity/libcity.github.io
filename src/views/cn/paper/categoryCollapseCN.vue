@@ -46,10 +46,10 @@ export default {
   data() {
     return {
       customStyle: 'background-color: #f7f7f7;border-radius: 4px;margin-bottom: 24px;border: 0;overflow: hidden',
-      taskOptions: ['交通流量预测', '交通速度预测', '交通需求量预测', '轨迹下一跳预测', '出行时间预测', '交通事故预测', '路径规划', '综述', '其他'],
+      taskOptions: ['交通流量预测', '交通速度预测', '交通需求量预测', '轨迹位置预测', '出行时间预测', '交通事故预测', '路径规划', '综述', '其他'],
       publicationOptions: ['AAAI', 'IJCAI', 'KDD', 'ICDM', 'CIKM', 'WWW', 'SDM', 'SIGSPATIAL', 'IEEE TKDE', 'IEEE TMC', 'ACM TISI', '其他'],
       yearOptions: ['2021', '2020', '2019', '2018', '2017', '2016及以前'],
-      taskC2E: new Map([['轨迹下一跳预测', 'Trajectory Next-Location Prediction'], ['交通流量预测', 'Traffic Flow Prediction'], ['交通速度预测', 'Traffic Speed Prediction'], ['交通需求量预测', 'On-Demand Service Prediction'], ['出行时间预测', 'Travel Time Prediction'], ['交通事故预测', 'Traffic Accident Prediction'], ['路径规划', 'Route Planning'], ['综述', 'Survey'], ['其他', 'Others']]),
+      taskC2E: new Map([['轨迹位置预测', 'Trajectory Next-Location Prediction'], ['交通流量预测', 'Traffic Flow Prediction'], ['交通速度预测', 'Traffic Speed Prediction'], ['交通需求量预测', 'On-Demand Service Prediction'], ['出行时间预测', 'Travel Time Prediction'], ['交通事故预测', 'Traffic Accident Prediction'], ['路径规划', 'Route Planning'], ['综述', 'Survey'], ['其他', 'Others']]),
 
       taskCheckedList: [],
       taskIndeterminate: true,
@@ -106,7 +106,7 @@ export default {
         if (res.data.code == 200) {
           this.paperFindList = res.data.data;
           this.paperFindList.forEach((item)=>{
-            item.year += "，" + item.publication + "，" + item.task;
+            item.year = item.task + "，" + item.publication + "，" + item.year;
           })
           this.$emit("paperFindList", this.paperFindList);
           this.$emit("taskCheckedList", taskCheckedListEN);

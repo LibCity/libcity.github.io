@@ -38,7 +38,7 @@
         <li><code style="color: #e83e8c; font-size: 90%">y_pred</code>：预测值，格式同输入中的<code style="color: #e83e8c; font-size: 90%">y</code>。</li>
       </ul>
       <br>
-      <p class="sectitle">轨迹下一跳预测</p>
+      <p class="sectitle">轨迹位置预测</p>
       <a-divider style="margin: 10px 0; background-image: linear-gradient(to right,  rgb(103, 179, 241),  rgb(103, 179, 241), #f6f6f6, #f6f6f6);"></a-divider>
       <p style="text-indent: 2em">标准数据输入格式为类字典的<code style="color: #e83e8c; font-size: 90%">Batch</code>对象实例，该对象所具有的键名如下：</p>
       <ul>

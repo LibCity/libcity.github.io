@@ -37,8 +37,8 @@
                             <td>MAE、MSE、RMSE、MAPE、R2、EVAR</td>
                         </tr>
                         <tr>
-                            <td>轨迹下一跳预测</td>
-                            <td>TopK</td>
+                            <td>轨迹位置预测</td>
+                            <td>TopK（Recall@K、Presicion@K）</td>
                         </tr>
                     </tbody>
                 </table>

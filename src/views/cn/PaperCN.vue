@@ -109,7 +109,7 @@ export default {
             if (res.data.code == 200) {
                 this.paperSearchList = res.data.data;
                 this.paperSearchList.forEach((item)=>{
-                    item.year += "，" + item.publication + "，" + item.task;
+                    item.year =  item.task + "，" + item.publication + "，" + item.year;
                 })
                 this.paperFindList = this.paperSearchList;
                 this.paperNumber = this.paperFindList.length;

@@ -2,7 +2,7 @@ const dat = {
   basic:{
     task:["Traffic State Prediction", "Trajectory Next-Location Prediction"],
     dataset:[["METR_LA","PEMS_BAY"], ["foursquare_tky","gowalla"]],
-    model: [["DCRNN", "AGCRN"], ["DeepMove"]],
+    model: [["DCRNN", "AGCRN", "MTGNN", "GWNET", "STGCN", "TGC-LSTM"], ["DeepMove"]],
     metrics: [["MAE", "MSE", "RMSE", "MAPE", "R2", "EVAR"], ["TopK"]]
   },
   data:{
