@@ -12,7 +12,6 @@
     <div class="content">
       <div>
         <p class="title">数据流</p>
-        <a-divider style="margin: 10px 0; background-image: linear-gradient(to right,  rgb(103, 179, 241),  rgb(103, 179, 241), #f6f6f6, #f6f6f6);"></a-divider>
         <p style="text-indent: 2em">出于可扩展性，灵活性和可复用性的考虑，数据模块实现了一条优雅的数据流，可以将原始数据转换成统一的模型输入。整体的数据流如下所示：</p>
         <div style="margin: 10px auto 10px auto; text-align: center">
           <img src="../../../assets/img/data_flow-CN.png" alt="Data Flow" height="120"/>

@@ -61,6 +61,36 @@ const routes = [
     component: () => import("../views/ranking/speed/PEMS-BAY.vue")
   },
   {
+    path: "/ranking/PEMSD4",
+    name: "PEMSD4",
+    component: () => import("../views/ranking/speed/PEMSD4.vue")
+  },
+  {
+    path: "/ranking/PEMSD8",
+    name: "PEMSD8",
+    component: () => import("../views/ranking/speed/PEMSD8.vue")
+  },
+  {
+    path: "/ranking/T-Drive20150206",
+    name: "T-Drive20150206",
+    component: () => import("../views/ranking/speed/T-Drive20150206.vue")
+  },
+  {
+    path: "/ranking/TAXIBJ2015",
+    name: "TAXIBJ2015",
+    component: () => import("../views/ranking/speed/TAXIBJ2015.vue")
+  },
+  {
+    path: "/ranking/TAXIBJ",
+    name: "TAXIBJ",
+    component: () => import("../views/ranking/speed/TAXIBJ.vue")
+  },
+  {
+    path: "/ranking/NYCBike20140409",
+    name: "NYCBike20140409",
+    component: () => import("../views/ranking/speed/NYCBike20140409.vue")
+  },
+  {
     path: "/about",
     name: "About",
     component: () => import("../views/About.vue")
