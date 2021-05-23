@@ -12,7 +12,7 @@
 
     <div class="content">
         <div class="task-ranking">
-            <p class="task-name">Traffic Speed Prediction</p>
+            <p class="task-name">Traffic State Prediction</p>
             <a-divider style="margin: 10px 0; background-image: linear-gradient(to right,  rgb(103, 179, 241),  rgb(103, 179, 241), #f6f6f6, #f6f6f6);"></a-divider>
             <rank-table :rankdata="speed"></rank-table>
             <br>
@@ -36,35 +36,73 @@
         dataset: 'METR-LA',
         best: 'MTGNN',
         paper: 'Spatio-Temporal Graph Structure Learning for Traffic Forecasting',
-        datasetlink: 'https://aptx1231.github.io/Bigscity-TrafficDL-Docs/user_guide/data/raw_data.html#metr-la',
+        datasetlink: 'https://bigscity-trafficdl-docs.readthedocs.io/en/latest/user_guide/data/raw_data.html#metr-la',
         mlink: '#',
         plink: 'https://arxiv.org/abs/2005.11650',
         dlink: 'METR-LA'
     },
     {
         dataset: 'PEMS-BAY',
-        best: 'MTGNN',
-        paper: 'Spatio-Temporal Graph Structure Learning for Traffic Forecasting',
-        datasetlink: 'https://aptx1231.github.io/Bigscity-TrafficDL-Docs/user_guide/data/raw_data.html#metr-la',
+        best: 'GWNET',
+        paper: 'Graph wavenet for deep spatial-temporal graph modeling',
+        datasetlink: 'https://bigscity-trafficdl-docs.readthedocs.io/en/latest/user_guide/data/raw_data.html#pems-bay',
         mlink: '#',
-        plink: 'https://arxiv.org/abs/2005.11650',
+        plink: 'https://arxiv.org/abs/1906.00121',
         dlink: 'PEMS-BAY'
     },
     {
-        dataset: 'PEMSD7(M)',
-        best: 'STGCN',
-        paper: 'Spatio-temporal graph convolutional networks: A deep learning framework for traffic forecasting',
+        dataset: 'PEMSD4',
+        best: 'AGCRN',
+        paper: 'Adaptive Graph Convolutional Recurrent Network for Traffic Forecasting',
+        datasetlink: 'https://bigscity-trafficdl-docs.readthedocs.io/en/latest/user_guide/data/raw_data.html#pemsd4',
         mlink: '#',
-        plink: '#',
-        dlink: '#'
+        plink: 'https://arxiv.org/abs/2007.02842',
+        dlink: 'PEMSD4'
     },
     {
-        dataset: 'Loop Seattle',
-        best: 'TGC-LSTM',
-        paper: 'Traffic Graph Convolutional Recurrent Neural Network: A Deep Learning Framework for Network-Scale Traffic Learning and Forecasting',
+        dataset: 'PEMSD8',
+        best: 'GWNET',
+        paper: 'Graph wavenet for deep spatial-temporal graph modeling',
+        datasetlink: 'https://bigscity-trafficdl-docs.readthedocs.io/en/latest/user_guide/data/raw_data.html#pemsd8',
         mlink: '#',
-        plink: '#',
-        dlink: '#'
+        plink: 'https://arxiv.org/abs/1906.00121',
+        dlink: 'PEMSD8'
+    },
+    {
+        dataset: 'T-Drive20150206',
+        best: 'MTGNN',
+        paper: 'Spatio-Temporal Graph Structure Learning for Traffic Forecasting',
+        datasetlink: 'https://bigscity-trafficdl-docs.readthedocs.io/en/latest/user_guide/data/raw_data.html#t-drive20150206',
+        mlink: '#',
+        plink: 'https://arxiv.org/abs/2005.11650',
+        dlink: 'T-Drive20150206'
+    },
+    {
+        dataset: 'TAXIBJ2015',
+        best: 'AGCRN',
+        paper: 'Adaptive Graph Convolutional Recurrent Network for Traffic Forecasting',
+        datasetlink: 'https://bigscity-trafficdl-docs.readthedocs.io/en/latest/user_guide/data/raw_data.html#taxibj',
+        mlink: '#',
+        plink: 'https://arxiv.org/abs/2007.02842',
+        dlink: 'TAXIBJ2015'
+    },
+    {
+        dataset: 'TAXIBJ',
+        best: 'MTGNN',
+        paper: 'Spatio-Temporal Graph Structure Learning for Traffic Forecasting',
+        datasetlink: 'https://bigscity-trafficdl-docs.readthedocs.io/en/latest/user_guide/data/raw_data.html#taxibj',
+        mlink: '#',
+        plink: 'https://arxiv.org/abs/2005.11650',
+        dlink: 'TAXIBJ'
+    },
+    {
+        dataset: 'NYCBike20140409',
+        best: 'MTGNN',
+        paper: 'Spatio-Temporal Graph Structure Learning for Traffic Forecasting',
+        datasetlink: 'https://bigscity-trafficdl-docs.readthedocs.io/en/latest/user_guide/data/raw_data.html#nycbike20140409',
+        mlink: '#',
+        plink: 'https://arxiv.org/abs/2005.11650',
+        dlink: 'NYCBike20140409'
     },
     ]
 

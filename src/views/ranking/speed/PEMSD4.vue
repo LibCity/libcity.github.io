@@ -2,7 +2,7 @@
   <div class="container">
     <div class="header">
       <div style="padding-top: 20px;color: white;">
-        <p style="margin: 20px 0 30px 130px; font-size: 60px">METR-LA</p>
+        <p style="margin: 20px 0 30px 130px; font-size: 60px">PEMSD4</p>
       </div>
     </div>
 
@@ -24,111 +24,111 @@
     const speedModelMAE = [
     {
         rank: '1',
-        model: 'MTGNN',
-        mlink: '#',
-        paper: 'Connecting the Dots: Multivariate Time Series Forecasting with Graph Neural Networks',
-        plink: 'https://arxiv.org/abs/2005.11650',
-        year: '2020',
-        step3: '2.65970',
-        step6: '3.03844',
-        step9: '3.27913',
-        step12: '3.46720'
-    },
-    {
-        rank: '2',
-        model: 'STGCN',
-        mlink: '#',
-        paper: 'Spatio-temporal graph convolutional networks: A deep learning framework for traffic forecasting',
-        plink: 'https://www.ijcai.org/Proceedings/2018/0505',
-        year: '2018',
-        step3: '2.79182',
-        step6: '3.16612',
-        step9: '3.38895',
-        step12: '3.54751'
-    },
-    {
-        rank: '3',
         model: 'AGCRN',
         mlink: '#',
         paper: 'Adaptive Graph Convolutional Recurrent Network for Traffic Forecasting',
         plink: 'https://arxiv.org/abs/2007.02842',
         year: '2018',
-        step3: '2.83642',
-        step6: '3.20918',
-        step9: '3.41369',
-        step12: '3.57438'
+        step3: '18.13214',
+        step6: '18.83440',
+        step9: '19.37659',
+        step12: '19.85133'
     },
     {
-        rank: '4',
+        rank: '2',
         model: 'GWNET',
         mlink: '#',
         paper: 'Graph wavenet for deep spatial-temporal graph modeling',
         plink: 'https://arxiv.org/abs/1906.00121',
         year: '2019',
-        step3: '2.80364',
-        step6: '3.20263',
-        step9: '3.43401',
-        step12: '3.58650'
+        step3: '17.69171',
+        step6: '18.57398',
+        step9: '19.24659',
+        step12: '19.95562'
     },
     {
-        rank: '5',
-        model: 'DCRNN',
+        rank: '3',
+        model: 'MTGNN',
         mlink: '#',
-        paper: 'Diffusion convolutional recurrent neural network: Data-driven traffic forecasting',
-        plink: 'https://arxiv.org/abs/1707.01926',
-        year: '2018',
-        step3: '2.70890',
-        step6: '3.12476',
-        step9: '3.38887',
-        step12: '3.59865'
+        paper: 'Connecting the Dots: Multivariate Time Series Forecasting with Graph Neural Networks',
+        plink: 'https://arxiv.org/abs/2005.11650',
+        year: '2020',
+        step3: '17.92926',
+        step6: '18.76000',
+        step9: '19.34854',
+        step12: '20.13532'
     },
     {
-        rank: '6',
+        rank: '4',
         model: 'GMAN',
         mlink: '#',
         paper: 'GMAN: A Graph Multi-Attention Network for Traffic Prediction',
         plink: 'https://ojs.aaai.org//index.php/AAAI/article/view/5477',
         year: '2020',
-        step3: '2.97876',
-        step6: '3.33146',
-        step9: '3.56791',
-        step12: '3.76438'
-    },
+        step3: '18.79037',
+        step6: '19.53828',
+        step9: '20.18934',
+        step12: '20.86548'
+    },  
     {
-        rank: '7',
-        model: 'STG2Seq',
+        rank: '5',
+        model: 'STGCN',
         mlink: '#',
-        paper: 'STG2Seq: Spatial-temporal Graph to Sequence Model for Multi-step Passenger Demand Forecasting',
-        plink: 'https://arxiv.org/abs/1905.10069',
-        year: '2019',
-        step3: '3.20701',
-        step6: '3.51383',
-        step9: '3.75212',
-        step12: '3.98922'
+        paper: 'Spatio-temporal graph convolutional networks: A deep learning framework for traffic forecasting',
+        plink: 'https://www.ijcai.org/Proceedings/2018/0505',
+        year: '2018',
+        step3: '19.14878',
+        step6: '20.13257',
+        step9: '20.83048',
+        step12: '21.56703'
     },
     {
-        rank: '8',
+        rank: '6',
         model: 'GRU',
         mlink: '#',
         paper: 'Using LSTM and GRU neural network methods for traffic flow prediction',
         plink: 'https://ieeexplore.ieee.org/abstract/document/7804912',
         year: '2016',
-        step3: '3.87858',
-        step6: '3.97065',
-        step9: '4.03415',
-        step12: '4.10105'
+        step3: '22.44114',
+        step6: '22.50614',
+        step9: '22.57063',
+        step12: '22.58327'
     },
     {
-        rank: '9',
+        rank: '7',
         model: 'Seq2Seq',
         mlink: '#',
         paper: 'Sequence to Sequence Learning with Neural Networks',
         plink: 'https://papers.nips.cc/paper/2014/hash/a14ac55a4f27472c5d894ec1c3c743d2-Abstract.html',
         year: '2014',
-        step3: '3.72423',
-        step6: '3.84346',
-        step9: '3.96849',
-        step12: '4.10702'
+        step3: '22.68513',
+        step6: '22.58108',
+        step9: '22.76203',
+        step12: '23.16315'
+    },
+    {
+        rank: '8',
+        model: 'DCRNN',
+        mlink: '#',
+        paper: 'Diffusion convolutional recurrent neural network: Data-driven traffic forecasting',
+        plink: 'https://arxiv.org/abs/1707.01926',
+        year: '2018',
+        step3: '19.58140',
+        step6: '21.46721',
+        step9: '23.15177',
+        step12: '24.86355'
+    },
+    {
+        rank: '9',
+        model: 'STG2Seq',
+        mlink: '#',
+        paper: 'STG2Seq: Spatial-temporal Graph to Sequence Model for Multi-step Passenger Demand Forecasting',
+        plink: 'https://arxiv.org/abs/1905.10069',
+        year: '2019',
+        step3: '23.00640',
+        step6: '23.25137',
+        step9: '23.74376',
+        step12: '24.93502'
     },
     {
         rank: '10',
@@ -137,10 +137,10 @@
         paper: 'Generalized Autoencoder: A Neural Network Framework for Dimensionality Reduction',
         plink: 'https://ieeexplore.ieee.org/document/6910027',
         year: '2014',
-        step3: '4.29603',
-        step6: '4.32998',
-        step9: '4.38502',
-        step12: '4.49087'
+        step3: '23.95922',
+        step6: '24.02409',
+        step9: '24.40145',
+        step12: '25.02537'
     },
     {
         rank: '11',
@@ -149,34 +149,22 @@
         paper: 'Attention based spatial-temporal graph convolutional networks for traffic flow forecasting',
         plink: 'https://ojs.aaai.org//index.php/AAAI/article/view/3881',
         year: '2019',
-        step3: '3.21922',
-        step6: '3.84098',
-        step9: '4.26184',
-        step12: '4.64147'
+        step3: '20.53003',
+        step6: '22.97082',
+        step9: '24.98192',
+        step12: '27.49544'
     },
     {
         rank: '12',
-        model: 'RNN',
-        mlink: '#',
-        paper: 'Using LSTM and GRU neural network methods for traffic flow prediction',
-        plink: 'https://ieeexplore.ieee.org/abstract/document/7804912',
-        year: '2016',
-        step3: '3.38340',
-        step6: '3.89137',
-        step9: '4.33444',
-        step12: '4.75634'
-    },
-    {
-        rank: '13',
         model: 'TGCN',
         mlink: '#',
         paper: 'T-gcn: A temporal graph convolutional network for traffic prediction',
         plink: 'https://ieeexplore.ieee.org/abstract/document/8809901/',
         year: '2020',
-        step3: '4.15217',
-        step6: '4.31891',
-        step9: '4.53214',
-        step12: '4.80658'
+        step3: '21.67769',
+        step6: '23.96235',
+        step9: '26.33971',
+        step12: '29.06183'
     },
     ]
 
