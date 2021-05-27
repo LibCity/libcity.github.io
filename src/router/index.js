@@ -81,10 +81,15 @@ const routes = [
     component: () => import("../views/ranking/speed/TAXIBJ2015.vue")
   },
   {
-    path: "/ranking/TAXIBJ",
-    name: "TAXIBJ",
-    component: () => import("../views/ranking/speed/TAXIBJ.vue")
+    path: "/ranking/NYCTAXI202001-202003-3600",
+    name: "NYCTAXI202001-202003-3600",
+    component: () => import("../views/ranking/speed/NYCTAXI202001-202003-3600.vue")
   },
+  // {
+  //   path: "/ranking/TAXIBJ",
+  //   name: "TAXIBJ",
+  //   component: () => import("../views/ranking/speed/TAXIBJ.vue")
+  // },
   {
     path: "/ranking/NYCBike20140409",
     name: "NYCBike20140409",

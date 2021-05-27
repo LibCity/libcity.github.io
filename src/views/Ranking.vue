@@ -52,11 +52,11 @@
     },
     {
         dataset: 'PEMSD4',
-        best: 'AGCRN',
-        paper: 'Adaptive Graph Convolutional Recurrent Network for Traffic Forecasting',
+        best: 'GWNET',
+        paper: 'Graph wavenet for deep spatial-temporal graph modeling',
         datasetlink: 'https://bigscity-trafficdl-docs.readthedocs.io/en/latest/user_guide/data/raw_data.html#pemsd4',
         mlink: '#',
-        plink: 'https://arxiv.org/abs/2007.02842',
+        plink: 'https://arxiv.org/abs/1906.00121',
         dlink: 'PEMSD4'
     },
     {
@@ -87,14 +87,23 @@
         dlink: 'TAXIBJ2015'
     },
     {
-        dataset: 'TAXIBJ',
-        best: 'MTGNN',
-        paper: 'Spatio-Temporal Graph Structure Learning for Traffic Forecasting',
-        datasetlink: 'https://bigscity-trafficdl-docs.readthedocs.io/en/latest/user_guide/data/raw_data.html#taxibj',
+        dataset: 'NYCTAXI202001-202003-3600',
+        best: 'DCRNN',
+        paper: 'Diffusion convolutional recurrent neural network: Data-driven traffic forecasting',
+        datasetlink: '#',
         mlink: '#',
-        plink: 'https://arxiv.org/abs/2005.11650',
-        dlink: 'TAXIBJ'
+        plink: 'https://arxiv.org/abs/1707.01926',
+        dlink: 'NYCTAXI202001-202003-3600'
     },
+    // {
+    //     dataset: 'TAXIBJ',
+    //     best: 'MTGNN',
+    //     paper: 'Spatio-Temporal Graph Structure Learning for Traffic Forecasting',
+    //     datasetlink: 'https://bigscity-trafficdl-docs.readthedocs.io/en/latest/user_guide/data/raw_data.html#taxibj',
+    //     mlink: '#',
+    //     plink: 'https://arxiv.org/abs/2005.11650',
+    //     dlink: 'TAXIBJ'
+    // },
     {
         dataset: 'NYCBike20140409',
         best: 'MTGNN',
