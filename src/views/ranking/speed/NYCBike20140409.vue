@@ -34,9 +34,9 @@
                 </thead>
                 <tbody>
                     <tr v-for="item in rankingData" :key="item.model">
-                        <td width="5%">{{item.rank}}</td>
-                        <td width="8%"><a :href="item.mlink">{{item.model}}</a></td>
-                        <td width="40%"><a :href="item.plink" class="paper">{{item.paper}}</a></td>
+                        <td width="6%">{{item.rank}}</td>
+                        <td width="8%"><a :href="item.mlink" target="_blank">{{item.model}}</a></td>
+                        <td width="39%"><a :href="item.plink" class="paper" target="_blank">{{item.paper}}</a></td>
                         <td width="5%">{{item.year}}</td>
                         <td width="14%">{{item.step1}}</td>
                         <td width="14%">{{item.step2}}</td>
@@ -115,7 +115,7 @@
         rank: 0,
         model: 'GWNET',
         mlink: '#',
-        paper: 'Graph wavenet for deep spatial-temporal graph modeling',
+        paper: 'Graph Wavenet for Deep Spatial-Temporal Graph Modeling',
         plink: 'https://arxiv.org/abs/1906.00121',
         year: '2019',
         step1: 2.31951189,
@@ -226,7 +226,7 @@
         rmse_step3: 6.408093452,
     },
     {
-        rank: '10',
+        rank: 0,
         model: 'STG2Seq',
         mlink: '#',
         paper: 'STG2Seq: Spatial-temporal Graph to Sequence Model for Multi-step Passenger Demand Forecasting',

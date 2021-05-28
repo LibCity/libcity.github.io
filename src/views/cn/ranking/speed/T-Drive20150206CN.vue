@@ -8,7 +8,7 @@
 
     <div class="content">
         <div class="metric">
-            View
+            视角
             <a-select default-value="MAE3" style="width: 180px; font-size: 14px; margin-left: 10px" @change="metricsChange">
                 <a-select-option value="MAE3">
                     MAE @ 3 STEP
@@ -21,12 +21,12 @@
 
         <div class="model-ranking">
             <table>
-                <thead>
+                <thead style="font-size: 16px">
                     <tr>
-                        <th>RANK</th>
-                        <th>MODEL</th>
-                        <th>PAPER</th>
-                        <th>YEAR</th>
+                        <th>排名</th>
+                        <th>模型</th>
+                        <th>论文</th>
+                        <th>年份</th>
                         <th>1 STEP<a-button type="link" icon="caret-down" size="small" style="color: white" @click="sortBy1"></a-button></th>
                         <th>2 STEP<a-button type="link" icon="caret-down" size="small" style="color: white" @click="sortBy2"></a-button></th>
                         <th>3 STEP<a-button type="link" icon="caret-down" size="small" style="color: white" @click="sortBy3"></a-button></th>

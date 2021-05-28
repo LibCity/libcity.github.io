@@ -22,7 +22,7 @@
             <p>LibTraffic要求torch版本在1.7.0及以上。如果您想在GPU上运行LibTraffic，请确保您的CUDA版本或CUDAToolkit版本在9.2及以上。这需要您的NVIDIA驱动版本为396.26或以上（Linux系统）或者为397.44或以上（Windows系统）。</p>
             <br>
 
-            <p class="title">Conda</p>
+            <!-- <p class="title">Conda</p>
             <a-divider style="margin: 10px 0; background-image: linear-gradient(to right,  rgb(103, 179, 241),  rgb(103, 179, 241), #f6f6f6, #f6f6f6);"></a-divider>
             <p>如果您使用Conda，可以通过以下命令安装：</p>
             <div class="code">
@@ -43,28 +43,23 @@
             <div class="code">
                 <code data-lang="bash">pip install libtraffic</code>
             </div>
-            <br>
+            <br> -->
             
             <p class="title">源文件</p>
             <a-divider style="margin: 10px 0; background-image: linear-gradient(to right,  rgb(103, 179, 241),  rgb(103, 179, 241), #f6f6f6, #f6f6f6);"></a-divider>
-            <p>您可以先通过以下指令从GitHub上下载源文件：</p>
+            <p>您可以通过以下指令从GitHub上下载源文件：</p>
             <div class="code">
-                <!-- <code data-lang="bash">
-                    git clone https://github.com/WenMellors/Bigscity-TrafficDL<br>
-                    cd libtraffic
-                </code> -->
-                <!-- frb替换以上内容 -->
                 <code data-lang="bash">
-                    git clone https://github.com/LibTraffic-at-git/LibTraffic.git<br>
-                    cd LibTraffic
+                    git clone https://github.com/LibTraffic/Bigscity-LibTraffic<br>
+                    <!-- cd Bigscity-LibTraffic -->
                 </code>
             </div>
-            <p>然后，您可以通过以下命令安装LibTraffic：</p>
+            <!-- <p>然后，您可以通过以下命令安装LibTraffic：</p>
             <div class="code">
                 <code data-lang="bash">
                     pip install -e . --verbose
                 </code>
-            </div>
+            </div> -->
             <br>
         </div>
     </div>

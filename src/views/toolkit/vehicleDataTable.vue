@@ -11,11 +11,11 @@
       </thead>
       <tbody>
           <tr v-for="item in content" :key="item.dataset">
-              <td width="20%"><a :href="item.plink">{{item.dataset}}</a></td>
+              <td width="20%"><a :href="item.plink" target="_blank">{{item.dataset}}</a></td>
               <td width="25%">{{item.place}}</td>
               <td width="30%">{{item.duration}}</td>
               <td width="5%">{{item.vehicle}}</td>
-              <td width="20%"><a-button type="primary" shape="round"><a :href="item.source">Source</a></a-button></td>
+              <td width="20%"><a-button type="primary" shape="round"><a :href="item.source" target="_blank">Source</a></a-button></td>
           </tr>
       </tbody>
   </table>

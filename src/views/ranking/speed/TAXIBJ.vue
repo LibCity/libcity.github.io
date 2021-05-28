@@ -35,8 +35,8 @@
                 <tbody>
                     <tr v-for="item in speedModelMAE" :key="item.model">
                         <td width="6%">{{item.rank}}</td>
-                        <td width="10%"><a :href="item.mlink">{{item.model}}</a></td>
-                        <td width="43%"><a :href="item.plink" class="paper">{{item.paper}}</a></td>
+                        <td width="10%"><a :href="item.mlink" target="_blank">{{item.model}}</a></td>
+                        <td width="43%"><a :href="item.plink" class="paper" target="_blank">{{item.paper}}</a></td>
                         <td width="5%">{{item.year}}</td>
                         <td width="36%">{{item.step1}}</td>
                     </tr>
@@ -92,7 +92,7 @@
         rank: '5',
         model: 'GWNET',
         mlink: '#',
-        paper: 'Graph wavenet for deep spatial-temporal graph modeling',
+        paper: 'Graph Wavenet for Deep Spatial-Temporal Graph Modeling',
         plink: 'https://arxiv.org/abs/1906.00121',
         year: '2019',
         step1: '11.01056',

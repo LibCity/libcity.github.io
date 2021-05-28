@@ -44,7 +44,7 @@
     {
         dataset: 'PEMS-BAY',
         best: 'GWNET',
-        paper: 'Graph wavenet for deep spatial-temporal graph modeling',
+        paper: 'Graph Wavenet for Deep Spatial-Temporal Graph Modeling',
         datasetlink: 'https://bigscity-trafficdl-docs.readthedocs.io/en/latest/user_guide/data/raw_data.html#pems-bay',
         mlink: '#',
         plink: 'https://arxiv.org/abs/1906.00121',
@@ -53,7 +53,7 @@
     {
         dataset: 'PEMSD4',
         best: 'GWNET',
-        paper: 'Graph wavenet for deep spatial-temporal graph modeling',
+        paper: 'Graph Wavenet for Deep Spatial-Temporal Graph Modeling',
         datasetlink: 'https://bigscity-trafficdl-docs.readthedocs.io/en/latest/user_guide/data/raw_data.html#pemsd4',
         mlink: '#',
         plink: 'https://arxiv.org/abs/1906.00121',
@@ -62,7 +62,7 @@
     {
         dataset: 'PEMSD8',
         best: 'GWNET',
-        paper: 'Graph wavenet for deep spatial-temporal graph modeling',
+        paper: 'Graph Wavenet for Deep Spatial-Temporal Graph Modeling',
         datasetlink: 'https://bigscity-trafficdl-docs.readthedocs.io/en/latest/user_guide/data/raw_data.html#pemsd8',
         mlink: '#',
         plink: 'https://arxiv.org/abs/1906.00121',
@@ -120,7 +120,7 @@
         dataset: 'foursqaure-tky',
         best: 'DeepMove',
         paper: 'DeepMove: Predicting Human Mobility with Attentional Recurrent Networks',
-        datasetlink: 'https://aptx1231.github.io/Bigscity-TrafficDL-Docs/user_guide/data/raw_data.html#foursquare',
+        datasetlink: 'https://bigscity-trafficdl-docs.readthedocs.io/en/latest/user_guide/data/raw_data.html#foursquare',
         mlink: '#',
         plink: 'https://dl.acm.org/doi/10.1145/3178876.3186058',
         dlink: 'foursqaure-tky'
@@ -129,7 +129,7 @@
         dataset: 'Gowalla',
         best: 'DeepMove',
         paper: 'DeepMove: Predicting Human Mobility with Attentional Recurrent Networks',
-        datasetlink: 'https://aptx1231.github.io/Bigscity-TrafficDL-Docs/user_guide/data/raw_data.html#gowalla',
+        datasetlink: 'https://bigscity-trafficdl-docs.readthedocs.io/en/latest/user_guide/data/raw_data.html#gowalla',
         mlink: '#',
         plink: 'https://dl.acm.org/doi/10.1145/3178876.3186058',
         dlink: 'Gowalla'

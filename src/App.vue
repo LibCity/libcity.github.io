@@ -76,7 +76,7 @@
           key="5"
           style="width: 110px; font-size: 20px; textalign: center; margin-left: 10px;"
         >
-          <a href="https://aptx1231.github.io/Bigscity-TrafficDL-Docs/" target="_blank">Document</a>
+          <a href="https://bigscity-trafficdl-docs.readthedocs.io/en/latest/" target="_blank">Document</a>
         </a-menu-item>
 
         <a-menu-item
@@ -120,8 +120,9 @@
             margin-left: 100px;
           "
         >
-          GitHub
+          <a href="https://github.com/LibTraffic/Bigscity-LibTraffic" target="_blank">Github</a>
         </a-menu-item>
+        
         <a-menu-item
           key="10"
           style="width: 120px; font-size: 20px; textalign: center"
@@ -199,7 +200,7 @@
           key="5"
           style="width: 75px; font-size: 20px; textalign: center; margin-left: 10px;"
         >
-          <a href="https://aptx1231.github.io/Bigscity-TrafficDL-Docs/" target="_blank">文档</a>
+          <a href="https://bigscity-trafficdl-docs.readthedocs.io/en/latest/" target="_blank">文档</a>
         </a-menu-item>
 
         <a-menu-item
@@ -276,8 +277,8 @@
         <div style="display:block;float: right;  width:150px; height: 160px; vertical-align: top;">
           <h3 style="color: rgb(27, 140, 233)">Resources</h3>
           <dl>
-            <dt><a-button class="footer-btn" type="link"><a style="font-size: 16px;" href="https://aptx1231.github.io/Bigscity-TrafficDL-Docs/">Document</a></a-button></dt>
-            <dt><a-button class="footer-btn" type="link"><a style="font-size: 16px;" href="#">Github</a></a-button></dt>
+            <dt><a-button class="footer-btn" type="link"><a style="font-size: 16px;" href="https://bigscity-trafficdl-docs.readthedocs.io/en/latest/" target="_blank">Document</a></a-button></dt>
+            <dt><a-button class="footer-btn" type="link"><a style="font-size: 16px;" href="https://github.com/LibTraffic/Bigscity-LibTraffic" target="_blank">Github</a></a-button></dt>
             <dt><a-button class="footer-btn" type="link" style="font-size: 16px;" @click="toPaper">Paper Library</a-button></dt>
             <!-- frb 隐藏下面这行内容 -->
             <!-- <dt><a-button class="footer-btn" type="link" style="font-size: 16px;" @click="toAbout">About Us</a-button></dt> -->
@@ -304,8 +305,8 @@
         <div style="display:block;float: right;  width:150px; height: 160px; vertical-align: top;">
           <h3 style="color: rgb(27, 140, 233)">资源</h3>
           <dl>
-            <dt><a-button class="footer-btn" type="link"><a style="font-size: 16px;" href="https://aptx1231.github.io/Bigscity-TrafficDL-Docs/">文档</a></a-button></dt>
-            <dt><a-button class="footer-btn" type="link"><a style="font-size: 16px;" href="#">Github</a></a-button></dt>
+            <dt><a-button class="footer-btn" type="link"><a style="font-size: 16px;" href="https://bigscity-trafficdl-docs.readthedocs.io/en/latest/" target="_blank">文档</a></a-button></dt>
+            <dt><a-button class="footer-btn" type="link"><a style="font-size: 16px;" href="https://github.com/LibTraffic/Bigscity-LibTraffic" target="_blank">Github</a></a-button></dt>
             <dt><a-button class="footer-btn" type="link" style="font-size: 16px;" @click="toPaper">论文库</a-button></dt>
             <!-- frb 隐藏下面这行内容 -->
             <!-- <dt><a-button class="footer-btn" type="link" style="font-size: 16px;" @click="toAbout">关于我们</a-button></dt> -->

@@ -334,7 +334,7 @@
     //         mlink: '#',
     //         from: 'IJCAI',
     //         year: '2019',
-    //         paper: 'Graph wavenet for deep spatial-temporal graph modeling',
+    //         paper: 'Graph Wavenet for Deep Spatial-Temporal Graph Modeling',
     //         plink: 'https://arxiv.org/abs/1906.00121' 
     //     },
     //     {
@@ -409,7 +409,7 @@
             mlink: '#',
             from: 'IJCAI',
             year: '2019',
-            paper: 'Graph wavenet for deep spatial-temporal graph modeling',
+            paper: 'Graph Wavenet for Deep Spatial-Temporal Graph Modeling',
             plink: 'https://arxiv.org/abs/1906.00121' 
         },
         {
@@ -765,7 +765,7 @@
             mlink: '#',
             from: 'IJCAI',
             year: '2019',
-            paper: 'Graph wavenet for deep spatial-temporal graph modeling',
+            paper: 'Graph Wavenet for Deep Spatial-Temporal Graph Modeling',
             plink: 'https://arxiv.org/abs/1906.00121' 
         },
         {

@@ -10,9 +10,9 @@
       </thead>
       <tbody>
           <tr v-for="item in rankdata" :key="item.dataset">
-              <td width="15%"><a :href="item.datasetlink" class="dataset">{{item.dataset}}</a></td>
-              <td width="15%"><a-icon type="crown" style="color: gold; font-size: 20px;"/><a :href="item.mlink" class="model">{{item.best}}</a></td>
-              <td width="55%"><a class="paper" :href="item.plink">{{item.paper}}</a></td>
+              <td width="15%"><a :href="item.datasetlink" class="dataset" target="_blank">{{item.dataset}}</a></td>
+              <td width="15%"><a-icon type="crown" style="color: gold; font-size: 20px;"/><a :href="item.mlink" target="_blank" class="model">{{item.best}}</a></td>
+              <td width="55%"><a class="paper" :href="item.plink" target="_blank">{{item.paper}}</a></td>
               <td width="15%"><a-button type="primary" shape="round" @click="toDatasetRanking(item.dlink)">See All</a-button></td>
           </tr>
       </tbody>

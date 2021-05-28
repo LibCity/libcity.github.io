@@ -64,7 +64,7 @@
       <div class="code">
         <code data-lang="bash">python run_model.py --learning_rate 0.001</code>
       </div>
-      <p>All supporting parameters and more details can be found in <a href="https://aptx1231.github.io/Bigscity-TrafficDL-Docs/get_started/quick_start.html">Document</a>.</p>
+      <p>All supporting parameters and more details can be found in <a href="https://bigscity-trafficdl-docs.readthedocs.io/en/latest/get_started/quick_start.html" target="_blank">Document</a>.</p>
 
       <!-- <p class="title">Quick Start From API</p>
       <a-divider style="margin: 10px 0; background-image: linear-gradient(to right,  rgb(103, 179, 241),  rgb(103, 179, 241), #f6f6f6, #f6f6f6);"></a-divider> -->

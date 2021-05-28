@@ -168,6 +168,41 @@ const routes = [
     component: () => import("../views/cn/ranking/speed/METR-LACN.vue")
   },
   {
+    path: "/cn/ranking/PEMS-BAY",
+    name: "PEMS-BAYCN",
+    component: () => import("../views/cn/ranking/speed/PEMS-BAYCN.vue")
+  },
+  {
+    path: "/cn/ranking/PEMSD4",
+    name: "PEMSD4CN",
+    component: () => import("../views/cn/ranking/speed/PEMSD4CN.vue")
+  },
+  {
+    path: "/cn/ranking/PEMSD8",
+    name: "PEMSD8CN",
+    component: () => import("../views/cn/ranking/speed/PEMSD8CN.vue")
+  },
+  {
+    path: "/cn/ranking/T-Drive20150206",
+    name: "T-Drive20150206CN",
+    component: () => import("../views/cn/ranking/speed/T-Drive20150206CN.vue")
+  },
+  {
+    path: "/cn/ranking/TAXIBJ2015",
+    name: "TAXIBJ2015CN",
+    component: () => import("../views/cn/ranking/speed/TAXIBJ2015CN.vue")
+  },
+  {
+    path: "/cn/ranking/NYCTAXI202001-202003-3600",
+    name: "NYCTAXI202001-202003-3600CN",
+    component: () => import("../views/cn/ranking/speed/NYCTAXI202001-202003-3600CN.vue")
+  },
+  {
+    path: "/cn/ranking/NYCBike20140409",
+    name: "NYCBike20140409CN",
+    component: () => import("../views/cn/ranking/speed/NYCBike20140409CN.vue")
+  },
+  {
     path: "/cn/news",
     name: "NewsCN",
     component: () => import("../views/cn/news/NewsCN.vue")
