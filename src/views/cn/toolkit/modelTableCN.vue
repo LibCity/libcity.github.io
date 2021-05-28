@@ -10,10 +10,10 @@
       </thead>
       <tbody>
           <tr v-for="item in content" :key="item.model">
-              <td width="20%"><a :href="item.mlink">{{item.model}}</a></td>
+              <td width="20%"><a :href="item.mlink" target="_blank">{{item.model}}</a></td>
               <td width="20%">{{item.from}}</td>
               <td width="10%">{{item.year}}</td>
-              <td width="50%"><a :href="item.plink">{{item.paper}}</a></td>
+              <td width="50%"><a :href="item.plink" target="_blank">{{item.paper}}</a></td>
           </tr>
       </tbody>
   </table>

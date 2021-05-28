@@ -4,7 +4,8 @@
       <div style="padding-top: 20px;color: white;">
         <p style="margin: 20px 0 30px 130px; font-size: 60px">Install LibTraffic</p>
         <p style="margin: 0px 0 20px 130px; font-size: 30px">
-          LibTraffic can be installed with pip, with Conda or from source.
+          <!-- LibTraffic can be installed with pip, with Conda or from source. -->
+          LibTraffic can be installed from source.
         </p>
       </div>
     </div>
@@ -19,10 +20,10 @@
                 <li>Windows 10</li>
                 <li>macOS X</li>
             </ul>
-            <p>LibTraffic requires torch version 1.7.0 or later. If you want to use LibTraffic with GPU, please ensure that ...</p>
+            <p>LibTraffic requires torch version 1.7.0 or later. If you want to use LibTraffic with GPU, please ensure that please ensure that CUDA or CUDAToolkit version is 9.2 or later. This requires NVIDIA driver version >= 396.26 (for Linux) or >= 397.44 (for Windows10).</p>
             <br>
 
-            <p class="title">Conda</p>
+            <!-- <p class="title">Conda</p>
             <a-divider style="margin: 10px 0; background-image: linear-gradient(to right,  rgb(103, 179, 241),  rgb(103, 179, 241), #f6f6f6, #f6f6f6);"></a-divider>
             <p>If you use Conda, you can install LibTraffic with:</p>
             <div class="code">
@@ -43,23 +44,23 @@
             <div class="code">
                 <code data-lang="bash">pip install libtraffic</code>
             </div>
-            <br>
+            <br> -->
             
             <p class="title">Source</p>
             <a-divider style="margin: 10px 0; background-image: linear-gradient(to right,  rgb(103, 179, 241),  rgb(103, 179, 241), #f6f6f6, #f6f6f6);"></a-divider>
             <p>Download the source files from GitHub:</p>
             <div class="code">
                 <code data-lang="bash">
-                    git clone https://github.com/WenMellors/Bigscity-TrafficDL<br>
-                    cd libtraffic
+                    git clone https://github.com/LibTraffic/Bigscity-LibTraffic<br>
+                    <!-- cd Bigscity-LibTraffic -->
                 </code>
             </div>
-            <p>Run the following command to install:</p>
+            <!-- <p>Run the following command to install:</p>
             <div class="code">
                 <code data-lang="bash">
                     pip install ....
                 </code>
-            </div>
+            </div> -->
             <br>
         </div>
     </div>

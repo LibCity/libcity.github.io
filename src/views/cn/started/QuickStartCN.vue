@@ -63,7 +63,7 @@
       <div class="code">
         <code data-lang="bash">python run_model.py --learning_rate 0.001</code>
       </div>
-      <p>所有支持的参数和更多的细节可见<a target="_blank" href="https://aptx1231.github.io/Bigscity-TrafficDL-Docs/get_started/quick_start.html">文档</a>。</p>
+      <p>所有支持的参数和更多的细节可见<a target="_blank" href="https://bigscity-trafficdl-docs.readthedocs.io/en/latest/get_started/quick_start.html">文档</a>。</p>
       <br>
       <!-- frb 隐藏下面内容 -->
       <!-- <p class="title">从API快速上手</p> -->

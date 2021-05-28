@@ -347,7 +347,7 @@
             mlink: '#',
             from: 'IJCAI',
             year: '2019',
-            paper: 'Graph wavenet for deep spatial-temporal graph modeling',
+            paper: 'Graph Wavenet for Deep Spatial-Temporal Graph Modeling',
             plink: 'https://arxiv.org/abs/1906.00121' 
         },
         {
@@ -435,7 +435,7 @@
         },
         {
             model: 'AGCRN',
-            mlink: 'https://aptx1231.github.io/Bigscity-TrafficDL-Docs/user_guide/model/Traffic_Flow_Prediction/AGCRN.html',
+            mlink: 'https://bigscity-trafficdl-docs.readthedocs.io/en/latest/user_guide/model/Traffic_Flow_Prediction/AGCRN.html',
             from: 'NIPS',
             year: '2020',
             paper: 'Adaptive Graph Convolutional Recurrent Network for Traffic Forecasting',
@@ -547,7 +547,7 @@
         },
         {
             model: 'ASTGCN',
-            mlink: 'https://aptx1231.github.io/Bigscity-TrafficDL-Docs/user_guide/model/Traffic_Flow_Prediction/ASTGCN.html',
+            mlink: 'https://bigscity-trafficdl-docs.readthedocs.io/en/latest/user_guide/model/Traffic_Flow_Prediction/ASTGCN.html',
             from: 'AAAI',
             year: '2019',
             paper: 'Attention based spatial-temporal graph convolutional networks for traffic flow forecasting',
@@ -692,7 +692,7 @@
             mlink: '#',
             from: 'IJCAI',
             year: '2019',
-            paper: 'Graph wavenet for deep spatial-temporal graph modeling',
+            paper: 'Graph Wavenet for Deep Spatial-Temporal Graph Modeling',
             plink: 'https://arxiv.org/abs/1906.00121' 
         },
         {

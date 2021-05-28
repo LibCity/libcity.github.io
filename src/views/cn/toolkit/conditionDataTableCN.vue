@@ -14,14 +14,14 @@
       </thead>
       <tbody>
           <tr v-for="item in content" :key="item.dataset">
-              <td width="14%"><a :href="item.plink">{{item.dataset}}</a></td>
+              <td width="14%"><a :href="item.plink" target="_blank">{{item.dataset}}</a></td>
               <td width="4%">{{item.geo}}</td>
               <td width="4%">{{item.rel}}</td>
               <td width="8%">{{item.feature}}</td>
               <td width="17%">{{item.place}}</td>
               <td width="20%">{{item.duration}}</td>
               <td width="10%">{{item.interval}}</td>
-              <td width="23%"><a-button type="primary" shape="round"><a :href="item.source">Source</a></a-button><a-button type="primary" shape="round" style="margin-left: 5px"><a :href="item.slink">Script</a></a-button></td>
+              <td width="23%"><a-button type="primary" shape="round"><a :href="item.source">Source</a></a-button><a-button type="primary" shape="round" style="margin-left: 5px"><a :href="item.slink" target="_blank">Script</a></a-button></td>
           </tr>
       </tbody>
   </table>

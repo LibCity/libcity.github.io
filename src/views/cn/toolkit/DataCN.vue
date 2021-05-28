@@ -20,8 +20,8 @@
         <ul>
           <li><span style="font-weight: 700">原始数据</span>：未经处理的开源交通数据集。</li>
           <li><span style="font-weight: 700">原子文件</span>：各类交通预测任务的基础输入元素。</li>
-          <li><span style="font-weight: 700">Dataset类</span>：为各类交通预测任务制定的Dataset类，负责读取原子文件。LibTraffic还提供一系列的数据预处理功能。详见<a href="#">文档</a>。</li>
-          <li><span style="font-weight: 700">DataLoader类</span>：主要依托于<code style="color: #e83e8c; font-size: 90%">PyTorch</code>原生的<code style="color: #e83e8c; font-size: 90%">torch.utils.data.DataLoader</code>的DataLoader类，负责将数据以内部数据表示结构<code style="color: #e83e8c; font-size: 90%">Batch</code>类的形式返回给模型使用。 <span style="font-weight: 700">Batch</span>是基于<code style="color: #e83e8c; font-size: 90%">python.dict</code>实现的抽象数据结构，其构成key-value的结构。<code style="color: #e83e8c; font-size: 90%">Key</code>对应于模型输入的特征名。<code style="color: #e83e8c; font-size: 90%">Value</code>对应于张量（由<code style="color: #e83e8c; font-size: 90%">torch.Tensor</code>实现），其包含一个<code style="color: #e83e8c; font-size: 90%">batch</code>或<code style="color: #e83e8c; font-size: 90%">mini-batch</code>的数据。详见<a href="#">文档</a>。</li>
+          <li><span style="font-weight: 700">Dataset类</span>：为各类交通预测任务制定的Dataset类，负责读取原子文件。LibTraffic还提供一系列的数据预处理功能。详见<a href="https://bigscity-trafficdl-docs.readthedocs.io/en/latest/user_guide/data/data_flow.html" target="_blank">文档</a>。</li>
+          <li><span style="font-weight: 700">DataLoader类</span>：主要依托于<code style="color: #e83e8c; font-size: 90%">PyTorch</code>原生的<code style="color: #e83e8c; font-size: 90%">torch.utils.data.DataLoader</code>的DataLoader类，负责将数据以内部数据表示结构<code style="color: #e83e8c; font-size: 90%">Batch</code>类的形式返回给模型使用。 <span style="font-weight: 700">Batch</span>是基于<code style="color: #e83e8c; font-size: 90%">python.dict</code>实现的抽象数据结构，其构成key-value的结构。<code style="color: #e83e8c; font-size: 90%">Key</code>对应于模型输入的特征名。<code style="color: #e83e8c; font-size: 90%">Value</code>对应于张量（由<code style="color: #e83e8c; font-size: 90%">torch.Tensor</code>实现），其包含一个<code style="color: #e83e8c; font-size: 90%">batch</code>或<code style="color: #e83e8c; font-size: 90%">mini-batch</code>的数据。详见<a href="https://bigscity-trafficdl-docs.readthedocs.io/en/latest/user_guide/data/data_flow.html" target="_blank">文档</a>。</li>
         </ul>
         <br>
 
@@ -68,14 +68,14 @@
           </tbody>
         </table>
         <br>
-        <p style="text-indent: 2em">原子文件的本质是基于特征的数据表格，分别对应于模型输入的不同部分，这些原子文件组成了不同时空数据挖掘任务的输入。详见<a href="https://aptx1231.github.io/Bigscity-TrafficDL-Docs/user_guide/data/atmoic_files.html">文档</a>。</p>
+        <p style="text-indent: 2em">原子文件的本质是基于特征的数据表格，分别对应于模型输入的不同部分，这些原子文件组成了不同时空数据挖掘任务的输入。详见<a href="https://bigscity-trafficdl-docs.readthedocs.io/en/latest/user_guide/data/atomic_files.html"  target="_blank">文档</a>。</p>
         <!-- frb 暂时隐藏该部分 -->
         <!-- <p style="text-indent: 2em">下面给出一个格式化的METR-LA数据集的例子。</p> -->
         <br>
 
         <p class="title">数据集列表</p>
         <a-divider style="margin: 10px 0; background-image: linear-gradient(to right,  rgb(103, 179, 241),  rgb(103, 179, 241), #f6f6f6, #f6f6f6);"></a-divider>
-        <p style="text-indent: 2em">我们已经收集了29个时空数据集。为了帮助用户将原始数据转换为原子文件，我们发布了将这些数据集转换为原子文件的脚本，供用户参考。此外，我们也将已经处理好的原子文件打包上传至<a href="https://bhpan.buaa.edu.cn:443/link/20D4B9501565142A624E4F662AB14A1E">北航云盘</a>。</p>
+        <p style="text-indent: 2em">我们已经收集了29个时空数据集。为了帮助用户将原始数据转换为原子文件，我们发布了将这些数据集转换为原子文件的脚本，供用户参考。此外，我们也将已经处理好的原子文件打包上传至<a href="https://bhpan.buaa.edu.cn:443/link/20D4B9501565142A624E4F662AB14A1E" target="_blank">北航云盘</a>。</p>
         <a-divider style="font-size: 24px">交通状况数据集</a-divider>
         <condition-data-table-cn :content="condition"></condition-data-table-cn>
         <br>
@@ -118,7 +118,7 @@
       interval: '5分钟',
       source: 'https://github.com/liyaguang/DCRNN',
       plink: cn_doc_link + 'metr-la',
-      slink: 'https://github.com/aptx1231/Bigscity-TrafficDL-Datasets/blob/master/metr_la.py'
+      slink: 'https://github.com/LibTraffic/Bigscity-LibTraffic-Datasets/blob/master/metr_la.py'
     },
     {
       dataset: 'Los-loop',
@@ -130,7 +130,7 @@
       interval: '5分钟',
       source: 'https://github.com/lehaifeng/T-GCN/tree/master/data',
       plink: cn_doc_link + 'los-loop',
-      slink: 'https://github.com/aptx1231/Bigscity-TrafficDL-Datasets/blob/master/los-loop.py'
+      slink: 'https://github.com/LibTraffic/Bigscity-LibTraffic-Datasets/blob/master/los-loop.py'
     },
     {
       dataset: 'SZ-Taxi',
@@ -142,7 +142,7 @@
       interval: '15分钟',
       source: 'https://github.com/lehaifeng/T-GCN/tree/master/data',
       plink: cn_doc_link + 'sz-taxi',
-      slink: 'https://github.com/aptx1231/Bigscity-TrafficDL-Datasets/blob/master/sz-taxi.py'
+      slink: 'https://github.com/LibTraffic/Bigscity-LibTraffic-Datasets/blob/master/sz-taxi.py'
     },
     {
       dataset: 'Loop Seattle',
@@ -154,7 +154,7 @@
       interval: '5分钟',
       source: 'https://github.com/zhiyongc/Seattle-Loop-Data',
       plink: cn_doc_link + 'loop-seattle',
-      slink: 'https://github.com/aptx1231/Bigscity-TrafficDL-Datasets/blob/master/loop_seattle.py'
+      slink: 'https://github.com/LibTraffic/Bigscity-LibTraffic-Datasets/blob/master/loop_seattle.py'
     },
     {
       dataset: 'Q-Traffic',
@@ -166,7 +166,7 @@
       interval: '15分钟',
       source: 'https://github.com/JingqingZ/BaiduTraffic',
       plink: cn_doc_link + 'q-traffic',
-      slink: 'https://github.com/aptx1231/Bigscity-TrafficDL-Datasets/blob/master/q-traffic.py'
+      slink: 'https://github.com/LibTraffic/Bigscity-LibTraffic-Datasets/blob/master/q-traffic.py'
     },
     {
       dataset: 'PeMSD3',
@@ -178,7 +178,7 @@
       interval: '5分钟',
       source: 'https://github.com/Davidham3/STSGCN',
       plink: cn_doc_link + 'pemsd3',
-      slink: 'https://github.com/aptx1231/Bigscity-TrafficDL-Datasets/blob/master/pemsd3.py'
+      slink: 'https://github.com/LibTraffic/Bigscity-LibTraffic-Datasets/blob/master/pemsd3.py'
     },
     {
       dataset: 'PeMSD4',
@@ -190,7 +190,7 @@
       interval: '5分钟',
       source: 'https://github.com/Davidham3/ASTGCN/tree/master/data/PEMS04',
       plink: cn_doc_link + 'pemsd4',
-      slink: 'https://github.com/aptx1231/Bigscity-TrafficDL-Datasets/blob/master/pemsd4.py'
+      slink: 'https://github.com/LibTraffic/Bigscity-LibTraffic-Datasets/blob/master/pemsd4.py'
     },
     {
       dataset: 'PEMSD7',
@@ -202,7 +202,7 @@
       interval: '5分钟',
       source: 'https://github.com/Davidham3/STSGCN',
       plink: cn_doc_link + 'pemsd7',
-      slink: 'https://github.com/aptx1231/Bigscity-TrafficDL-Datasets/blob/master/pemsd7.py'
+      slink: 'https://github.com/LibTraffic/Bigscity-LibTraffic-Datasets/blob/master/pemsd7.py'
     },
     {
       dataset: 'PEMSD8',
@@ -214,7 +214,7 @@
       interval: '5分钟',
       source: 'https://github.com/Davidham3/ASTGCN/tree/master/data/PEMS08',
       plink: cn_doc_link + 'pemsd8',
-      slink: 'https://github.com/aptx1231/Bigscity-TrafficDL-Datasets/blob/master/pemsd8.py'
+      slink: 'https://github.com/LibTraffic/Bigscity-LibTraffic-Datasets/blob/master/pemsd8.py'
     },
     {
       dataset: 'PEMSD7(M)',
@@ -226,7 +226,7 @@
       interval: '5分钟',
       source: 'https://github.com/Davidham3/STGCN/tree/master/datasets',
       plink: cn_doc_link + 'pemsd7-m',
-      slink: 'https://github.com/aptx1231/Bigscity-TrafficDL-Datasets/blob/master/pemsd7(m).py'
+      slink: 'https://github.com/LibTraffic/Bigscity-LibTraffic-Datasets/blob/master/pemsd7(m).py'
     },
     {
       dataset: 'PEMS-BAY',
@@ -238,7 +238,7 @@
       interval: '5分钟',
       source: 'https://github.com/liyaguang/DCRNN',
       plink: cn_doc_link + 'pems-bay',
-      slink: 'https://github.com/aptx1231/Bigscity-TrafficDL-Datasets/blob/master/pems_bay.py'
+      slink: 'https://github.com/LibTraffic/Bigscity-LibTraffic-Datasets/blob/master/pems_bay.py'
     },
     {
       dataset: 'Beijing subway',
@@ -250,7 +250,7 @@
       interval: '10分钟，15分钟，30分钟',
       source: 'https://github.com/JinleiZhangBJTU/ResNet-LSTM-GCN',
       plink: cn_doc_link + 'beijing-subway',
-      slink: 'https://github.com/aptx1231/Bigscity-TrafficDL-Datasets/blob/master/beijing%20subway.py'
+      slink: 'https://github.com/LibTraffic/Bigscity-LibTraffic-Datasets/blob/master/beijing%20subway.py'
     },
     {
       dataset: 'M_dense',
@@ -262,7 +262,7 @@
       interval: '60分钟',
       source: 'https://github.com/Davidham3/STSGCN',
       plink: cn_doc_link + 'm-dense',
-      slink: 'https://github.com/aptx1231/Bigscity-TrafficDL-Datasets/blob/master/m_dense.py'
+      slink: 'https://github.com/LibTraffic/Bigscity-LibTraffic-Datasets/blob/master/m_dense.py'
     },
     {
       dataset: 'Rotterdam',
@@ -274,7 +274,7 @@
       interval: '2分钟',
       source: 'https://github.com/RomainLITUD/DGCN_traffic_forecasting',
       plink: cn_doc_link + 'rotterdam',
-      slink: 'https://github.com/aptx1231/Bigscity-TrafficDL-Datasets/blob/master/rotterdam.py'
+      slink: 'https://github.com/LibTraffic/Bigscity-LibTraffic-Datasets/blob/master/rotterdam.py'
     },
     {
       dataset: 'SHMetro',
@@ -286,7 +286,7 @@
       interval: '15分钟',
       source: 'https://github.com/ivechan/PVCGN',
       plink: cn_doc_link + 'shmetro',
-      slink: 'https://github.com/aptx1231/Bigscity-TrafficDL-Datasets/blob/master/sh_metro.py'
+      slink: 'https://github.com/LibTraffic/Bigscity-LibTraffic-Datasets/blob/master/sh_metro.py'
     },
     {
       dataset: 'HZMetro',
@@ -298,7 +298,7 @@
       interval: '15分钟',
       source: 'https://github.com/ivechan/PVCGN',
       plink: cn_doc_link + 'hzmetro',
-      slink: 'https://github.com/aptx1231/Bigscity-TrafficDL-Datasets/blob/master/hz_metro.py'
+      slink: 'https://github.com/LibTraffic/Bigscity-LibTraffic-Datasets/blob/master/hz_metro.py'
     },
     ]
 

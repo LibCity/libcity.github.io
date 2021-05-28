@@ -18,7 +18,7 @@
 
             <p class="title">Contact Us</p>
             <a-divider style="margin: 10px 0; background-image: linear-gradient(to right,  rgb(103, 179, 241),  rgb(103, 179, 241), #f6f6f6, #f6f6f6);"></a-divider>
-            <p>If you have any question about the library, please open an issue in the <a href="">GitHub repo</a>.</p>
+            <p>If you have any question about the library, please open an issue in the <a href="https://github.com/LibTraffic/Bigscity-LibTraffic" target="_blank">GitHub repo</a>.</p>
             <p>Or You may contact the developers through bigscity(@)126.com</p>
             <br>
             
@@ -29,7 +29,7 @@
 
             <p class="title">License</p>
             <a-divider style="margin: 10px 0; background-image: linear-gradient(to right,  rgb(103, 179, 241),  rgb(103, 179, 241), #f6f6f6, #f6f6f6);"></a-divider>
-            <p>Toolkit is released under the <a href="#">MIT License</a>. All the codes and data in this project should be used for academic purpose only.</p>
+            <p>Toolkit is released under the <a href="#" target="_blank">MIT License</a>. All the codes and data in this project should be used for academic purpose only.</p>
             <br>
         </div>
     </div>
