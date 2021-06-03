@@ -10,11 +10,11 @@ const routes = [
     name: "Home",
     component: Home
   },
-  {
-    path: "/paper",
-    name: "Paper",
-    component: () => import("../views/Paper.vue")
-  },
+  // {
+  //   path: "/paper",
+  //   name: "Paper",
+  //   component: () => import("../views/Paper.vue")
+  // },
   {
     path: "/ranking",
     name: "Ranking",
@@ -100,11 +100,11 @@ const routes = [
     name: "About",
     component: () => import("../views/About.vue")
   },
-  {
-    path: "/chart",
-    name: "Chart",
-    component: () => import("../views/Chart.vue")
-  },
+  // {
+  //   path: "/chart",
+  //   name: "Chart",
+  //   component: () => import("../views/Chart.vue")
+  // },
   {
     path: "/news",
     name: "News",
@@ -152,10 +152,15 @@ const routes = [
     name: "EvaluationCN",
     component: () => import("../views/cn/toolkit/EvaluationCN.vue")
   },
+  // {
+  //   path: "/cn/paper",
+  //   name: "PaperCN",
+  //   component: () => import("../views/cn/PaperCN.vue")
+  // },
   {
-    path: "/cn/paper",
-    name: "PaperCN",
-    component: () => import("../views/cn/PaperCN.vue")
+    path: "/cn/about",
+    name: "AboutCN",
+    component: () => import("../views/cn/AboutCN.vue")
   },
   {
     path: "/cn/ranking",

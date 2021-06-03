@@ -1,6 +1,6 @@
 module.exports = {
   lintOnSave: false,
-  // outputDir: "docs",
+  outputDir: "docs",
   css: {
     loaderOptions: {
       less: {

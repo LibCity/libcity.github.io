@@ -11,25 +11,25 @@
 
     <div class="content">
         <div>
-            <p class="title">Our Mission</p>
-            <a-divider style="margin: 10px 0; background-image: linear-gradient(to right,  rgb(103, 179, 241),  rgb(103, 179, 241), #f6f6f6, #f6f6f6);"></a-divider>
-            <p>The mission of toolkit is to </p>
-            <br>
-
-            <p class="title">Contact Us</p>
-            <a-divider style="margin: 10px 0; background-image: linear-gradient(to right,  rgb(103, 179, 241),  rgb(103, 179, 241), #f6f6f6, #f6f6f6);"></a-divider>
-            <p>If you have any question about the library, please open an issue in the <a href="https://github.com/LibTraffic" target="_blank">GitHub repo</a>.</p>
-            <p>Or You may contact the developers through ?(@)?.com</p>
-            <br>
-            
-            <p class="title">Contributing</p>
+            <p class="title">我们的使命</p>
             <a-divider style="margin: 10px 0; background-image: linear-gradient(to right,  rgb(103, 179, 241),  rgb(103, 179, 241), #f6f6f6, #f6f6f6);"></a-divider>
             <p></p>
             <br>
 
-            <p class="title">License</p>
+            <p class="title">联系我们</p>
             <a-divider style="margin: 10px 0; background-image: linear-gradient(to right,  rgb(103, 179, 241),  rgb(103, 179, 241), #f6f6f6, #f6f6f6);"></a-divider>
-            <p>Toolkit is released under the <a href="#" target="_blank">MIT License</a>. All the codes and data in this project should be used for academic purpose only.</p>
+            <p>有问题请在仓库提出issue <a href="https://github.com/LibTraffic" target="_blank">GitHub repo</a>.</p>
+            <p>或者通过邮件联系我们 ?(@)?.com</p>
+            <br>
+            
+            <p class="title">贡献</p>
+            <a-divider style="margin: 10px 0; background-image: linear-gradient(to right,  rgb(103, 179, 241),  rgb(103, 179, 241), #f6f6f6, #f6f6f6);"></a-divider>
+            <p></p>
+            <br>
+
+            <p class="title">协议</p>
+            <a-divider style="margin: 10px 0; background-image: linear-gradient(to right,  rgb(103, 179, 241),  rgb(103, 179, 241), #f6f6f6, #f6f6f6);"></a-divider>
+            <p></p>
             <br>
         </div>
     </div>
