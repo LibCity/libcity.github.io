@@ -24,12 +24,12 @@
       <p>You will obtain some output like:</p>
       <div class="code" style="font-size: 16px">
         <code data-lang="bash">
-          - INFO - Log directory: ./trafficdl/log<br>
+          - INFO - Log directory: ./libtraffic/log<br>
           - INFO - Begin pipeline, task=traffic_state_pred, model_name=DCRNN, dataset_name=METR_LA<br>
           - INFO - Loaded file METR_LA.geo, num_nodes=207<br>
           - INFO - Loaded file METR_LA.rel, shape=(207, 207)<br>
           - INFO - Start Calculate the weight by Gauss kernel!<br>
-          - INFO - Loading ./trafficdl/cache/dataset_cache/point_based_METR_LA_12_12_0.7_0.1_standard_64_True_False_True.npz<br>
+          - INFO - Loading ./libtraffic/cache/dataset_cache/point_based_METR_LA_12_12_0.7_0.1_standard_64_True_False_True.npz<br>
           - INFO - train	x: (23974, 12, 207, 2)y: (23974, 12, 207, 2)<br>
           - INFO - eval	x: (3425, 12, 207, 2)y: (3425, 12, 207, 2)<br>
           - INFO - test	x: (6850, 12, 207, 2)y: (6850, 12, 207, 2)<br>
@@ -47,13 +47,13 @@
           - INFO - evaluating now!<br>
           - INFO - Epoch [0/100] (375) train_mae: 3.3774, val_mae: 4.3733, lr: 0.010000, 403.5s<br>
           - INFO - Saved model at 0<br>
-          - INFO - Val loss decrease from inf to 4.3733, saving to ./trafficdl/cache/model_cache/DCRNN_METR_LA_epoch0.tar<br>
+          - INFO - Val loss decrease from inf to 4.3733, saving to ./libtraffic/cache/model_cache/DCRNN_METR_LA_epoch0.tar<br>
           ...<br>
           - INFO - epoch complete!<br>
           - INFO - evaluating now!<br>
           - INFO - Epoch [99/100] (37500) train_mae: 2.8075, val_mae: 2.8501, lr: 0.000001, 401.7s<br>
           - INFO - Loaded model at 66<br>
-          - INFO - Saved model at ./trafficdl/cache/model_cache/DCRNN_METR_LA.m<br>
+          - INFO - Saved model at ./libtraffic/cache/model_cache/DCRNN_METR_LA.m<br>
           - INFO - Start evaluating ...<br>
           - INFO - Evaluate result is ...<br>
         </code>
@@ -64,7 +64,7 @@
       <div class="code">
         <code data-lang="bash">python run_model.py --learning_rate 0.001</code>
       </div>
-      <p>All supporting parameters and more details can be found in <a href="https://bigscity-trafficdl-docs.readthedocs.io/en/latest/get_started/quick_start.html" target="_blank">Document</a>.</p>
+      <p>All supporting parameters and more details can be found in <a href="https://bigscity-libtraffic-docs.readthedocs.io/en/latest/get_started/quick_start.html" target="_blank">Document</a>.</p>
 
       <!-- <p class="title">Quick Start From API</p>
       <a-divider style="margin: 10px 0; background-image: linear-gradient(to right,  rgb(103, 179, 241),  rgb(103, 179, 241), #f6f6f6, #f6f6f6);"></a-divider> -->

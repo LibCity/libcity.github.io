@@ -435,7 +435,7 @@
         },
         {
             model: 'AGCRN',
-            mlink: 'https://bigscity-trafficdl-docs.readthedocs.io/en/latest/user_guide/model/Traffic_Flow_Prediction/AGCRN.html',
+            mlink: 'https://bigscity-libtraffic-docs.readthedocs.io/en/latest/user_guide/model/Traffic_Flow_Prediction/AGCRN.html',
             from: 'NIPS',
             year: '2020',
             paper: 'Adaptive Graph Convolutional Recurrent Network for Traffic Forecasting',
@@ -547,7 +547,7 @@
         },
         {
             model: 'ASTGCN',
-            mlink: 'https://bigscity-trafficdl-docs.readthedocs.io/en/latest/user_guide/model/Traffic_Flow_Prediction/ASTGCN.html',
+            mlink: 'https://bigscity-libtraffic-docs.readthedocs.io/en/latest/user_guide/model/Traffic_Flow_Prediction/ASTGCN.html',
             from: 'AAAI',
             year: '2019',
             paper: 'Attention based spatial-temporal graph convolutional networks for traffic flow forecasting',

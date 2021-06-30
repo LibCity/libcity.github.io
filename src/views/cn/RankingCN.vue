@@ -36,7 +36,7 @@
         dataset: 'METR-LA',
         best: 'MTGNN',
         paper: 'Spatio-Temporal Graph Structure Learning for Traffic Forecasting',
-        datasetlink: 'https://bigscity-trafficdl-docs.readthedocs.io/en/latest/user_guide/data/raw_data.html#metr-la',
+        datasetlink: 'https://bigscity-libtraffic-docs.readthedocs.io/en/latest/user_guide/data/raw_data.html#metr-la',
         mlink: '#',
         plink: 'https://arxiv.org/abs/2005.11650',
         dlink: 'METR-LA'
@@ -45,7 +45,7 @@
         dataset: 'PEMS-BAY',
         best: 'GWNET',
         paper: 'Graph Wavenet for Deep Spatial-Temporal Graph Modeling',
-        datasetlink: 'https://bigscity-trafficdl-docs.readthedocs.io/en/latest/user_guide/data/raw_data.html#pems-bay',
+        datasetlink: 'https://bigscity-libtraffic-docs.readthedocs.io/en/latest/user_guide/data/raw_data.html#pems-bay',
         mlink: '#',
         plink: 'https://arxiv.org/abs/1906.00121',
         dlink: 'PEMS-BAY'
@@ -54,7 +54,7 @@
         dataset: 'PEMSD4',
         best: 'GWNET',
         paper: 'Graph Wavenet for Deep Spatial-Temporal Graph Modeling',
-        datasetlink: 'https://bigscity-trafficdl-docs.readthedocs.io/en/latest/user_guide/data/raw_data.html#pemsd4',
+        datasetlink: 'https://bigscity-libtraffic-docs.readthedocs.io/en/latest/user_guide/data/raw_data.html#pemsd4',
         mlink: '#',
         plink: 'https://arxiv.org/abs/1906.00121',
         dlink: 'PEMSD4'
@@ -63,7 +63,7 @@
         dataset: 'PEMSD8',
         best: 'GWNET',
         paper: 'Graph Wavenet for Deep Spatial-Temporal Graph Modeling',
-        datasetlink: 'https://bigscity-trafficdl-docs.readthedocs.io/en/latest/user_guide/data/raw_data.html#pemsd8',
+        datasetlink: 'https://bigscity-libtraffic-docs.readthedocs.io/en/latest/user_guide/data/raw_data.html#pemsd8',
         mlink: '#',
         plink: 'https://arxiv.org/abs/1906.00121',
         dlink: 'PEMSD8'
@@ -72,7 +72,7 @@
         dataset: 'T-Drive20150206',
         best: 'MTGNN',
         paper: 'Spatio-Temporal Graph Structure Learning for Traffic Forecasting',
-        datasetlink: 'https://bigscity-trafficdl-docs.readthedocs.io/en/latest/user_guide/data/raw_data.html#t-drive20150206',
+        datasetlink: 'https://bigscity-libtraffic-docs.readthedocs.io/en/latest/user_guide/data/raw_data.html#t-drive20150206',
         mlink: '#',
         plink: 'https://arxiv.org/abs/2005.11650',
         dlink: 'T-Drive20150206'
@@ -81,7 +81,7 @@
         dataset: 'TAXIBJ2015',
         best: 'AGCRN',
         paper: 'Adaptive Graph Convolutional Recurrent Network for Traffic Forecasting',
-        datasetlink: 'https://bigscity-trafficdl-docs.readthedocs.io/en/latest/user_guide/data/raw_data.html#taxibj',
+        datasetlink: 'https://bigscity-libtraffic-docs.readthedocs.io/en/latest/user_guide/data/raw_data.html#taxibj',
         mlink: '#',
         plink: 'https://arxiv.org/abs/2007.02842',
         dlink: 'TAXIBJ2015'
@@ -99,7 +99,7 @@
     //     dataset: 'TAXIBJ',
     //     best: 'MTGNN',
     //     paper: 'Spatio-Temporal Graph Structure Learning for Traffic Forecasting',
-    //     datasetlink: 'https://bigscity-trafficdl-docs.readthedocs.io/en/latest/user_guide/data/raw_data.html#taxibj',
+    //     datasetlink: 'https://bigscity-libtraffic-docs.readthedocs.io/en/latest/user_guide/data/raw_data.html#taxibj',
     //     mlink: '#',
     //     plink: 'https://arxiv.org/abs/2005.11650',
     //     dlink: 'TAXIBJ'
@@ -108,7 +108,7 @@
         dataset: 'NYCBike20140409',
         best: 'MTGNN',
         paper: 'Spatio-Temporal Graph Structure Learning for Traffic Forecasting',
-        datasetlink: 'https://bigscity-trafficdl-docs.readthedocs.io/en/latest/user_guide/data/raw_data.html#nycbike20140409',
+        datasetlink: 'https://bigscity-libtraffic-docs.readthedocs.io/en/latest/user_guide/data/raw_data.html#nycbike20140409',
         mlink: '#',
         plink: 'https://arxiv.org/abs/2005.11650',
         dlink: 'NYCBike20140409'
@@ -120,7 +120,7 @@
         dataset: 'foursqaure-tky',
         best: 'DeepMove',
         paper: 'DeepMove: Predicting Human Mobility with Attentional Recurrent Networks',
-        datasetlink: 'https://bigscity-trafficdl-docs.readthedocs.io/en/latest/user_guide/data/raw_data.html#foursquare',
+        datasetlink: 'https://bigscity-libtraffic-docs.readthedocs.io/en/latest/user_guide/data/raw_data.html#foursquare',
         mlink: '#',
         plink: 'https://dl.acm.org/doi/10.1145/3178876.3186058',
         dlink: 'foursqaure-tky'
@@ -129,7 +129,7 @@
         dataset: 'Gowalla',
         best: 'DeepMove',
         paper: 'DeepMove: Predicting Human Mobility with Attentional Recurrent Networks',
-        datasetlink: 'https://bigscity-trafficdl-docs.readthedocs.io/en/latest/user_guide/data/raw_data.html#gowalla',
+        datasetlink: 'https://bigscity-libtraffic-docs.readthedocs.io/en/latest/user_guide/data/raw_data.html#gowalla',
         mlink: '#',
         plink: 'https://dl.acm.org/doi/10.1145/3178876.3186058',
         dlink: 'Gowalla'

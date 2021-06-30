@@ -76,7 +76,7 @@
           key="5"
           style="width: 110px; font-size: 20px; textalign: center; margin-left: 10px;"
         >
-          <a href="https://bigscity-trafficdl-docs.readthedocs.io/en/latest/" target="_blank">Document</a>
+          <a href="https://bigscity-libtraffic-docs.readthedocs.io/en/latest/" target="_blank">Document</a>
         </a-menu-item>
 
         <!-- <a-menu-item
@@ -200,7 +200,7 @@
           key="5"
           style="width: 75px; font-size: 20px; textalign: center; margin-left: 10px;"
         >
-          <a href="https://bigscity-trafficdl-docs.readthedocs.io/en/latest/" target="_blank">文档</a>
+          <a href="https://bigscity-libtraffic-docs.readthedocs.io/en/latest/" target="_blank">文档</a>
         </a-menu-item>
 <!-- 
         <a-menu-item
@@ -277,7 +277,7 @@
         <div style="display:block;float: right;  width:150px; height: 160px; vertical-align: top;">
           <h3 style="color: rgb(27, 140, 233)">Resources</h3>
           <dl>
-            <dt><a-button class="footer-btn" type="link"><a style="font-size: 16px;" href="https://bigscity-trafficdl-docs.readthedocs.io/en/latest/" target="_blank">Document</a></a-button></dt>
+            <dt><a-button class="footer-btn" type="link"><a style="font-size: 16px;" href="https://bigscity-libtraffic-docs.readthedocs.io/en/latest/" target="_blank">Document</a></a-button></dt>
             <dt><a-button class="footer-btn" type="link"><a style="font-size: 16px;" href="https://github.com/LibTraffic" target="_blank">Github</a></a-button></dt>
             <dt><a-button class="footer-btn" type="link" style="font-size: 16px;" href="https://github.com/LibTraffic/Bigscity-LibTraffic-Paper" target="_blank">Paper Library</a-button></dt>
             <!-- frb 隐藏下面这行内容 -->
@@ -305,7 +305,7 @@
         <div style="display:block;float: right;  width:150px; height: 160px; vertical-align: top;">
           <h3 style="color: rgb(27, 140, 233)">资源</h3>
           <dl>
-            <dt><a-button class="footer-btn" type="link"><a style="font-size: 16px;" href="https://bigscity-trafficdl-docs.readthedocs.io/en/latest/" target="_blank">文档</a></a-button></dt>
+            <dt><a-button class="footer-btn" type="link"><a style="font-size: 16px;" href="https://bigscity-libtraffic-docs.readthedocs.io/en/latest/" target="_blank">文档</a></a-button></dt>
             <dt><a-button class="footer-btn" type="link"><a style="font-size: 16px;" href="https://github.com/LibTraffic" target="_blank">Github</a></a-button></dt>
             <dt><a-button class="footer-btn" type="link" style="font-size: 16px;" href="https://github.com/LibTraffic/Bigscity-LibTraffic-Paper" target="_blank">论文库</a-button></dt>
             <!-- frb 隐藏下面这行内容 -->
