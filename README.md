@@ -1,24 +1,8 @@
-# frb-front
+# Website of LibTraffic
 
-## Project setup
-```
-npm install
-```
+Please note that this website is currently under development!
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+This website is deployed based on Github Page.
 
-### Compiles and minifies for production
-```
-npm run build
-```
+[Click here to preview in advance](https://libtraffic.github.io/Bigscity-LibTraffic-Website/#/).
 
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
