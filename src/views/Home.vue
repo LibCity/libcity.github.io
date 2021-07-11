@@ -7,8 +7,19 @@
           A unified and comprehensive framework for traffic prediction.
         </p>
         <div class="btn-list">
-          <a-button class="btn" type="primary" shape="round" @click="toInstallToolkit">Install</a-button>
-          <a-button class="btn" id="long_btn" type="primary" shape="round" @click="toQuickStart">Quick Start</a-button>
+          <a-button
+            class="btn"
+            type="primary"
+            shape="round"
+            @click="toInstallToolkit"
+          >Install</a-button>
+          <a-button
+            class="btn"
+            id="long_btn"
+            type="primary"
+            shape="round"
+            @click="toQuickStart"
+          >Quick Start</a-button>
         </div>
       </div>
     </div>
@@ -18,22 +29,36 @@
       </div>
       <div class="latestnews">
         <div class="news-header"><span class="news-block-title">LATEST NEWS</span>
-        <a-button class="seemore-btn" value="large" style="background-color: white;" @click="toNews">
-          See all News<a-icon type="right" style="color: red;"/>
-        </a-button></div>
+          <a-button
+            class="seemore-btn"
+            value="large"
+            style="background-color: white;"
+            @click="toNews"
+          >
+            See all News
+            <a-icon
+              type="right"
+              style="color: red;"
+            />
+          </a-button>
+        </div>
         <new-card class="news"></new-card>
       </div>
       <div class="toolkit">
         <div class="news-header">
-        <span class="block-title">FRAMEWORK</span>
+          <span class="block-title">FRAMEWORK</span>
         </div>
         <div style="width: 80%; margin: 10px auto 20px auto; text-align: center">
-          <img src="../assets/img/toolkit.png" alt="toolkit" height="550"/>
+          <img
+            src="../assets/img/toolkit.png"
+            alt="toolkit"
+            height="550"
+          />
         </div>
-      </div> 
+      </div>
       <div class="platform">
         <div class="news-header">
-        <span class="block-title">PLATFORM</span>
+          <span class="block-title">PLATFORM</span>
         </div>
         <div>
           <plat-card class="feature"></plat-card>
@@ -62,13 +87,13 @@ export default {
   methods: {
     toNews() {
       this.$router.push({
-            name: "News",
+        name: "News",
       });
     },
     toInstallToolkit() {
-        this.$router.push({
-            name: "InstallLibTraffic",
-        });
+      this.$router.push({
+        name: "InstallLibTraffic",
+      });
     },
     toQuickStart() {
       this.$router.push({
@@ -87,10 +112,11 @@ export default {
   background-color: white;
 }
 .header {
-  min-width:900px;
+  min-width: 900px;
   width: 100%;
   height: 360px;
-  background:  rgb(27, 140, 233) linear-gradient(to right,  rgb(27, 140, 233), rgb(11, 247, 188));
+  background: rgb(27, 140, 233)
+    linear-gradient(to right, rgb(27, 140, 233), rgb(11, 247, 188));
   /* border: blue solid 1px; */
 }
 .btn-list {
@@ -104,7 +130,7 @@ export default {
   border-color: white;
   font-size: 20px;
   font-weight: 700;
-  font-family: 'Microsoft YaHei', Arial, Helvetica, sans-serif;
+  font-family: "Microsoft YaHei", Arial, Helvetica, sans-serif;
 }
 .btn:hover {
   background-color: white;
@@ -120,7 +146,7 @@ export default {
   /* border: rgb(99, 97, 99) solid 1px; */
 }
 .feature {
-  min-width:1050px;
+  min-width: 1050px;
   width: 80%;
   margin: 20px auto 20px auto;
 }
@@ -131,12 +157,11 @@ export default {
   background-color: whitesmoke;
   padding-top: 20px;
   padding-bottom: 20px;
-  
 }
-.news-header{
+.news-header {
   min-width: 1000px;
   width: 80%;
-  margin:auto
+  margin: auto;
 }
 .news {
   min-width: 1000px;
@@ -157,28 +182,28 @@ export default {
 }
 .block-title {
   /* border: red solid 1px; */
-  margin:auto;
-  font-size: 32px; 
-  width: 250px; 
-  line-height: 48px; 
-  height: 48px; 
+  margin: auto;
+  font-size: 32px;
+  width: 250px;
+  line-height: 48px;
+  height: 48px;
   font-weight: 700;
 }
 .news-block-title {
-  width:250px;
-  font-size: 32px; 
-  display: inline-block; 
-  line-height: 48px; 
-  height: 48px; 
+  width: 250px;
+  font-size: 32px;
+  display: inline-block;
+  line-height: 48px;
+  height: 48px;
   font-weight: 700;
 }
 .seemore-btn {
   display: block;
   float: right;
-  width: 160px; 
-  height: 48px; 
-  line-height: 48px; 
-  font-size: 18px; 
+  width: 160px;
+  height: 48px;
+  line-height: 48px;
+  font-size: 18px;
   border: 0;
 }
 </style>
