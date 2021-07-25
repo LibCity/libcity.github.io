@@ -5,7 +5,7 @@
                 <p style="margin: 20px 0 30px 130px; font-size: 60px">Model</p>
                 <p style="margin: 0px 0 20px 130px; font-size: 30px">
                     LibTraffic supports 4 mainstream spatio-temporal data mining tasks <br> 
-                    and implements 18 commonly used intelligence algorithms.
+                    and implements 42 commonly used intelligence algorithms.
                 </p>
             </div>
         </div>
@@ -14,7 +14,7 @@
             <div>
                 <p class="title">Model List</p>
                 <a-divider style="margin: 10px 0; background-image: linear-gradient(to right,  rgb(103, 179, 241),  rgb(103, 179, 241), #f6f6f6, #f6f6f6);"></a-divider>
-                <p>Up to now, LibTraffic supports 4 mainstream spatio-temporal data mining tasks: Traffic Flow Prediction, Traffic Speed Prediction, On-Demand Service Prediction and Trajectory Next-Location Prediction. Besides, LibTraffic has already implemented 18 commonly used intelligence algorithms. We summary the models in the following tables: </p>
+                <p>Up to now, LibTraffic supports 4 mainstream spatio-temporal data mining tasks: Traffic Flow Prediction, Traffic Speed Prediction, On-Demand Service Prediction and Trajectory Next-Location Prediction. Besides, LibTraffic has already implemented 42 commonly used intelligence algorithms. We summary the models in the following tables: </p>
 
                 <!-- <a-divider style="font-size: 24px">Traffic Flow Prediction</a-divider>
                 <model-table :content="flow"></model-table>

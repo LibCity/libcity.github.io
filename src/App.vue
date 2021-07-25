@@ -161,10 +161,17 @@
         <a-menu-item
           key="10"
           style="width: 120px; font-size: 20px; textalign: center"
+        >
+          中文版
+        </a-menu-item>
+
+        <!-- <a-menu-item
+          key="10"
+          style="width: 120px; font-size: 20px; textalign: center"
           @click="changeLang"
         >
-          中文
-        </a-menu-item>
+          中文版
+        </a-menu-item> -->
       </a-menu>
 
       <a-menu
@@ -351,7 +358,6 @@
             /></a>
         </div>
         <div style="display:block;float: right; width:150px; height: 160px;">
-          <!-- frb 隐藏下面内容 -->
           <h3 style="color: rgb(27, 140, 233)">Useful Links</h3>
           <dl>
             <dt>
@@ -360,7 +366,7 @@
                 type="link"
               ><a
                   style="font-size: 16px;"
-                  href="https://www.bigscity.com/"
+                  href="https://www.bigcity.ai/"
                 >BIGSCity</a></a-button>
             </dt>
           </dl>
@@ -397,7 +403,6 @@
                 target="_blank"
               >Paper Library</a-button>
             </dt>
-            <!-- frb 隐藏下面这行内容 -->
             <dt>
               <a-button
                 class="footer-btn"
@@ -423,7 +428,6 @@
         <div style="display:inline-block; border: red solid 0px; width:160px; height: 160px; vertical-align: top;">
         </div>
         <div style="display:block;float: right; width:150px; height: 160px;">
-          <!-- frb 隐藏下面内容 -->
           <h3 style="color: rgb(27, 140, 233)">友情链接</h3>
           <dl>
             <dt>
@@ -432,7 +436,7 @@
                 type="link"
               ><a
                   style="font-size: 16px;"
-                  href="https://www.bigscity.com/"
+                  href="https://www.bigcity.ai/"
                 >BIGSCity</a></a-button>
             </dt>
           </dl>
@@ -469,7 +473,6 @@
                 target="_blank"
               >论文库</a-button>
             </dt>
-            <!-- frb 隐藏下面这行内容 -->
             <dt>
               <a-button
                 class="footer-btn"

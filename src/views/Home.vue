@@ -3,8 +3,8 @@
     <div class="header">
       <div style="padding-top: 20px; color: white;">
         <p style="width:200px;margin: 30px 0 20px 150px; font-size: 64px">LibTraffic</p>
-        <p style="width:900px;margin: 0px 0 20px 150px; font-size: 32px">
-          A unified and comprehensive framework for traffic prediction.
+        <p style="width:1000px;margin: 0px 0 20px 150px; font-size: 32px">
+          A unified, comprehensive and extensible library for traffic prediction.
         </p>
         <div class="btn-list">
           <a-button
