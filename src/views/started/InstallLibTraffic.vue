@@ -12,7 +12,7 @@
 
     <div class="content">
         <div>
-            <p class="title">System requirements</p>
+            <!-- <p class="title">System requirements</p>
             <a-divider style="margin: 10px 0; background-image: linear-gradient(to right,  rgb(103, 179, 241),  rgb(103, 179, 241), #f6f6f6, #f6f6f6);"></a-divider>
             <p>LibTraffic works with the following operating systems:</p>
             <ul>
@@ -21,7 +21,7 @@
                 <li>macOS X</li>
             </ul>
             <p>LibTraffic requires torch version 1.7.0 or later. If you want to use LibTraffic with GPU, please ensure that please ensure that CUDA or CUDAToolkit version is 9.2 or later. This requires NVIDIA driver version >= 396.26 (for Linux) or >= 397.44 (for Windows10).</p>
-            <br>
+            <br> -->
 
             <!-- <p class="title">Conda</p>
             <a-divider style="margin: 10px 0; background-image: linear-gradient(to right,  rgb(103, 179, 241),  rgb(103, 179, 241), #f6f6f6, #f6f6f6);"></a-divider>
@@ -48,19 +48,41 @@
             
             <p class="title">Source</p>
             <a-divider style="margin: 10px 0; background-image: linear-gradient(to right,  rgb(103, 179, 241),  rgb(103, 179, 241), #f6f6f6, #f6f6f6);"></a-divider>
-            <p>Download the source files from GitHub:</p>
+            <!-- <p>Download the source files from GitHub:</p> -->
+            <p>LibTraffic can only be installed from source code.</p>
+            <p>Please execute the following command to get the source code.</p>
             <div class="code">
                 <code data-lang="bash">
                     git clone https://github.com/LibTraffic/Bigscity-LibTraffic<br>
-                    <!-- cd Bigscity-LibTraffic -->
+                    cd Bigscity-LibTraffic
                 </code>
             </div>
-            <!-- <p>Run the following command to install:</p>
+            <p>After obtaining the source code, you can configure the environment.</p>
+            <br>
+
+            <p class="title">Requirements</p>
+            <a-divider style="margin: 10px 0; background-image: linear-gradient(to right,  rgb(103, 179, 241),  rgb(103, 179, 241), #f6f6f6, #f6f6f6);"></a-divider>
+            <p>Our code is based on Python version 3.7 and Pytorch version 1.7.1. You can click <a href="https://pytorch.org/get-started/previous-versions/#v171" target="_blank">here</a> to see how to install Pytorch. For example, if your cuda vision is 10.2, you can install Pytorch with the following command.</p>
+            <p>Pip:</p>
             <div class="code">
                 <code data-lang="bash">
-                    pip install ....
+                    pip install torch==1.7.1 torchvision==0.8.2 torchaudio==0.7.2
                 </code>
-            </div> -->
+            </div>
+            <p>Conda:</p>
+            <div class="code">
+                <code data-lang="bash">
+                    conda install pytorch==1.7.1 torchvision==0.8.2 torchaudio==0.7.2 cudatoolkit=10.2 -c pytorch
+                </code>
+            </div>
+            <p>After installing Pytorch, you can install all the dependencies of Libtraffic with the following command by pip.</p>
+            <div class="code">
+                <code data-lang="bash">
+                    pip install -r requirements.txt
+                </code>
+            </div>
+            <p>Now, you can use LibTraffic, more details please refer to the section <a href="https://libtraffic.github.io/Bigscity-LibTraffic-Website/#/quick_start">quick start</a>.</p>
+            <p>Note that the packages that most models depend on are recorded in <code style="color: #e83e8c; font-size: 90%">requirements.txt</code>. In addition to the above dependent packages, the implementation of model <code style="color: #e83e8c; font-size: 90%">STAGGCN</code> depends on third-party library <code style="color: #e83e8c; font-size: 90%">torch-geometric</code>. If you want to run this model, please refer to <a href="https://github.com/rusty1s/pytorch_geometric">this address</a> to install this package according to your specific environment and uncomment the fifth line of the file <code style="color: #e83e8c; font-size: 90%">libtraffic/model/traffic_speed_prediction/STAGGCN.py</code>.</p>
             <br>
         </div>
     </div>

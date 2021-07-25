@@ -18,11 +18,11 @@
         <br>
         <br>
 
-        <p class="task-name">Trajectory Next-Location Prediction</p>
+        <!-- <p class="task-name">Trajectory Next-Location Prediction</p>
         <a-divider style="margin: 10px 0; background-image: linear-gradient(to right,  rgb(103, 179, 241),  rgb(103, 179, 241), #f6f6f6, #f6f6f6);"></a-divider>
         <rank-table :rankdata="location"></rank-table>
         <br>
-        <br>
+        <br> -->
       </div>
     </div>
   </div>

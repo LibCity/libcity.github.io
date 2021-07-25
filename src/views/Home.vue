@@ -27,7 +27,7 @@
       <div style="min-height: 380px">
         <feat-card class="feature"></feat-card>
       </div>
-      <div class="latestnews">
+      <!-- <div class="latestnews">
         <div class="news-header"><span class="news-block-title">LATEST NEWS</span>
           <a-button
             class="seemore-btn"
@@ -43,7 +43,7 @@
           </a-button>
         </div>
         <new-card class="news"></new-card>
-      </div>
+      </div> -->
       <div class="toolkit">
         <div class="news-header">
           <span class="block-title">FRAMEWORK</span>

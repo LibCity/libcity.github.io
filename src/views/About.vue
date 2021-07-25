@@ -11,25 +11,26 @@
 
     <div class="content">
         <div>
-            <p class="title">Our Mission</p>
+            <!-- <p class="title">Our Mission</p>
             <a-divider style="margin: 10px 0; background-image: linear-gradient(to right,  rgb(103, 179, 241),  rgb(103, 179, 241), #f6f6f6, #f6f6f6);"></a-divider>
             <p>The mission of toolkit is to </p>
-            <br>
+            <br> -->
 
             <p class="title">Contact Us</p>
             <a-divider style="margin: 10px 0; background-image: linear-gradient(to right,  rgb(103, 179, 241),  rgb(103, 179, 241), #f6f6f6, #f6f6f6);"></a-divider>
-            <p>If you have any question about the library, please open an issue in the <a href="https://github.com/LibTraffic" target="_blank">GitHub repo</a>.</p>
-            <p>Or You may contact the developers through ?(@)?.com</p>
+            <p>The LibTraffic is mainly developed and maintained by Beihang Interest Group on SmartCity (<a href="https://www.bigcity.ai/" target="_blank">BIGSCITY</a>). The core developers of this library are <a href="https://github.com/aptx1231" target="_blank">@aptx1231</a> and <a href="https://github.com/WenMellors" target="_blank">@WenMellors</a>.</p>
+            <p>Several co-developers have also participated in the reproduction of the model, the list of contributions of which is presented in the <a href="https://github.com/LibTraffic/Bigscity-LibTraffic/blob/master/contribution_list.md" target="_blank">reproduction contribution list</a>.</p>
+            <p>If you encounter a bug or have any suggestion, please contact us by <a href="https://github.com/LibTraffic/Bigscity-LibTraffic/issues" target="_blank">raising an issue</a>.</p>
             <br>
             
-            <p class="title">Contributing</p>
+            <!-- <p class="title">Contributing</p>
             <a-divider style="margin: 10px 0; background-image: linear-gradient(to right,  rgb(103, 179, 241),  rgb(103, 179, 241), #f6f6f6, #f6f6f6);"></a-divider>
             <p></p>
-            <br>
+            <br> -->
 
             <p class="title">License</p>
             <a-divider style="margin: 10px 0; background-image: linear-gradient(to right,  rgb(103, 179, 241),  rgb(103, 179, 241), #f6f6f6, #f6f6f6);"></a-divider>
-            <p>Toolkit is released under the <a href="#" target="_blank">MIT License</a>. All the codes and data in this project should be used for academic purpose only.</p>
+            <p>LibTraffic uses <a href="https://github.com/LibTraffic/Bigscity-LibTraffic/blob/master/LICENSE.txt" target="_blank">Apache License 2.0</a>.</p>
             <br>
         </div>
     </div>

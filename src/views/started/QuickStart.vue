@@ -10,7 +10,7 @@
     </div>
 
     <div class="content">
-      <p class="title">Quick Start From Source</p>
+      <!-- <p class="title">Quick Start From Source</p>
       <a-divider style="margin: 10px 0; background-image: linear-gradient(to right,  rgb(103, 179, 241),  rgb(103, 179, 241), #f6f6f6, #f6f6f6);"></a-divider>
       <p>With the source code of LibTraffic, you can run the provided script for initial usage of our library:</p>
       <div class="code">
@@ -64,10 +64,54 @@
       <div class="code">
         <code data-lang="bash">python run_model.py --learning_rate 0.001</code>
       </div>
-      <p>All supporting parameters and more details can be found in <a href="https://bigscity-libtraffic-docs.readthedocs.io/en/latest/get_started/quick_start.html" target="_blank">Document</a>.</p>
+      <p>All supporting parameters and more details can be found in <a href="https://bigscity-libtraffic-docs.readthedocs.io/en/latest/get_started/quick_start.html" target="_blank">Document</a>.</p> -->
 
       <!-- <p class="title">Quick Start From API</p>
       <a-divider style="margin: 10px 0; background-image: linear-gradient(to right,  rgb(103, 179, 241),  rgb(103, 179, 241), #f6f6f6, #f6f6f6);"></a-divider> -->
+
+      <p class="title">Download One Dataset</p>
+      <a-divider style="margin: 10px 0; background-image: linear-gradient(to right,  rgb(103, 179, 241),  rgb(103, 179, 241), #f6f6f6, #f6f6f6);"></a-divider>
+      <p>The dataset used in LibTraffic is stored in a unified data storage format named <a href="https://bigscity-libtraffic-docs.readthedocs.io/en/latest/user_guide/data/atomic_files.html" target="_blank">atomic files</a>.</p>
+      <p>In order to directly use the <a href="https://bigscity-libtraffic-docs.readthedocs.io/en/latest/user_guide/data/raw_data.html" target="_blank">raw datasets</a> in LibTraffic, we have converted all these datasets into the format of atomic files, and provide the <a href="https://github.com/LibTraffic/Bigscity-LibTraffic-Datasets" target="_blank">conversion tools</a>.</p>
+      <p>You can simply download the datasets we have processed, the data link is <a href="https://pan.baidu.com/s/1qEfcXBO-QwZfiT0G3IYMpQ#list/path=%2F" target="_blank">BaiduDisk with code 1231</a> or <a href="https://drive.google.com/drive/folders/1g5v2Gq1tkOq8XO0HDCZ9nOTtRpB6-gPe?usp=sharing">Google Drive</a>.</p>
+      <p>Before run models in LibTraffic, please make sure you download at least one dataset and put it in directory <code style="color: #e83e8c; font-size: 90%">Bigscity-LibTraffic/raw_data/dataset_name/*</code>.</p>
+      <p>For example, if you download the METR_LA dataset, the directorys structure is as follows:</p>
+      <ul>
+        <li><code style="color: #e83e8c; font-size: 90%">Bigscity-LibTraffic/raw_data/METR_LA/METR_LA.geo</code></li>
+        <li><code style="color: #e83e8c; font-size: 90%">Bigscity-LibTraffic/raw_data/METR_LA/METR_LA.rel</code></li>
+        <li><code style="color: #e83e8c; font-size: 90%">Bigscity-LibTraffic/raw_data/METR_LA/METR_LA.dyna</code></li>
+        <li><code style="color: #e83e8c; font-size: 90%">Bigscity-LibTraffic/raw_data/METR_LA/config.json</code></li>
+      </ul>
+      <br>
+
+      <p class="title">Run Model Pipeline</p>
+      <a-divider style="margin: 10px 0; background-image: linear-gradient(to right,  rgb(103, 179, 241),  rgb(103, 179, 241), #f6f6f6, #f6f6f6);"></a-divider>
+      <p>The script <code style="color: #e83e8c; font-size: 90%">run_model.py</code> used for training and evaluating a single model is provided in the root directory of the framework, and a series of command line parameters are provided to allow users to adjust the running parameter configuration.</p>
+      <p>When run the <code style="color: #e83e8c; font-size: 90%">run_model.py</code>, you must specify the following three parameters, namely <b>task</b>, <b>dataset</b> and <b>model</b>. For example:</p>
+      <div class="code">
+        <code data-lang="bash">
+          python run_model.py --task traffic_state_pred --model GRU --dataset METR_LA
+        </code>
+      </div>
+      <p>This script will run the GRU model on the METR_LA dataset for traffic state prediction task under the default configuration.</p>
+      <p>Furthermore, the script supports the input of the following command line parameters to adjust the parameter settings of the pipeline.</p>
+      <p>Supporting parameters:</p>
+      <ul>
+        <li><code style="color: #e83e8c; font-size: 90%">task</code>: The name of the task to be performed, including <code style="color: #e83e8c; font-size: 90%">traffic_state_pred</code> and <code style="color: #e83e8c; font-size: 90%">traj_loc_pred</code>. Defaults to <code style="color: #e83e8c; font-size: 90%">None</code>.</li>
+        <li><code style="color: #e83e8c; font-size: 90%">model</code>: The name of the model to be performed. Defaults to <code style="color: #e83e8c; font-size: 90%">None</code>. (<a href="https://bigscity-libtraffic-docs.readthedocs.io/en/latest/user_guide/model.html" target="_href">supporting models</a>)</li>
+        <li><code style="color: #e83e8c; font-size: 90%">dataset</code>: The name of the model to be performed. Defaults to <code style="color: #e83e8c; font-size: 90%">None</code>. (<a href="https://bigscity-libtraffic-docs.readthedocs.io/en/latest/user_guide/data/raw_data.html" target="_href">supporting datasets</a>)</li>
+        <li><code style="color: #e83e8c; font-size: 90%">config_file</code>: The name of user-defined configuration file. Defaults to <code style="color: #e83e8c; font-size: 90%">None</code>. (<a href="https://bigscity-libtraffic-docs.readthedocs.io/en/latest/user_guide/config_settings.html" target="_href">see more</a>)</li>
+        <li><code style="color: #e83e8c; font-size: 90%">saved_model</code>：Whether to save the trained model. Defaults to <code style="color: #e83e8c; font-size: 90%">True</code>.</li>
+        <li><code style="color: #e83e8c; font-size: 90%">train</code>：If the model has been pre-trained, whether to retrain the model. Defaults to <code style="color: #e83e8c; font-size: 90%">True</code>.</li>
+        <li><code style="color: #e83e8c; font-size: 90%">batch_size</code>：The training and evaluation batch size.</li>
+        <li><code style="color: #e83e8c; font-size: 90%">train_rate</code>：The proportion of the training set to the total dataset. (The order of division is training set, validation set, test set)</li>
+        <li><code style="color: #e83e8c; font-size: 90%">eval_rate</code>：The proportion of the validation set.</li>
+        <li><code style="color: #e83e8c; font-size: 90%">learning_rate</code>：Learning_rate. The default learning rate of different models may be different, please refer to the corresponding configuration file for details.</li>
+        <li><code style="color: #e83e8c; font-size: 90%">max_epoch</code>：Maximum rounds of training. The default value varies with the model.</li>
+        <li><code style="color: #e83e8c; font-size: 90%">gpu</code>：Whether to use GPU. Defaults to <code style="color: #e83e8c; font-size: 90%">True</code>.</li>
+        <li><code style="color: #e83e8c; font-size: 90%">gpu_id</code>：The id of the GPU used. Defaults to <code style="color: #e83e8c; font-size: 90%">0</code>.</li>
+      </ul>
+      <br>
     </div>
     
   </div>

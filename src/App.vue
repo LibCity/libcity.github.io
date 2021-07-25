@@ -158,13 +158,6 @@
           >Github</a>
         </a-menu-item>
 
-        <a-menu-item
-          key="10"
-          style="width: 120px; font-size: 20px; textalign: center"
-        >
-          中文版
-        </a-menu-item>
-
         <!-- <a-menu-item
           key="10"
           style="width: 120px; font-size: 20px; textalign: center"

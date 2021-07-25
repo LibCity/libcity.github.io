@@ -29,8 +29,8 @@
       <a-col :span="8">
         <div class="pcard">
             <a-card title="Paper" :bordered="true" style="border-radius: 5px">
-                <p style="margin-bottom: 0px; height: 120px">LibTraffic offers more than 200 research papers on spatio-temporal data mining from top conferences or journals and supports conditional filtering and searching.</p>
-                <a-button style="padding-left: 180px; margin-top: 5px; font-size: 15px;" type="link" @click="toPaper">See More >></a-button>
+                <p style="margin-bottom: 0px; height: 120px">LibTraffic offers more than 300 research papers on spatio-temporal data mining from top conferences or journals.</p>
+                <a-button style="padding-left: 180px; margin-top: 5px; font-size: 15px;" type="link"><a href="https://github.com/LibTraffic/Bigscity-LibTraffic-Paper" target="_blank">See More >></a></a-button>
             </a-card>
         </div>
       </a-col>
