@@ -1,9 +1,14 @@
 <template>
-  <div>
-    <p> Below is the demonstration video of LibTraffic. </p>
-    <p> From this video, you can see the whole pipeline from cloning code, environment configuration, downloading data, running model, completing training and model evaluation.</p>
-    <video-player class="video-player vjs-custom-skin" ref="videoPlayer" :playsline="false" :options="playerOptions"></video-player>
-  </div>
+    <div class="content">
+        <div>
+            </br>
+            <p class="title">Video</p>
+            <a-divider style="margin: 10px 0; background-image: linear-gradient(to right,  rgb(103, 179, 241),  rgb(103, 179, 241), #f6f6f6, #f6f6f6);"></a-divider>
+            <p> Below is the demonstration video of LibTraffic. </p>
+            <p> From this video, you can see the whole pipeline from cloning code, environment configuration, downloading data, running model, completing training and model evaluation.</p>
+        </div>
+        <video-player class="video-player vjs-custom-skin" ref="videoPlayer" :playsline="false" :options="playerOptions"></video-player>
+    </div>
 </template>
 
 <script>
@@ -48,4 +53,33 @@ export default {
   /* .video-player {
     width: 50%;
   } */
+
+  .container {
+  margin: auto;
+  width: 100%;
+  height: auto;
+  /* border: red solid 1px; */
+}
+.header {
+  width: 100%;
+  height: 250px;
+  background:  rgb(27, 140, 233) linear-gradient(to right,  rgb(27, 140, 233), rgb(11, 247, 188));
+  /* border: blue solid 1px; */
+}
+.content {
+    width: 80%;
+    height: auto;
+    margin: 50px auto 0 auto;
+    font-size: 20px;
+    line-height: 36px;
+    color: black;
+    font-family: 'Open Sans', 'Microsoft YaHei', Arial, Helvetica, sans-serif;
+    /* border: blue solid 3px; */
+}
+.title {
+    font-size: 32px;
+    font-weight: 700;
+    font-family: 'Open Sans', 'Microsoft YaHei', Arial, Helvetica, sans-serif;
+    margin-bottom: 0;
+}
 </style>
