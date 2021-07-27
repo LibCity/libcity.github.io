@@ -8,6 +8,14 @@ import Antd from "ant-design-vue";
 import "ant-design-vue/dist/antd.css";
 import api from "./api/index.js";
 import path from "./api/path.js";
+import VideoPlayer from 'vue-video-player'
+require('video.js/dist/video-js.css')
+require('vue-video-player/src/custom-theme.css')
+//引入 hls,视频直播(m3u8)必须引入的
+import 'videojs-contrib-hls'
+//播放rtmp视频
+import 'videojs-flash'
+Vue.use(VideoPlayer)
 
 Vue.prototype.$echarts = echarts;
 Vue.config.productionTip = false;

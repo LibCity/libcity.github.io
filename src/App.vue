@@ -130,6 +130,14 @@
         <a-menu-item
           key="8"
           style="width: 80px; font-size: 20px; textalign: center"
+          @click="menuItemClick('Video')"
+        >
+          Video
+        </a-menu-item>
+
+        <a-menu-item
+          key="9"
+          style="width: 80px; font-size: 20px; textalign: center"
           @click="menuItemClick('About')"
         >
           About
@@ -144,12 +152,12 @@
         </a-menu-item> -->
 
         <a-menu-item
-          key="9"
+          key="10"
           style="
             width: 95px;
             font-size: 20px;
             textalign: center;
-            margin-left: 100px;
+            margin-left: 300px;
           "
         >
           <a
