@@ -31,7 +31,7 @@
 
         <a-menu-item
           key="2"
-          style="width: 135px; font-size: 20px; textalign: center"
+          style="width: 140px; font-size: 20px; textalign: center"
         >
           <a-dropdown>
             <span class="ant-dropdown-link">
@@ -60,7 +60,7 @@
 
         <a-menu-item
           key="3"
-          style="width: 55px; font-size: 20px; textalign: center"
+          style="width: 60px; font-size: 20px; textalign: center"
           @click="menuItemClick('Task')"
         >
           Task
@@ -68,7 +68,7 @@
 
         <a-menu-item
           key="4"
-          style="width: 80px; font-size: 20px; textalign: center"
+          style="width: 85px; font-size: 20px; textalign: center"
         >
           <a-dropdown>
             <span class="ant-dropdown-link">
@@ -103,7 +103,7 @@
 
         <a-menu-item
           key="5"
-          style="width: 110px; font-size: 20px; textalign: center; margin-left: 10px;"
+          style="width: 115px; font-size: 20px; textalign: center; margin-left: 10px;"
         >
           <a
             href="https://bigscity-libtraffic-docs.readthedocs.io/en/latest/"
@@ -121,7 +121,7 @@
 
         <a-menu-item
           key="7"
-          style="width: 90px; font-size: 20px; textalign: center"
+          style="width: 95px; font-size: 20px; textalign: center"
           @click="menuItemClick('Ranking')"
         >
           Ranking
@@ -157,13 +157,13 @@
             width: 95px;
             font-size: 20px;
             textalign: center;
-            margin-left: 300px;
+            margin-left: 220px;
           "
         >
           <a
             href="https://github.com/LibTraffic"
             target="_blank"
-          >Github</a>
+          >GitHub</a>
         </a-menu-item>
 
         <!-- <a-menu-item

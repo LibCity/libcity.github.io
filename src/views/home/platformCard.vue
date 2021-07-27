@@ -44,9 +44,9 @@
       </a-col>
       <a-col :span="8">
         <div class="pcard">
-            <a-card title="Visual" :bordered="true" style="border-radius: 5px">
-                <p style="margin-bottom: 0px; height: 120px">LibTraffic supports visual parameter configuration and shows the training process and prediction preformance of pretrained models in chart.</p>
-                <a-button style="padding-left: 180px; margin-top: 5px; font-size: 15px;" type="link" @click="toChart">See More >></a-button>
+            <a-card title="Video" :bordered="true" style="border-radius: 5px">
+                <p style="margin-bottom: 0px; height: 120px">This website provides a demonstration video for researchers to know the basic usage of LibTraffic quickly.</p>
+                <a-button style="padding-left: 180px; margin-top: 5px; font-size: 15px;" type="link" @click="toVideo">See More >></a-button>
             </a-card>
         </div>
       </a-col>
@@ -79,6 +79,11 @@ export default {
     toChart() {
         this.$router.push({
             name: "Chart",
+        });
+    },
+    toVideo() {
+        this.$router.push({
+            name: "Video",
         });
     }
   }
