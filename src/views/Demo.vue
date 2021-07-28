@@ -15,7 +15,7 @@
 
 <script>
 export default {
-  name: 'Video2',
+  name: 'Demo',
   data () {
     return {
       playerOptions: {

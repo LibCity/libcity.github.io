@@ -130,7 +130,7 @@
         <a-menu-item
           key="8"
           style="width: 75px; font-size: 20px; textalign: center"
-          @click="menuItemClick('Video')"
+          @click="menuItemClick('Demo')"
         >
           Demo
         </a-menu-item>
