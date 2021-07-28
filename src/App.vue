@@ -31,7 +31,7 @@
 
         <a-menu-item
           key="2"
-          style="width: 140px; font-size: 20px; textalign: center"
+          style="width: 135px; font-size: 20px; textalign: center"
         >
           <a-dropdown>
             <span class="ant-dropdown-link">
@@ -60,7 +60,7 @@
 
         <a-menu-item
           key="3"
-          style="width: 60px; font-size: 20px; textalign: center"
+          style="width: 55px; font-size: 20px; textalign: center"
           @click="menuItemClick('Task')"
         >
           Task
@@ -68,7 +68,7 @@
 
         <a-menu-item
           key="4"
-          style="width: 85px; font-size: 20px; textalign: center"
+          style="width: 80px; font-size: 20px; textalign: center"
         >
           <a-dropdown>
             <span class="ant-dropdown-link">
@@ -103,7 +103,7 @@
 
         <a-menu-item
           key="5"
-          style="width: 115px; font-size: 20px; textalign: center; margin-left: 10px;"
+          style="width: 110px; font-size: 20px; textalign: center; margin-left: 10px;"
         >
           <a
             href="https://bigscity-libtraffic-docs.readthedocs.io/en/latest/"
@@ -121,7 +121,7 @@
 
         <a-menu-item
           key="7"
-          style="width: 95px; font-size: 20px; textalign: center"
+          style="width: 90px; font-size: 20px; textalign: center"
           @click="menuItemClick('Ranking')"
         >
           Ranking
@@ -129,15 +129,15 @@
 
         <a-menu-item
           key="8"
-          style="width: 80px; font-size: 20px; textalign: center"
+          style="width: 75px; font-size: 20px; textalign: center"
           @click="menuItemClick('Video')"
         >
-          Video
+          Demo
         </a-menu-item>
 
         <a-menu-item
           key="9"
-          style="width: 80px; font-size: 20px; textalign: center"
+          style="width: 75px; font-size: 20px; textalign: center"
           @click="menuItemClick('About')"
         >
           About
@@ -157,7 +157,6 @@
             width: 95px;
             font-size: 20px;
             textalign: center;
-            margin-left: 220px;
           "
         >
           <a
@@ -393,7 +392,7 @@
                   style="font-size: 16px;"
                   href="https://github.com/LibTraffic"
                   target="_blank"
-                >Github</a></a-button>
+                >GitHub</a></a-button>
             </dt>
             <dt>
               <a-button

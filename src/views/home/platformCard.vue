@@ -44,7 +44,7 @@
       </a-col>
       <a-col :span="8">
         <div class="pcard">
-            <a-card title="Video" :bordered="true" style="border-radius: 5px">
+            <a-card title="Demo" :bordered="true" style="border-radius: 5px">
                 <p style="margin-bottom: 0px; height: 120px">This website provides a demonstration video for researchers to know the basic usage of LibTraffic quickly.</p>
                 <a-button style="padding-left: 180px; margin-top: 5px; font-size: 15px;" type="link" @click="toVideo">See More >></a-button>
             </a-card>
