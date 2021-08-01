@@ -53,7 +53,7 @@
             <p>Please execute the following command to get the source code.</p>
             <div class="code">
                 <code data-lang="bash">
-                    git clone https://github.com/LibTraffic/Bigscity-LibTraffic<br>
+                    git clone https://github.com/LibTraffic/Bigscity-LibTraffic.git<br>
                     cd Bigscity-LibTraffic
                 </code>
             </div>
