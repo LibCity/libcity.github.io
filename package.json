@@ -12,9 +12,11 @@
     "axios": "^0.21.1",
     "core-js": "^3.6.5",
     "echarts": "^4.9.0",
+    "file-loader": "^6.2.0",
     "less": "^4.1.0",
     "less-loader": "^7.3.0",
     "vue": "^2.6.11",
+    "vue-pdf": "^4.3.0",
     "vue-router": "^3.2.0",
     "vue-video-player": "^5.0.2",
     "vuex": "^3.4.0"

@@ -16,6 +16,11 @@ const routes = [
   //   component: () => import("../views/Paper.vue")
   // },
   {
+    path: "/LibTraffic-An-Open-Library-For-Traffic-Prediction",
+    name: "LibTrafficPaper",
+    component: () => import("../views/LibTrafficPaper.vue")
+  },
+  {
     path: "/demo",
     name: "Demo",
     component: () => import("../views/Demo.vue")

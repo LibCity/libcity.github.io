@@ -20,6 +20,12 @@
             shape="round"
             @click="toQuickStart"
           >Quick Start</a-button>
+          <a-button
+            class="btn"
+            type="primary"
+            shape="round"
+            @click="toLibTrafficPaper"
+          >Paper</a-button>
         </div>
       </div>
     </div>
@@ -98,7 +104,12 @@ export default {
     toQuickStart() {
       this.$router.push({
         name: "QuickStart",
-      })
+      });
+    },
+    toLibTrafficPaper() {
+      this.$router.push({
+        name: "LibTrafficPaper",
+      });
     }
   }
 };
