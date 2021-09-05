@@ -9,7 +9,7 @@
                         alt="example"
                         src="../../assets/img/smart_city.jpg"
                         />
-                        <a-card-meta title="LibTraffic v0.1.0 Has Released!">
+                        <a-card-meta title="LibCity v0.1.0 Has Released!">
                         <template slot="description">
                             Today we are announcing ...
                         </template>

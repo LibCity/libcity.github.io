@@ -4,7 +4,7 @@
       <div style="padding-top: 20px;color: white;">
         <p style="margin: 20px 0 30px 130px; font-size: 60px">Task</p>
         <p style="margin: 0px 0 20px 130px; font-size: 30px">
-          LibTraffic has implemented a set of standard tracks for each supported <br>
+          LibCity has implemented a set of standard tracks for each supported <br>
           spatio-temporal data mining task to improve comparability of models.
         </p>
       </div>
@@ -13,7 +13,7 @@
     <div class="content">
       <p class="title">Standard Track</p>
       <a-divider style="margin: 10px 0; background-image: linear-gradient(to right,  rgb(103, 179, 241),  rgb(103, 179, 241), #f6f6f6, #f6f6f6);"></a-divider>
-      <p>LibTraffic has implemented a set of standard tracks for each task. On the standard track, the original data set, standard data module (Data module), and standard evaluation module (Evaluator module) provided by LibTraffic are used to constrain different models to use the same data input and evaluation indicators to improve the comparability of evaluation results.</p>
+      <p>LibCity has implemented a set of standard tracks for each task. On the standard track, the original data set, standard data module (Data module), and standard evaluation module (Evaluator module) provided by LibCity are used to constrain different models to use the same data input and evaluation indicators to improve the comparability of evaluation results.</p>
       <p>The standard data input format and evaluation input format for different tasks are explained below:</p>
       <br>
       <p class="sectitle">Traffic State Prediction</p>

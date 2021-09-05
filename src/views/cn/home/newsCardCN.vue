@@ -5,9 +5,9 @@
                 <div>
                     <a-card class="newscard">
                         <img slot="cover" alt="example" src="../../../assets/img/smart_city.jpg"/>
-                        <a-card-meta title="LibTraffic 0.1.0版本发布！">
+                        <a-card-meta title="LibCity 0.1.0版本发布！">
                         <template slot="description">
-                            今天，我们正式发布了LibTraffic 0.1.0版本。
+                            今天，我们正式发布了LibCity 0.1.0版本。
                         </template>
                         </a-card-meta>
                     </a-card>

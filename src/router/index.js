@@ -16,9 +16,9 @@ const routes = [
   //   component: () => import("../views/Paper.vue")
   // },
   {
-    path: "/LibTraffic-An-Open-Library-For-Traffic-Prediction",
-    name: "LibTrafficPaper",
-    component: () => import("../views/LibTrafficPaper.vue")
+    path: "/LibCity-An-Open-Library-For-Traffic-Prediction",
+    name: "LibCityPaper",
+    component: () => import("../views/LibCityPaper.vue")
   },
   {
     path: "/demo",
@@ -31,9 +31,9 @@ const routes = [
     component: () => import("../views/Ranking.vue")
   },
   {
-    path: "/install_libtraffic",
-    name: "InstallLibTraffic",
-    component: () => import("../views/started/InstallLibTraffic.vue")
+    path: "/install_libcity",
+    name: "InstallLibCity",
+    component: () => import("../views/started/InstallLibCity.vue")
   },
   {
     path: "/quick_start",
@@ -121,9 +121,9 @@ const routes = [
     component: () => import("../views/news/News.vue")
   },
   {
-    path: "/news/LibTraffic-v0.1.0-has-released",
-    name: 'LibTraffic-V0.1.0-Has-Released',
-    component: () => import("../views/news/content/LibTraffic-V0.1.0-Has-Released.vue")
+    path: "/news/LibCity-v0.1.0-has-released",
+    name: 'LibCity-V0.1.0-Has-Released',
+    component: () => import("../views/news/content/LibCity-V0.1.0-Has-Released.vue")
   },
 
 
@@ -133,9 +133,9 @@ const routes = [
     component: () => import("../views/cn/HomeCN.vue")
   },
   {
-    path: "/cn/install_libtraffic",
-    name: "InstallLibTrafficCN",
-    component: () => import("../views/cn/started/InstallLibTrafficCN.vue")
+    path: "/cn/install_libcity",
+    name: "InstallLibCityCN",
+    component: () => import("../views/cn/started/InstallLibCityCN.vue")
   },
   {
     path: "/cn/quick_start",
@@ -223,9 +223,9 @@ const routes = [
     component: () => import("../views/cn/news/NewsCN.vue")
   },
   {
-    path: "/cn/news/LibTraffic-v0.1.0-has-released",
-    name: 'LibTraffic-V0.1.0-Has-ReleasedCN',
-    component: () => import("../views/cn/news/content/LibTraffic-V0.1.0-Has-ReleasedCN.vue")
+    path: "/cn/news/LibCity-v0.1.0-has-released",
+    name: 'LibCity-V0.1.0-Has-ReleasedCN',
+    component: () => import("../views/cn/news/content/LibCity-V0.1.0-Has-ReleasedCN.vue")
   },
 ];
 

@@ -4,7 +4,7 @@
       <div style="padding-top: 20px;color: white;">
         <p style="margin: 20px 0 30px 130px; font-size: 60px">快速上手</p>
         <p style="margin: 0px 0 20px 130px; font-size: 30px">
-          该页面会帮助你快速了解LibTraffic的基本使用.
+          该页面会帮助你快速了解LibCity的基本使用.
         </p>
       </div>
     </div>
@@ -12,7 +12,7 @@
     <div class="content">
       <p class="title">从源文件快速上手</p>
       <a-divider style="margin: 10px 0; background-image: linear-gradient(to right,  rgb(103, 179, 241),  rgb(103, 179, 241), #f6f6f6, #f6f6f6);"></a-divider>
-      <p style="text-indent: 2em">如果你从GitHub下载了LibTraffic的源码，你可以使用提供的脚本进行简单的使用：</p>
+      <p style="text-indent: 2em">如果你从GitHub下载了LibCity的源码，你可以使用提供的脚本进行简单的使用：</p>
       <div class="code">
         <code data-lang="bash">python run_model.py</code>
       </div>
@@ -24,12 +24,12 @@
       <p style="text-indent: 2em">您会得到一些类似下面的输出：</p>
       <div class="code" style="font-size: 16px">
         <code data-lang="bash">
-          - INFO - Log directory: ./libtraffic/log<br>
+          - INFO - Log directory: ./libcity/log<br>
           - INFO - Begin pipeline, task=traffic_state_pred, model_name=DCRNN, dataset_name=METR_LA<br>
           - INFO - Loaded file METR_LA.geo, num_nodes=207<br>
           - INFO - Loaded file METR_LA.rel, shape=(207, 207)<br>
           - INFO - Start Calculate the weight by Gauss kernel!<br>
-          - INFO - Loading ./libtraffic/cache/dataset_cache/point_based_METR_LA_12_12_0.7_0.1_standard_64_True_False_True.npz<br>
+          - INFO - Loading ./libcity/cache/dataset_cache/point_based_METR_LA_12_12_0.7_0.1_standard_64_True_False_True.npz<br>
           - INFO - train	x: (23974, 12, 207, 2)y: (23974, 12, 207, 2)<br>
           - INFO - eval	x: (3425, 12, 207, 2)y: (3425, 12, 207, 2)<br>
           - INFO - test	x: (6850, 12, 207, 2)y: (6850, 12, 207, 2)<br>
@@ -47,13 +47,13 @@
           - INFO - evaluating now!<br>
           - INFO - Epoch [0/100] (375) train_mae: 3.3774, val_mae: 4.3733, lr: 0.010000, 403.5s<br>
           - INFO - Saved model at 0<br>
-          - INFO - Val loss decrease from inf to 4.3733, saving to ./libtraffic/cache/model_cache/DCRNN_METR_LA_epoch0.tar<br>
+          - INFO - Val loss decrease from inf to 4.3733, saving to ./libcity/cache/model_cache/DCRNN_METR_LA_epoch0.tar<br>
           ...<br>
           - INFO - epoch complete!<br>
           - INFO - evaluating now!<br>
           - INFO - Epoch [99/100] (37500) train_mae: 2.8075, val_mae: 2.8501, lr: 0.000001, 401.7s<br>
           - INFO - Loaded model at 66<br>
-          - INFO - Saved model at ./libtraffic/cache/model_cache/DCRNN_METR_LA.m<br>
+          - INFO - Saved model at ./libcity/cache/model_cache/DCRNN_METR_LA.m<br>
           - INFO - Start evaluating ...<br>
           - INFO - Evaluate result is ...<br>
         </code>
@@ -63,7 +63,7 @@
       <div class="code">
         <code data-lang="bash">python run_model.py --learning_rate 0.001</code>
       </div>
-      <p>所有支持的参数和更多的细节可见<a target="_blank" href="https://bigscity-libtraffic-docs.readthedocs.io/en/latest/get_started/quick_start.html">文档</a>。</p>
+      <p>所有支持的参数和更多的细节可见<a target="_blank" href="https://bigscity-libcity-docs.readthedocs.io/en/latest/get_started/quick_start.html">文档</a>。</p>
       <br>
       <!-- frb 隐藏下面内容 -->
       <!-- <p class="title">从API快速上手</p> -->

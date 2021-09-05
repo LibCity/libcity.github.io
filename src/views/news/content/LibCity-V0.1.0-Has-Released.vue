@@ -3,7 +3,7 @@
     <div class="header">
       <div style="padding-top: 20px;color: white;">
         <p style="margin: 20px 0 0 130px; font-size: 18px">March 1, 2021</p>
-        <p style="margin: 0 0 10px 130px; font-size: 60px">LibTraffic v0.1.0 Has Released</p>
+        <p style="margin: 0 0 10px 130px; font-size: 60px">LibCity v0.1.0 Has Released</p>
       </div>
     </div>
 

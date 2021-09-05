@@ -2,7 +2,7 @@
   <div class="container">
     <div class="header">
       <div style="padding-top: 20px; color: white;">
-        <p style="width:200px;margin: 30px 0 20px 150px; font-size: 64px">LibTraffic</p>
+        <p style="width:200px;margin: 30px 0 20px 150px; font-size: 64px">LibCity</p>
         <p style="width:900px;margin: 0px 0 20px 150px; font-size: 32px">
           一个统一、全面的交通预测框架。
         </p>
@@ -63,7 +63,7 @@ export default {
     },
     toInstallToolkit() {
         this.$router.push({
-            name: "InstallLibTrafficCN",
+            name: "InstallLibCityCN",
         });
     },
     toQuickStart() {

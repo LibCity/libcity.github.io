@@ -4,7 +4,7 @@
             <div style="padding-top: 20px;color: white;">
                 <p style="margin: 20px 0 30px 130px; font-size: 60px">Evaluation</p>
                 <p style="margin: 0px 0 20px 130px; font-size: 30px">
-                    LibTraffic incorporates extensive and standard evaluation metrics for <br> 
+                    LibCity incorporates extensive and standard evaluation metrics for <br> 
                     testing and comparing intelligence algorithms of spatio-temporal data mining.
                 </p>
             </div>

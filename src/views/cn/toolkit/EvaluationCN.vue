@@ -4,7 +4,7 @@
             <div style="padding-top: 20px;color: white;">
                 <p style="margin: 20px 0 30px 130px; font-size: 60px">测评</p>
                 <p style="margin: 0px 0 20px 130px; font-size: 30px">
-                    LibTraffic包含了广泛的标准化测评方法，用于测试和比较时空数据挖掘算法。
+                    LibCity包含了广泛的标准化测评方法，用于测试和比较时空数据挖掘算法。
                 </p>
             </div>
         </div>
@@ -14,7 +14,7 @@
                 <p class="title">测评指标</p>
                 <a-divider style="margin: 10px 0; background-image: linear-gradient(to right,  rgb(103, 179, 241),  rgb(103, 179, 241), #f6f6f6, #f6f6f6);"></a-divider>
 
-                <p style="text-indent: 2em">考虑到不同的任务有不同的输出格式，LibTraffic为各类任务实现了不同的测评器，并支持一系列主流的测评指标。不同任务支持的指标如下表所示。</p>
+                <p style="text-indent: 2em">考虑到不同的任务有不同的输出格式，LibCity为各类任务实现了不同的测评器，并支持一系列主流的测评指标。不同任务支持的指标如下表所示。</p>
 
                 <table style="width: 900px">
                     <thead style="font-size: 16px">

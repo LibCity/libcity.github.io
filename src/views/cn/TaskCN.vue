@@ -4,7 +4,7 @@
       <div style="padding-top: 20px;color: white;">
         <p style="margin: 20px 0 30px 130px; font-size: 60px">任务</p>
         <p style="margin: 0px 0 20px 130px; font-size: 30px">
-          LibTraffic为每个支持的时空数据挖掘任务<br>
+          LibCity为每个支持的时空数据挖掘任务<br>
           实现了一套标准赛道，提高不同模型的性能可比性。
         </p>
       </div>
@@ -13,7 +13,7 @@
     <div class="content">
       <p class="title">标准赛道</p>
       <a-divider style="margin: 10px 0; background-image: linear-gradient(to right,  rgb(103, 179, 241),  rgb(103, 179, 241), #f6f6f6, #f6f6f6);"></a-divider>
-      <p style="text-indent: 2em">LibTraffic为每个任务实现了一套标准赛道。标准赛道上，使用项目提供的原始数据集、标准数据模块（Data 模块）、标准测评模块（Evaluator 模块），从而约束不同模型使用相同的数据输入与测评指标，以提高测评结果的可比性。</p>
+      <p style="text-indent: 2em">LibCity为每个任务实现了一套标准赛道。标准赛道上，使用项目提供的原始数据集、标准数据模块（Data 模块）、标准测评模块（Evaluator 模块），从而约束不同模型使用相同的数据输入与测评指标，以提高测评结果的可比性。</p>
       <p style="text-indent: 2em">下面对不同任务的标准数据输入格式与测评输入格式进行说明：</p>
       <br>
       <p class="sectitle">交通状态预测</p>

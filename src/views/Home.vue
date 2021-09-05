@@ -2,7 +2,7 @@
   <div class="container">
     <div class="header">
       <div style="padding-top: 20px; color: white;">
-        <p style="width:200px;margin: 30px 0 20px 150px; font-size: 64px">LibTraffic</p>
+        <p style="width:200px;margin: 30px 0 20px 150px; font-size: 64px">LibCity</p>
         <p style="width:1000px;margin: 0px 0 20px 150px; font-size: 32px">
           A unified, comprehensive and extensible library for traffic prediction.
         </p>
@@ -24,7 +24,7 @@
             class="btn"
             type="primary"
             shape="round"
-            @click="toLibTrafficPaper"
+            @click="toLibCityPaper"
           >Paper</a-button>
         </div>
       </div>
@@ -98,7 +98,7 @@ export default {
     },
     toInstallToolkit() {
       this.$router.push({
-        name: "InstallLibTraffic",
+        name: "InstallLibCity",
       });
     },
     toQuickStart() {
@@ -106,9 +106,9 @@ export default {
         name: "QuickStart",
       });
     },
-    toLibTrafficPaper() {
+    toLibCityPaper() {
       this.$router.push({
-        name: "LibTrafficPaper",
+        name: "LibCityPaper",
       });
     }
   }

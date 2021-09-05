@@ -3,20 +3,20 @@
     <div class="header">
       <div style="padding-top: 20px;color: white;">
         <p style="margin: 20px 0 0 130px; font-size: 18px">Featured Post</p>
-        <p style="margin: 0 0 10px 130px; font-size: 60px">LibTraffic v0.1.0 Has Released</p>
+        <p style="margin: 0 0 10px 130px; font-size: 60px">LibCity v0.1.0 Has Released</p>
         <p style="margin: 0 0 20px 130px; font-size: 22px">
           Today, we are announcing ...
         </p>
-        <a-button class="readmore-btn" value="large" style="margin: 5px 0 0 130px; background-color: white;" @click="toNamedNews('LibTraffic-V0.1.0-Has-Released')">
+        <a-button class="readmore-btn" value="large" style="margin: 5px 0 0 130px; background-color: white;" @click="toNamedNews('LibCity-V0.1.0-Has-Released')">
           Read More<a-icon type="right" style="color: red;"/>
         </a-button>
       </div>
     </div>
 
     <div class="content">
-        <div id="libtraffic-v0.1.0-has-released">
+        <div id="libcity-v0.1.0-has-released">
             <p class="news-date">March 1, 2021</p>
-            <h2 class="news-title" @click="toNamedNews('LibTraffic-V0.1.0-Has-Released')" style="cursor:pointer">LibTraffic v0.1.0 has released</h2>
+            <h2 class="news-title" @click="toNamedNews('LibCity-V0.1.0-Has-Released')" style="cursor:pointer">LibCity v0.1.0 has released</h2>
             <p class="news-summary">Today, we are announcing ...</p>
         </div>
         <a-divider style="background-image: linear-gradient(to right,  rgb(103, 179, 241),  rgb(103, 179, 241), #f6f6f6, #f6f6f6);"/>

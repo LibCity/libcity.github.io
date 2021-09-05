@@ -1,6 +1,6 @@
 <template>
     <div>
-        <p class="title">Our <a :href="`${path}LibTraffic_An_Open_Library_for_Traffic_Prediction.pdf`" download="LibTraffic_An_Open_Library_for_Traffic_Prediction.pdf">paper</a> is accepted by ACM SIGSPATIAL 2021!</p>
+        <p class="title">Our <a :href="`${path}LibCity_An_Open_Library_for_Traffic_Prediction.pdf`" download="LibCity_An_Open_Library_for_Traffic_Prediction.pdf">paper</a> is accepted by ACM SIGSPATIAL 2021!</p>
         <pdf
         ref="pdf"
         v-for="i in numPages" 
@@ -18,7 +18,7 @@
         },
         data(){
             return {
-                url: require("../assets/docs/LibTraffic_An_Open_Library_for_Traffic_Prediction.pdf"),
+                url: require("../assets/docs/LibCity_An_Open_Library_for_Traffic_Prediction.pdf"),
                 numPages: null,
                 path:process.env.BASE_URL,
             }

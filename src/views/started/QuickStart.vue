@@ -4,7 +4,7 @@
       <div style="padding-top: 20px;color: white;">
         <p style="margin: 20px 0 30px 130px; font-size: 60px">Quick Start</p>
         <p style="margin: 0px 0 20px 130px; font-size: 30px">
-          This page will help you quickly know the basic usages of LibTraffic.
+          This page will help you quickly know the basic usages of LibCity.
         </p>
       </div>
     </div>
@@ -12,7 +12,7 @@
     <div class="content">
       <!-- <p class="title">Quick Start From Source</p>
       <a-divider style="margin: 10px 0; background-image: linear-gradient(to right,  rgb(103, 179, 241),  rgb(103, 179, 241), #f6f6f6, #f6f6f6);"></a-divider>
-      <p>With the source code of LibTraffic, you can run the provided script for initial usage of our library:</p>
+      <p>With the source code of LibCity, you can run the provided script for initial usage of our library:</p>
       <div class="code">
         <code data-lang="bash">python run_model.py</code>
       </div>
@@ -24,12 +24,12 @@
       <p>You will obtain some output like:</p>
       <div class="code" style="font-size: 16px">
         <code data-lang="bash">
-          - INFO - Log directory: ./libtraffic/log<br>
+          - INFO - Log directory: ./libcity/log<br>
           - INFO - Begin pipeline, task=traffic_state_pred, model_name=DCRNN, dataset_name=METR_LA<br>
           - INFO - Loaded file METR_LA.geo, num_nodes=207<br>
           - INFO - Loaded file METR_LA.rel, shape=(207, 207)<br>
           - INFO - Start Calculate the weight by Gauss kernel!<br>
-          - INFO - Loading ./libtraffic/cache/dataset_cache/point_based_METR_LA_12_12_0.7_0.1_standard_64_True_False_True.npz<br>
+          - INFO - Loading ./libcity/cache/dataset_cache/point_based_METR_LA_12_12_0.7_0.1_standard_64_True_False_True.npz<br>
           - INFO - train	x: (23974, 12, 207, 2)y: (23974, 12, 207, 2)<br>
           - INFO - eval	x: (3425, 12, 207, 2)y: (3425, 12, 207, 2)<br>
           - INFO - test	x: (6850, 12, 207, 2)y: (6850, 12, 207, 2)<br>
@@ -47,13 +47,13 @@
           - INFO - evaluating now!<br>
           - INFO - Epoch [0/100] (375) train_mae: 3.3774, val_mae: 4.3733, lr: 0.010000, 403.5s<br>
           - INFO - Saved model at 0<br>
-          - INFO - Val loss decrease from inf to 4.3733, saving to ./libtraffic/cache/model_cache/DCRNN_METR_LA_epoch0.tar<br>
+          - INFO - Val loss decrease from inf to 4.3733, saving to ./libcity/cache/model_cache/DCRNN_METR_LA_epoch0.tar<br>
           ...<br>
           - INFO - epoch complete!<br>
           - INFO - evaluating now!<br>
           - INFO - Epoch [99/100] (37500) train_mae: 2.8075, val_mae: 2.8501, lr: 0.000001, 401.7s<br>
           - INFO - Loaded model at 66<br>
-          - INFO - Saved model at ./libtraffic/cache/model_cache/DCRNN_METR_LA.m<br>
+          - INFO - Saved model at ./libcity/cache/model_cache/DCRNN_METR_LA.m<br>
           - INFO - Start evaluating ...<br>
           - INFO - Evaluate result is ...<br>
         </code>
@@ -64,23 +64,23 @@
       <div class="code">
         <code data-lang="bash">python run_model.py --learning_rate 0.001</code>
       </div>
-      <p>All supporting parameters and more details can be found in <a href="https://bigscity-libtraffic-docs.readthedocs.io/en/latest/get_started/quick_start.html" target="_blank">Document</a>.</p> -->
+      <p>All supporting parameters and more details can be found in <a href="https://bigscity-libcity-docs.readthedocs.io/en/latest/get_started/quick_start.html" target="_blank">Document</a>.</p> -->
 
       <!-- <p class="title">Quick Start From API</p>
       <a-divider style="margin: 10px 0; background-image: linear-gradient(to right,  rgb(103, 179, 241),  rgb(103, 179, 241), #f6f6f6, #f6f6f6);"></a-divider> -->
 
       <p class="title">Download One Dataset</p>
       <a-divider style="margin: 10px 0; background-image: linear-gradient(to right,  rgb(103, 179, 241),  rgb(103, 179, 241), #f6f6f6, #f6f6f6);"></a-divider>
-      <p>The dataset used in LibTraffic is stored in a unified data storage format named <a href="https://bigscity-libtraffic-docs.readthedocs.io/en/latest/user_guide/data/atomic_files.html" target="_blank">atomic files</a>.</p>
-      <p>In order to directly use the <a href="https://bigscity-libtraffic-docs.readthedocs.io/en/latest/user_guide/data/raw_data.html" target="_blank">raw datasets</a> in LibTraffic, we have converted all these datasets into the format of atomic files, and provide the <a href="https://github.com/LibTraffic/Bigscity-LibTraffic-Datasets" target="_blank">conversion tools</a>.</p>
+      <p>The dataset used in LibCity is stored in a unified data storage format named <a href="https://bigscity-libcity-docs.readthedocs.io/en/latest/user_guide/data/atomic_files.html" target="_blank">atomic files</a>.</p>
+      <p>In order to directly use the <a href="https://bigscity-libcity-docs.readthedocs.io/en/latest/user_guide/data/raw_data.html" target="_blank">raw datasets</a> in LibCity, we have converted all these datasets into the format of atomic files, and provide the <a href="https://github.com/LibCity/Bigscity-LibCity-Datasets" target="_blank">conversion tools</a>.</p>
       <p>You can simply download the datasets we have processed, the data link is <a href="https://pan.baidu.com/s/1qEfcXBO-QwZfiT0G3IYMpQ#list/path=%2F" target="_blank">BaiduDisk with code 1231</a> or <a href="https://drive.google.com/drive/folders/1g5v2Gq1tkOq8XO0HDCZ9nOTtRpB6-gPe?usp=sharing">Google Drive</a>.</p>
-      <p>Before run models in LibTraffic, please make sure you download at least one dataset and put it in directory <code style="color: #e83e8c; font-size: 90%">Bigscity-LibTraffic/raw_data/dataset_name/*</code>.</p>
+      <p>Before run models in LibCity, please make sure you download at least one dataset and put it in directory <code style="color: #e83e8c; font-size: 90%">Bigscity-LibCity/raw_data/dataset_name/*</code>.</p>
       <p>For example, if you download the METR_LA dataset, the directorys structure is as follows:</p>
       <ul>
-        <li><code style="color: #e83e8c; font-size: 90%">Bigscity-LibTraffic/raw_data/METR_LA/METR_LA.geo</code></li>
-        <li><code style="color: #e83e8c; font-size: 90%">Bigscity-LibTraffic/raw_data/METR_LA/METR_LA.rel</code></li>
-        <li><code style="color: #e83e8c; font-size: 90%">Bigscity-LibTraffic/raw_data/METR_LA/METR_LA.dyna</code></li>
-        <li><code style="color: #e83e8c; font-size: 90%">Bigscity-LibTraffic/raw_data/METR_LA/config.json</code></li>
+        <li><code style="color: #e83e8c; font-size: 90%">Bigscity-LibCity/raw_data/METR_LA/METR_LA.geo</code></li>
+        <li><code style="color: #e83e8c; font-size: 90%">Bigscity-LibCity/raw_data/METR_LA/METR_LA.rel</code></li>
+        <li><code style="color: #e83e8c; font-size: 90%">Bigscity-LibCity/raw_data/METR_LA/METR_LA.dyna</code></li>
+        <li><code style="color: #e83e8c; font-size: 90%">Bigscity-LibCity/raw_data/METR_LA/config.json</code></li>
       </ul>
       <br>
 
@@ -98,9 +98,9 @@
       <p>Supporting parameters:</p>
       <ul>
         <li><code style="color: #e83e8c; font-size: 90%">task</code>: The name of the task to be performed, including <code style="color: #e83e8c; font-size: 90%">traffic_state_pred</code> and <code style="color: #e83e8c; font-size: 90%">traj_loc_pred</code>. Defaults to <code style="color: #e83e8c; font-size: 90%">None</code>.</li>
-        <li><code style="color: #e83e8c; font-size: 90%">model</code>: The name of the model to be performed. Defaults to <code style="color: #e83e8c; font-size: 90%">None</code>. (<a href="https://bigscity-libtraffic-docs.readthedocs.io/en/latest/user_guide/model.html" target="_href">supporting models</a>)</li>
-        <li><code style="color: #e83e8c; font-size: 90%">dataset</code>: The name of the model to be performed. Defaults to <code style="color: #e83e8c; font-size: 90%">None</code>. (<a href="https://bigscity-libtraffic-docs.readthedocs.io/en/latest/user_guide/data/raw_data.html" target="_href">supporting datasets</a>)</li>
-        <li><code style="color: #e83e8c; font-size: 90%">config_file</code>: The name of user-defined configuration file. Defaults to <code style="color: #e83e8c; font-size: 90%">None</code>. (<a href="https://bigscity-libtraffic-docs.readthedocs.io/en/latest/user_guide/config_settings.html" target="_href">see more</a>)</li>
+        <li><code style="color: #e83e8c; font-size: 90%">model</code>: The name of the model to be performed. Defaults to <code style="color: #e83e8c; font-size: 90%">None</code>. (<a href="https://bigscity-libcity-docs.readthedocs.io/en/latest/user_guide/model.html" target="_href">supporting models</a>)</li>
+        <li><code style="color: #e83e8c; font-size: 90%">dataset</code>: The name of the model to be performed. Defaults to <code style="color: #e83e8c; font-size: 90%">None</code>. (<a href="https://bigscity-libcity-docs.readthedocs.io/en/latest/user_guide/data/raw_data.html" target="_href">supporting datasets</a>)</li>
+        <li><code style="color: #e83e8c; font-size: 90%">config_file</code>: The name of user-defined configuration file. Defaults to <code style="color: #e83e8c; font-size: 90%">None</code>. (<a href="https://bigscity-libcity-docs.readthedocs.io/en/latest/user_guide/config_settings.html" target="_href">see more</a>)</li>
         <li><code style="color: #e83e8c; font-size: 90%">saved_model</code>：Whether to save the trained model. Defaults to <code style="color: #e83e8c; font-size: 90%">True</code>.</li>
         <li><code style="color: #e83e8c; font-size: 90%">train</code>：If the model has been pre-trained, whether to retrain the model. Defaults to <code style="color: #e83e8c; font-size: 90%">True</code>.</li>
         <li><code style="color: #e83e8c; font-size: 90%">batch_size</code>：The training and evaluation batch size.</li>

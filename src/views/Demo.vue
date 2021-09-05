@@ -4,7 +4,7 @@
             <br>
             <p class="title">Demo</p>
             <a-divider style="margin: 10px 0; background-image: linear-gradient(to right,  rgb(103, 179, 241),  rgb(103, 179, 241), #f6f6f6, #f6f6f6);"></a-divider>
-            <p> Below is the demonstration video of LibTraffic. </p>
+            <p> Below is the demonstration video of LibCity. </p>
             <p> From this demo, you can see the whole pipeline from cloning code, environment configuration, downloading data, running model, completing training and model evaluation.</p>
         </div>
         <video-player class="video-player vjs-custom-skin" ref="videoPlayer" :playsline="false" :options="playerOptions"></video-player>
@@ -29,9 +29,9 @@ export default {
         fluid: true, // 当true时，Video.js player将拥有流体大小。换句话说，它将按比例缩放以适应其容器。
         sources: [{
           type: 'video/mp4', // 这里的种类支持很多种：基本视频格式、直播、流媒体等，具体可以参看git网址项目
-          src: require('../assets/video/Libtraffic_demo.mp4') // url地址
+          src: require('../assets/video/LibCity_demo.mp4') // url地址
         }],
-        poster: require('../assets/video/Libtraffic_demo.png'), // 你的封面地址
+        poster: require('../assets/video/LibCity_demo.png'), // 你的封面地址
         width: document.documentElement.clientWidth, // 播放器宽度
         notSupportedMessage: '此视频暂无法播放，请稍后再试', // 允许覆盖Video.js无法播放媒体源时显示的默认信息。
         controlBar: {

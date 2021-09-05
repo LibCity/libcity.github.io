@@ -43,10 +43,10 @@
               style="width:130px"
             >
               <a-menu-item
-                @click="menuItemClick('InstallLibTraffic')"
+                @click="menuItemClick('InstallLibCity')"
                 style="font-size:16px; line-height:24px"
               >
-                <a href="javascript:;">Install LibTraffic</a>
+                <a href="javascript:;">Install LibCity</a>
               </a-menu-item>
               <a-menu-item
                 @click="menuItemClick('QuickStart')"
@@ -106,7 +106,7 @@
           style="width: 110px; font-size: 20px; textalign: center; margin-left: 10px;"
         >
           <a
-            href="https://bigscity-libtraffic-docs.readthedocs.io/en/latest/"
+            href="https://bigscity-libcity-docs.readthedocs.io/en/latest/"
             target="_blank"
           >Document</a>
         </a-menu-item>
@@ -160,7 +160,7 @@
           "
         >
           <a
-            href="https://github.com/LibTraffic"
+            href="https://github.com/LibCity"
             target="_blank"
           >GitHub</a>
         </a-menu-item>
@@ -211,10 +211,10 @@
               style="width:130px"
             >
               <a-menu-item
-                @click="menuItemClick('InstallLibTrafficCN')"
+                @click="menuItemClick('InstallLibCityCN')"
                 style="font-size:16px; line-height:24px"
               >
-                <a href="javascript:;">安装LibTraffic</a>
+                <a href="javascript:;">安装LibCity</a>
               </a-menu-item>
               <a-menu-item
                 @click="menuItemClick('QuickStartCN')"
@@ -277,7 +277,7 @@
           style="width: 75px; font-size: 20px; textalign: center; margin-left: 10px;"
         >
           <a
-            href="https://bigscity-libtraffic-docs.readthedocs.io/en/latest/"
+            href="https://bigscity-libcity-docs.readthedocs.io/en/latest/"
             target="_blank"
           >文档</a>
         </a-menu-item>
@@ -324,7 +324,7 @@
           "
         >
           <a
-            href="https://github.com/LibTraffic"
+            href="https://github.com/LibCity"
             target="_blank"
           >Github</a>
         </a-menu-item>
@@ -380,7 +380,7 @@
                 type="link"
               ><a
                   style="font-size: 16px;"
-                  href="https://bigscity-libtraffic-docs.readthedocs.io/en/latest/"
+                  href="https://bigscity-libcity-docs.readthedocs.io/en/latest/"
                   target="_blank"
                 >Document</a></a-button>
             </dt>
@@ -390,7 +390,7 @@
                 type="link"
               ><a
                   style="font-size: 16px;"
-                  href="https://github.com/LibTraffic"
+                  href="https://github.com/LibCity"
                   target="_blank"
                 >GitHub</a></a-button>
             </dt>
@@ -399,7 +399,7 @@
                 class="footer-btn"
                 type="link"
                 style="font-size: 16px;"
-                href="https://github.com/LibTraffic/Bigscity-LibTraffic-Paper"
+                href="https://github.com/LibCity/Bigscity-LibCity-Paper"
                 target="_blank"
               >Paper Library</a-button>
             </dt>
@@ -414,7 +414,7 @@
           </dl>
         </div>
         <div style="text-align: center; font-size: 16px; color: black; margin-top:20px">
-          Copyright © 2021 LibTraffic All rights served.
+          Copyright © 2021 LibCity All rights served.
         </div>
       </div>
 
@@ -450,7 +450,7 @@
                 type="link"
               ><a
                   style="font-size: 16px;"
-                  href="https://bigscity-libtraffic-docs.readthedocs.io/en/latest/"
+                  href="https://bigscity-libcity-docs.readthedocs.io/en/latest/"
                   target="_blank"
                 >文档</a></a-button>
             </dt>
@@ -460,7 +460,7 @@
                 type="link"
               ><a
                   style="font-size: 16px;"
-                  href="https://github.com/LibTraffic"
+                  href="https://github.com/LibCity"
                   target="_blank"
                 >Github</a></a-button>
             </dt>
@@ -469,7 +469,7 @@
                 class="footer-btn"
                 type="link"
                 style="font-size: 16px;"
-                href="https://github.com/LibTraffic/Bigscity-LibTraffic-Paper"
+                href="https://github.com/LibCity/Bigscity-LibCity-Paper"
                 target="_blank"
               >论文库</a-button>
             </dt>
@@ -485,7 +485,7 @@
         </div>
 
         <div style="text-align: center; font-size: 16px; color: black; margin-top:20px">
-          Copyright © 2021 LibTraffic All rights served.
+          Copyright © 2021 LibCity All rights served.
         </div>
       </div>
 

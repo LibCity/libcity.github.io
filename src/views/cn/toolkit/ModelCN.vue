@@ -4,7 +4,7 @@
             <div style="padding-top: 20px;color: white;">
                 <p style="margin: 20px 0 30px 130px; font-size: 60px">模型</p>
                 <p style="margin: 0px 0 20px 130px; font-size: 30px">
-                    LibTraffic支持4类主流的时空数据挖掘任务，并实现了18个常用的模型。
+                    LibCity支持4类主流的时空数据挖掘任务，并实现了18个常用的模型。
                 </p>
             </div>
         </div>
@@ -13,7 +13,7 @@
             <div>
                 <p class="title">模型列表</p>
                 <a-divider style="margin: 10px 0; background-image: linear-gradient(to right,  rgb(103, 179, 241),  rgb(103, 179, 241), #f6f6f6, #f6f6f6);"></a-divider>
-                <p style="text-indent: 2em">截至目前，LibTraffic支持4类主流的时空数据挖掘任务：交通流量预测、交通速度预测、交通需求量预测和轨迹下一条预测。LibTraffic已经实现了18个常用的模型。我们在下表中总结了这些模型的信息。</p>
+                <p style="text-indent: 2em">截至目前，LibCity支持4类主流的时空数据挖掘任务：交通流量预测、交通速度预测、交通需求量预测和轨迹下一条预测。LibCity已经实现了18个常用的模型。我们在下表中总结了这些模型的信息。</p>
 
                 <!-- <a-divider style="font-size: 24px">交通流量预测</a-divider>
                 <model-table-cn :content="flow"></model-table-cn>

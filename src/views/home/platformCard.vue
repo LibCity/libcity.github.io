@@ -4,7 +4,7 @@
       <!-- <a-col :span="8">
         <div class="pcard">
             <a-card title="Task" :bordered="true" style="border-radius: 5px">
-                <p style="margin-bottom: 0px; height: 120px">LibTraffic has implemented a set of standard tracks for each supported spatio-temporal data mining task to improve performance comparability of different models.</p>
+                <p style="margin-bottom: 0px; height: 120px">LibCity has implemented a set of standard tracks for each supported spatio-temporal data mining task to improve performance comparability of different models.</p>
                 <a-button style="padding-left: 180px; margin-top: 5px; font-size: 15px;" type="link" @click="toTask">See More >></a-button>
             </a-card>
         </div>
@@ -12,7 +12,7 @@
       <a-col :span="8">
         <div class="pcard">
             <a-card title="Paper" :bordered="true" style="border-radius: 5px">
-                <p style="margin-bottom: 0px; height: 120px">LibTraffic offers more than 200 research papers on spatio-temporal data mining from top conferences or journals and supports conditional filtering and searching.</p>
+                <p style="margin-bottom: 0px; height: 120px">LibCity offers more than 200 research papers on spatio-temporal data mining from top conferences or journals and supports conditional filtering and searching.</p>
                 <a-button style="padding-left: 180px; margin-top: 5px; font-size: 15px;" type="link" @click="toPaper">See More >></a-button>
             </a-card>
         </div>
@@ -20,7 +20,7 @@
       <a-col :span="8">
         <div class="pcard">
             <a-card title="Ranking" :bordered="true" style="border-radius: 5px">
-                <p style="margin-bottom: 0px; height: 120px">LibTraffic tests existing models on different datasets and shows performances and rankings of these models for each dataset.</p>
+                <p style="margin-bottom: 0px; height: 120px">LibCity tests existing models on different datasets and shows performances and rankings of these models for each dataset.</p>
                 <a-button style="padding-left: 180px; margin-top: 5px; font-size: 15px;" type="link" @click="toRanking">See More >></a-button>
             </a-card>
         </div>
@@ -29,15 +29,15 @@
       <a-col :span="8">
         <div class="pcard">
             <a-card title="Paper" :bordered="true" style="border-radius: 5px">
-                <p style="margin-bottom: 0px; height: 120px">LibTraffic offers more than 300 research papers on spatio-temporal data mining from top conferences or journals.</p>
-                <a-button style="padding-left: 180px; margin-top: 5px; font-size: 15px;" type="link"><a href="https://github.com/LibTraffic/Bigscity-LibTraffic-Paper" target="_blank">See More >></a></a-button>
+                <p style="margin-bottom: 0px; height: 120px">LibCity offers more than 300 research papers on spatio-temporal data mining from top conferences or journals.</p>
+                <a-button style="padding-left: 180px; margin-top: 5px; font-size: 15px;" type="link"><a href="https://github.com/LibCity/Bigscity-LibCity-Paper" target="_blank">See More >></a></a-button>
             </a-card>
         </div>
       </a-col>
       <a-col :span="8">
         <div class="pcard">
             <a-card title="Ranking" :bordered="true" style="border-radius: 5px">
-                <p style="margin-bottom: 0px; height: 120px">LibTraffic tests existing models on different datasets and shows performances and rankings of these models for each dataset.</p>
+                <p style="margin-bottom: 0px; height: 120px">LibCity tests existing models on different datasets and shows performances and rankings of these models for each dataset.</p>
                 <a-button style="padding-left: 180px; margin-top: 5px; font-size: 15px;" type="link" @click="toRanking">See More >></a-button>
             </a-card>
         </div>
@@ -45,7 +45,7 @@
       <a-col :span="8">
         <div class="pcard">
             <a-card title="Demo" :bordered="true" style="border-radius: 5px">
-                <p style="margin-bottom: 0px; height: 120px">This website provides a demonstration video for researchers to know the basic usage of LibTraffic quickly.</p>
+                <p style="margin-bottom: 0px; height: 120px">This website provides a demonstration video for researchers to know the basic usage of LibCity quickly.</p>
                 <a-button style="padding-left: 180px; margin-top: 5px; font-size: 15px;" type="link" @click="toDemo">See More >></a-button>
             </a-card>
         </div>

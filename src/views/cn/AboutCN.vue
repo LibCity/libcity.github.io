@@ -18,7 +18,7 @@
 
             <p class="title">联系我们</p>
             <a-divider style="margin: 10px 0; background-image: linear-gradient(to right,  rgb(103, 179, 241),  rgb(103, 179, 241), #f6f6f6, #f6f6f6);"></a-divider>
-            <p>有问题请在仓库提出issue <a href="https://github.com/LibTraffic" target="_blank">GitHub repo</a>.</p>
+            <p>有问题请在仓库提出issue <a href="https://github.com/LibCity" target="_blank">GitHub repo</a>.</p>
             <p>或者通过邮件联系我们 ?(@)?.com</p>
             <br>
             
