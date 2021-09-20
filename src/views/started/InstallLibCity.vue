@@ -82,7 +82,6 @@
                 </code>
             </div>
             <p>Now, you can use LibCity, more details please refer to the section <a href="https://libcity.github.io/Bigscity-LibCity-Website/#/quick_start">quick start</a>.</p>
-            <p>Note that the packages that most models depend on are recorded in <code style="color: #e83e8c; font-size: 90%">requirements.txt</code>. In addition to the above dependent packages, the implementation of model <code style="color: #e83e8c; font-size: 90%">STAGGCN</code> depends on third-party library <code style="color: #e83e8c; font-size: 90%">torch-geometric</code>. If you want to run this model, please refer to <a href="https://github.com/rusty1s/pytorch_geometric">this address</a> to install this package according to your specific environment and uncomment the fifth line of the file <code style="color: #e83e8c; font-size: 90%">libcity/model/traffic_speed_prediction/STAGGCN.py</code>.</p>
             <br>
         </div>
     </div>
