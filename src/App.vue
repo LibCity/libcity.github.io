@@ -533,13 +533,6 @@
   color: black !important;
 }
 </style>
-
-<script type="text/javascript">
-  var sc_project = 12634230;
-  var sc_invisible = 1;
-  var sc_security = "821701bd";
-</script>
-<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script>
   
 <script>
 export default {
@@ -548,6 +541,12 @@ export default {
       lang: true,
       isActive: true,
     };
+  },
+  head: {
+    script: [
+      { src: 'https://www.statcounter.com/counter/counter.js', async: true },
+      { src: '/customscript.js' } // customscript.js located in "static/" directory
+    ]
   },
   methods: {
     changeLang() {
