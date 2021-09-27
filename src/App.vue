@@ -519,7 +519,21 @@
   color: black !important;
 }
 </style>
-
+<!-- Default Statcounter code for Bigscity-LibCity-Website
+          https://libcity.github.io/Bigscity-LibCity-Website/#/ -->
+          <script type="text/javascript">
+          var sc_project=12634230; 
+          var sc_invisible=1; 
+          var sc_security="821701bd"; 
+          </script>
+          <script type="text/javascript"
+          src="https://www.statcounter.com/counter/counter.js" async></script>
+          <noscript><div class="statcounter"><a title="Web Analytics Made Easy -
+          Statcounter" href="https://statcounter.com/" target="_blank"><img
+          class="statcounter" src="https://c.statcounter.com/12634230/0/821701bd/1/"
+          alt="Web Analytics Made Easy - Statcounter"
+          referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+          <!-- End of Statcounter Code -->
 <script>
 export default {
   data() {
