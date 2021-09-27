@@ -19,14 +19,8 @@
           lineHeight: '80px',
         }"
       >
-        <a-menu-item
-          key="1"
-          @click="menuItemClick('Home')"
-        >
-          <img
-            class="logo"
-            src="./assets/img/logo.png"
-          />
+        <a-menu-item key="1" @click="menuItemClick('Home')">
+          <img class="logo" src="./assets/img/logo.png" />
         </a-menu-item>
 
         <a-menu-item
@@ -38,19 +32,16 @@
               Get Started
               <a-icon type="down" />
             </span>
-            <a-menu
-              slot="overlay"
-              style="width:130px"
-            >
+            <a-menu slot="overlay" style="width: 130px">
               <a-menu-item
                 @click="menuItemClick('InstallLibCity')"
-                style="font-size:16px; line-height:24px"
+                style="font-size: 16px; line-height: 24px"
               >
                 <a href="javascript:;">Install LibCity</a>
               </a-menu-item>
               <a-menu-item
                 @click="menuItemClick('QuickStart')"
-                style="font-size:16px; line-height:24px"
+                style="font-size: 16px; line-height: 24px"
               >
                 <a href="javascript:;">Quick Start</a>
               </a-menu-item>
@@ -75,25 +66,22 @@
               Toolkit
               <a-icon type="down" />
             </span>
-            <a-menu
-              slot="overlay"
-              style="width:100px"
-            >
+            <a-menu slot="overlay" style="width: 100px">
               <a-menu-item
                 @click="menuItemClick('Data')"
-                style="font-size:16px; line-height:24px"
+                style="font-size: 16px; line-height: 24px"
               >
                 <a href="javascript:;">Data</a>
               </a-menu-item>
               <a-menu-item
                 @click="menuItemClick('Model')"
-                style="font-size:16px; line-height:24px"
+                style="font-size: 16px; line-height: 24px"
               >
                 <a href="javascript:;">Model</a>
               </a-menu-item>
               <a-menu-item
                 @click="menuItemClick('Evaluation')"
-                style="font-size:16px; line-height:24px"
+                style="font-size: 16px; line-height: 24px"
               >
                 <a href="javascript:;">Evaluation</a>
               </a-menu-item>
@@ -103,12 +91,18 @@
 
         <a-menu-item
           key="5"
-          style="width: 110px; font-size: 20px; textalign: center; margin-left: 10px;"
+          style="
+            width: 110px;
+            font-size: 20px;
+            textalign: center;
+            margin-left: 10px;
+          "
         >
           <a
             href="https://bigscity-libcity-docs.readthedocs.io/en/latest/"
             target="_blank"
-          >Document</a>
+            >Document</a
+          >
         </a-menu-item>
 
         <!-- <a-menu-item
@@ -153,16 +147,9 @@
 
         <a-menu-item
           key="10"
-          style="
-            width: 95px;
-            font-size: 20px;
-            textalign: center;
-          "
+          style="width: 95px; font-size: 20px; textalign: center"
         >
-          <a
-            href="https://github.com/LibCity"
-            target="_blank"
-          >GitHub</a>
+          <a href="https://github.com/LibCity" target="_blank">GitHub</a>
         </a-menu-item>
 
         <!-- <a-menu-item
@@ -184,14 +171,8 @@
           lineHeight: '80px',
         }"
       >
-        <a-menu-item
-          key="1"
-          @click="menuItemClick('HomeCN')"
-        >
-          <img
-            class="logo"
-            src="./assets/img/logo.png"
-          />
+        <a-menu-item key="1" @click="menuItemClick('HomeCN')">
+          <img class="logo" src="./assets/img/logo.png" />
         </a-menu-item>
 
         <a-menu-item
@@ -199,26 +180,20 @@
           style="width: 125px; font-size: 20px; textalign: center"
         >
           <a-dropdown>
-            <a
-              class="ant-dropdown-link"
-              @click="e => e.preventDefault()"
-            >
+            <a class="ant-dropdown-link" @click="(e) => e.preventDefault()">
               使用入门
               <a-icon type="down" />
             </a>
-            <a-menu
-              slot="overlay"
-              style="width:130px"
-            >
+            <a-menu slot="overlay" style="width: 130px">
               <a-menu-item
                 @click="menuItemClick('InstallLibCityCN')"
-                style="font-size:16px; line-height:24px"
+                style="font-size: 16px; line-height: 24px"
               >
                 <a href="javascript:;">安装LibCity</a>
               </a-menu-item>
               <a-menu-item
                 @click="menuItemClick('QuickStartCN')"
-                style="font-size:16px; line-height:24px"
+                style="font-size: 16px; line-height: 24px"
               >
                 <a href="javascript:;">快速上手</a>
               </a-menu-item>
@@ -239,32 +214,26 @@
           style="width: 95px; font-size: 20px; textalign: center"
         >
           <a-dropdown>
-            <a
-              class="ant-dropdown-link"
-              @click="e => e.preventDefault()"
-            >
+            <a class="ant-dropdown-link" @click="(e) => e.preventDefault()">
               工具包
               <a-icon type="down" />
             </a>
-            <a-menu
-              slot="overlay"
-              style="width:80px"
-            >
+            <a-menu slot="overlay" style="width: 80px">
               <a-menu-item
                 @click="menuItemClick('DataCN')"
-                style="font-size:16px; line-height:24px"
+                style="font-size: 16px; line-height: 24px"
               >
                 <a href="javascript:;">数据</a>
               </a-menu-item>
               <a-menu-item
                 @click="menuItemClick('ModelCN')"
-                style="font-size:16px; line-height:24px"
+                style="font-size: 16px; line-height: 24px"
               >
                 <a href="javascript:;">模型</a>
               </a-menu-item>
               <a-menu-item
                 @click="menuItemClick('EvaluationCN')"
-                style="font-size:16px; line-height:24px"
+                style="font-size: 16px; line-height: 24px"
               >
                 <a href="javascript:;">测评</a>
               </a-menu-item>
@@ -274,12 +243,18 @@
 
         <a-menu-item
           key="5"
-          style="width: 75px; font-size: 20px; textalign: center; margin-left: 10px;"
+          style="
+            width: 75px;
+            font-size: 20px;
+            textalign: center;
+            margin-left: 10px;
+          "
         >
           <a
             href="https://bigscity-libcity-docs.readthedocs.io/en/latest/"
             target="_blank"
-          >文档</a>
+            >文档</a
+          >
         </a-menu-item>
         <!-- 
         <a-menu-item
@@ -323,10 +298,7 @@
             margin-left: 100px;
           "
         >
-          <a
-            href="https://github.com/LibCity"
-            target="_blank"
-          >Github</a>
+          <a href="https://github.com/LibCity" target="_blank">Github</a>
         </a-menu-item>
         <a-menu-item
           key="10"
@@ -338,157 +310,199 @@
       </a-menu>
     </a-layout-header>
     <a-layout-content>
-      <div :style="{ marginTop: '80px', backgroundColor: 'transparent', minHeight: '680px', height: 'auto'}">
+      <div
+        :style="{
+          marginTop: '80px',
+          backgroundColor: 'transparent',
+          minHeight: '680px',
+          height: 'auto',
+        }"
+      >
         <router-view />
       </div>
     </a-layout-content>
 
-    <a-layout-footer
-      v-if="lang"
-      :style="{backgroundColor: '#ddd'}"
-    >
-      <div style="width: 80%; margin: auto;min-width: 1000px;">
-        <div style="display:inline-block; border: red solid 0px; width:160px; height: 160px; vertical-align: top;">
-          <a
-            href="https://clustrmaps.com/site/1biw6"
-            title="Visit tracker"
-          ><img
-              style="width:200px;height:127px"
+    <a-layout-footer v-if="lang" :style="{ backgroundColor: '#ddd' }">
+      <div style="width: 80%; margin: auto; min-width: 1000px">
+        <div
+          style="
+            display: inline-block;
+            border: red solid 0px;
+            width: 160px;
+            height: 160px;
+            vertical-align: top;
+          "
+        >
+          <a href="https://clustrmaps.com/site/1biw6" title="Visit tracker"
+            ><img
+              style="width: 200px; height: 127px"
               src="//clustrmaps.com/map_v2.png?cl=ffffff&w=a&t=tt&d=lIAqix0OUQ3-odCYrKKkfjqRbakJACtJCPHfUkqRc48"
-            /></a>
+          /></a>
         </div>
-        <div style="display:block;float: right; width:150px; height: 160px;">
+        <div style="display: block; float: right; width: 150px; height: 160px">
           <h3 style="color: rgb(27, 140, 233)">Useful Links</h3>
           <dl>
             <dt>
-              <a-button
-                class="footer-btn"
-                type="link"
-              ><a
-                  style="font-size: 16px;"
-                  href="https://www.bigcity.ai/"
-                >BIGSCity</a></a-button>
+              <a-button class="footer-btn" type="link"
+                ><a style="font-size: 16px" href="https://www.bigcity.ai/"
+                  >BIGSCity</a
+                ></a-button
+              >
             </dt>
           </dl>
         </div>
-        <div style="display:block;float: right;  width:150px; height: 160px; vertical-align: top;">
+        <div
+          style="
+            display: block;
+            float: right;
+            width: 150px;
+            height: 160px;
+            vertical-align: top;
+          "
+        >
           <h3 style="color: rgb(27, 140, 233)">Resources</h3>
           <dl>
             <dt>
-              <a-button
-                class="footer-btn"
-                type="link"
-              ><a
-                  style="font-size: 16px;"
+              <a-button class="footer-btn" type="link"
+                ><a
+                  style="font-size: 16px"
                   href="https://bigscity-libcity-docs.readthedocs.io/en/latest/"
                   target="_blank"
-                >Document</a></a-button>
+                  >Document</a
+                ></a-button
+              >
             </dt>
             <dt>
-              <a-button
-                class="footer-btn"
-                type="link"
-              ><a
-                  style="font-size: 16px;"
+              <a-button class="footer-btn" type="link"
+                ><a
+                  style="font-size: 16px"
                   href="https://github.com/LibCity"
                   target="_blank"
-                >GitHub</a></a-button>
+                  >GitHub</a
+                ></a-button
+              >
             </dt>
             <dt>
               <a-button
                 class="footer-btn"
                 type="link"
-                style="font-size: 16px;"
+                style="font-size: 16px"
                 href="https://github.com/LibCity/Bigscity-LibCity-Paper"
                 target="_blank"
-              >Paper Library</a-button>
+                >Paper Library</a-button
+              >
             </dt>
             <dt>
               <a-button
                 class="footer-btn"
                 type="link"
-                style="font-size: 16px;"
+                style="font-size: 16px"
                 @click="toAbout"
-              >About Us</a-button>
+                >About Us</a-button
+              >
             </dt>
           </dl>
         </div>
-        <div style="text-align: center; font-size: 16px; color: black; margin-top:20px">
+        <div
+          style="
+            text-align: center;
+            font-size: 16px;
+            color: black;
+            margin-top: 20px;
+          "
+        >
           Copyright © 2021 LibCity All rights served.
         </div>
       </div>
-
     </a-layout-footer>
 
-    <a-layout-footer
-      v-if="!lang"
-      :style="{backgroundColor: '#ddd'}"
-    >
-      <div style="width: 80%; margin: auto;min-width: 1000px;">
-        <div style="display:inline-block; border: red solid 0px; width:160px; height: 160px; vertical-align: top;">
-        </div>
-        <div style="display:block;float: right; width:150px; height: 160px;">
+    <a-layout-footer v-if="!lang" :style="{ backgroundColor: '#ddd' }">
+      <div style="width: 80%; margin: auto; min-width: 1000px">
+        <div
+          style="
+            display: inline-block;
+            border: red solid 0px;
+            width: 160px;
+            height: 160px;
+            vertical-align: top;
+          "
+        ></div>
+        <div style="display: block; float: right; width: 150px; height: 160px">
           <h3 style="color: rgb(27, 140, 233)">友情链接</h3>
           <dl>
             <dt>
-              <a-button
-                class="footer-btn"
-                type="link"
-              ><a
-                  style="font-size: 16px;"
-                  href="https://www.bigcity.ai/"
-                >BIGSCity</a></a-button>
+              <a-button class="footer-btn" type="link"
+                ><a style="font-size: 16px" href="https://www.bigcity.ai/"
+                  >BIGSCity</a
+                ></a-button
+              >
             </dt>
           </dl>
         </div>
-        <div style="display:block;float: right;  width:150px; height: 160px; vertical-align: top;">
+        <div
+          style="
+            display: block;
+            float: right;
+            width: 150px;
+            height: 160px;
+            vertical-align: top;
+          "
+        >
           <h3 style="color: rgb(27, 140, 233)">资源</h3>
           <dl>
             <dt>
-              <a-button
-                class="footer-btn"
-                type="link"
-              ><a
-                  style="font-size: 16px;"
+              <a-button class="footer-btn" type="link"
+                ><a
+                  style="font-size: 16px"
                   href="https://bigscity-libcity-docs.readthedocs.io/en/latest/"
                   target="_blank"
-                >文档</a></a-button>
+                  >文档</a
+                ></a-button
+              >
             </dt>
             <dt>
-              <a-button
-                class="footer-btn"
-                type="link"
-              ><a
-                  style="font-size: 16px;"
+              <a-button class="footer-btn" type="link"
+                ><a
+                  style="font-size: 16px"
                   href="https://github.com/LibCity"
                   target="_blank"
-                >Github</a></a-button>
+                  >Github</a
+                ></a-button
+              >
             </dt>
             <dt>
               <a-button
                 class="footer-btn"
                 type="link"
-                style="font-size: 16px;"
+                style="font-size: 16px"
                 href="https://github.com/LibCity/Bigscity-LibCity-Paper"
                 target="_blank"
-              >论文库</a-button>
+                >论文库</a-button
+              >
             </dt>
             <dt>
               <a-button
                 class="footer-btn"
                 type="link"
-                style="font-size: 16px;"
+                style="font-size: 16px"
                 @click="toAbout"
-              >关于我们</a-button>
+                >关于我们</a-button
+              >
             </dt>
           </dl>
         </div>
 
-        <div style="text-align: center; font-size: 16px; color: black; margin-top:20px">
+        <div
+          style="
+            text-align: center;
+            font-size: 16px;
+            color: black;
+            margin-top: 20px;
+          "
+        >
           Copyright © 2021 LibCity All rights served.
         </div>
       </div>
-
     </a-layout-footer>
   </a-layout>
 </template>
@@ -519,28 +533,21 @@
   color: black !important;
 }
 </style>
-<!-- Default Statcounter code for Bigscity-LibCity-Website
-          https://libcity.github.io/Bigscity-LibCity-Website/#/ -->
-          <script type="text/javascript">
-          var sc_project=12634230; 
-          var sc_invisible=1; 
-          var sc_security="821701bd"; 
-          </script>
-          <script type="text/javascript"
-          src="https://www.statcounter.com/counter/counter.js" async></script>
-          <noscript><div class="statcounter"><a title="Web Analytics Made Easy -
-          Statcounter" href="https://statcounter.com/" target="_blank"><img
-          class="statcounter" src="https://c.statcounter.com/12634230/0/821701bd/1/"
-          alt="Web Analytics Made Easy - Statcounter"
-          referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
-          <!-- End of Statcounter Code -->
+
+<script type="text/javascript">
+  var sc_project = 12634230;
+  var sc_invisible = 1;
+  var sc_security = "821701bd";
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script>
+  
 <script>
 export default {
   data() {
     return {
       lang: true,
-      isActive: true
-    }
+      isActive: true,
+    };
   },
   methods: {
     changeLang() {
@@ -548,18 +555,18 @@ export default {
       let curName = this.$route.name;
       if (!this.lang) {
         this.$router.push({
-          name: curName + "CN"
-        })
+          name: curName + "CN",
+        });
       } else {
         this.$router.push({
-          name: curName.substring(0, curName.length - 2)
-        })
+          name: curName.substring(0, curName.length - 2),
+        });
       }
     },
     menuItemClick(link) {
       this.$router.push({
-        name: link
-      })
+        name: link,
+      });
     },
     // toPaper() {
     //   this.$router.push({
@@ -569,8 +576,8 @@ export default {
     toAbout() {
       this.$router.push({
         name: "About",
-      })
-    }
-  }
-}
+      });
+    },
+  },
+};
 </script>
