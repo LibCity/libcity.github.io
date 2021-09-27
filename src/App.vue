@@ -339,6 +339,7 @@
               src="//clustrmaps.com/map_v2.png?cl=ffffff&w=a&t=tt&d=lIAqix0OUQ3-odCYrKKkfjqRbakJACtJCPHfUkqRc48"
           /></a>
         </div>
+        <div id = "counter"></div>
         <div style="display: block; float: right; width: 150px; height: 160px">
           <h3 style="color: rgb(27, 140, 233)">Useful Links</h3>
           <dl>
@@ -533,20 +534,32 @@
   color: black !important;
 }
 </style>
-  
+<script type="text/javascript">
+var sc_project=12634230; 
+var sc_invisible=1; 
+var sc_security="821701bd"; 
+</script>
+
 <script>
+
+let script = document.createElement('script');
+script.type = "text/javascript";
+script.src = "https://www.statcounter.com/counter/counter.js";
+console.log(script)
+document.getElementsByTagName('head')[0].appendChild(script);
+script.onload = function() {
+  console.log('js加载成功')
+}
+script.onerror = function() {
+  console.log('js加载失败')
+}
+
 export default {
   data() {
     return {
       lang: true,
       isActive: true,
     };
-  },
-  head: {
-    script: [
-      { src: 'https://www.statcounter.com/counter/counter.js', async: true },
-      { src: '/customscript.js' } // customscript.js located in "static/" directory
-    ]
   },
   methods: {
     changeLang() {
