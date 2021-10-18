@@ -333,18 +333,21 @@
             vertical-align: top;
           "
         >
-        <a @click="showStatus" :href="href"><img
-              style="width: 200px; height: 127px"
-              src="//clustrmaps.com/map_v2.png?cl=ffffff&w=a&t=tt&d=lIAqix0OUQ3-odCYrKKkfjqRbakJACtJCPHfUkqRc48"
-          /></a>
-          
-          <!-- <a href="https://clustrmaps.com/site/1biw6" title="Visit tracker"
+          <a href="https://clustrmaps.com/site/1biw6" title="Visit tracker"
             ><img
               style="width: 200px; height: 127px"
               src="//clustrmaps.com/map_v2.png?cl=ffffff&w=a&t=tt&d=lIAqix0OUQ3-odCYrKKkfjqRbakJACtJCPHfUkqRc48"
-          /></a> -->
+          /></a>
         </div>
-        <div id = "counter"></div>
+
+        <div id = "counter" style="width: 160px;">
+          <p style="float:left;">Current:</p>
+          <a style="float:right;" @click="showStatus" href="https://statcounter.com/p12660855/?guest=1"><img
+            class="statcounter"
+            src="https://c.statcounter.com/12660855/0/b2a6fe31/0/"
+            alt="Web Analytics"
+            referrerPolicy="no-referrer-when-downgrade"></a>
+        </div>
         <div style="display: block; float: right; width: 150px; height: 160px">
           <h3 style="color: rgb(27, 140, 233)">Useful Links</h3>
           <dl>
@@ -540,6 +543,13 @@
 }
 </style>
 
+<script type="text/javascript">
+  var sc_project = 12634230;
+  var sc_invisible = 1;
+  var sc_security = "82170bd";
+</script>
+
+
 <script>
 
 let script = document.createElement('script');
@@ -559,8 +569,10 @@ export default {
     return {
       lang: true,
       isActive: true,
-      href:''
     };
+  },
+  created(){
+    this.showStatus();
   },
   methods: {
     changeLang() {
@@ -597,7 +609,6 @@ export default {
       var sc_security="b2a6fe31";
       var scJsHost = "https://";
       document.write("<sc"+"ript type='text/javascript' src='" + scJsHost+ "statcounter.com/counter/counter.js'></"+"script>");
-      this.href = "https://statcounter.com/p12660855/?guest=1"
     }
   },
 };
