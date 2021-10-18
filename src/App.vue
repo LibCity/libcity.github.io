@@ -333,11 +333,16 @@
             vertical-align: top;
           "
         >
-          <a href="https://clustrmaps.com/site/1biw6" title="Visit tracker"
-            ><img
+        <a @click="showStatus" :href="href"><img
               style="width: 200px; height: 127px"
               src="//clustrmaps.com/map_v2.png?cl=ffffff&w=a&t=tt&d=lIAqix0OUQ3-odCYrKKkfjqRbakJACtJCPHfUkqRc48"
           /></a>
+          
+          <!-- <a href="https://clustrmaps.com/site/1biw6" title="Visit tracker"
+            ><img
+              style="width: 200px; height: 127px"
+              src="//clustrmaps.com/map_v2.png?cl=ffffff&w=a&t=tt&d=lIAqix0OUQ3-odCYrKKkfjqRbakJACtJCPHfUkqRc48"
+          /></a> -->
         </div>
         <div id = "counter"></div>
         <div style="display: block; float: right; width: 150px; height: 160px">
@@ -388,7 +393,7 @@
                 class="footer-btn"
                 type="link"
                 style="font-size: 16px"
-                href="https://github.com/LibCity/Bigscity-LibCity-Paper"
+                href="https://github.com/LibCity/Bigscity-LibCity-PaperList"
                 target="_blank"
                 >Paper Library</a-button
               >
@@ -476,7 +481,7 @@
                 class="footer-btn"
                 type="link"
                 style="font-size: 16px"
-                href="https://github.com/LibCity/Bigscity-LibCity-Paper"
+                href="https://github.com/LibCity/Bigscity-LibCity-PaperList"
                 target="_blank"
                 >论文库</a-button
               >
@@ -534,11 +539,6 @@
   color: black !important;
 }
 </style>
-<script type="text/javascript">
-var sc_project=12634230; 
-var sc_invisible=1; 
-var sc_security="821701bd"; 
-</script>
 
 <script>
 
@@ -559,6 +559,7 @@ export default {
     return {
       lang: true,
       isActive: true,
+      href:''
     };
   },
   methods: {
@@ -590,6 +591,14 @@ export default {
         name: "About",
       });
     },
+    showStatus(){
+      var sc_project=12660855;
+      var sc_invisible=0;
+      var sc_security="b2a6fe31";
+      var scJsHost = "https://";
+      document.write("<sc"+"ript type='text/javascript' src='" + scJsHost+ "statcounter.com/counter/counter.js'></"+"script>");
+      this.href = "https://statcounter.com/p12660855/?guest=1"
+    }
   },
 };
 </script>
