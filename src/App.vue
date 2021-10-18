@@ -579,9 +579,9 @@ export default {
       isActive: true,
     };
   },
-  // created(){
-  //   this.showStatus();
-  // },
+  created(){
+    this.showStatus();
+  },
   methods: {
     changeLang() {
       this.lang = !this.lang;
