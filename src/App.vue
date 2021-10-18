@@ -342,12 +342,20 @@
 
         <div id = "counter" style="width: 160px;">
           <p style="float:left;">Current:</p>
-          <a style="float:right;" @click="showStatus" href="https://statcounter.com/p12660855/?guest=1"><img
+          <a style="float:right;" href="https://statcounter.com"><img
             class="statcounter"
             src="https://c.statcounter.com/12660855/0/b2a6fe31/0/"
             alt="Web Analytics"
             referrerPolicy="no-referrer-when-downgrade"></a>
+          <!-- <a style="float:right;" title="Web Analytics"
+            href="https://statcounter.com/" target="_blank"><img
+            class="statcounter"
+            src="https://c.statcounter.com/12660855/0/b2a6fe31/0/"
+            alt="Web Analytics"
+            referrerPolicy="no-referrer-when-downgrade"></a> -->
         </div>
+
+
         <div style="display: block; float: right; width: 150px; height: 160px">
           <h3 style="color: rgb(27, 140, 233)">Useful Links</h3>
           <dl>
@@ -544,9 +552,9 @@
 </style>
 
 <script type="text/javascript">
-  var sc_project = 12634230;
-  var sc_invisible = 1;
-  var sc_security = "82170bd";
+      var sc_project=12660855;
+      var sc_invisible=0;
+      var sc_security="b2a6fe31";
 </script>
 
 
@@ -571,9 +579,9 @@ export default {
       isActive: true,
     };
   },
-  created(){
-    this.showStatus();
-  },
+  // created(){
+  //   this.showStatus();
+  // },
   methods: {
     changeLang() {
       this.lang = !this.lang;
