@@ -130,6 +130,14 @@
         </a-menu-item>
 
         <a-menu-item
+          key="11"
+          style="width: 75px; font-size: 20px; textalign: center"
+          @click="menuItemClick('Paper')"
+        >
+          Paper
+        </a-menu-item>
+
+        <a-menu-item
           key="9"
           style="width: 75px; font-size: 20px; textalign: center"
           @click="menuItemClick('About')"
@@ -338,21 +346,20 @@
               style="width: 200px; height: 127px"
               src="//clustrmaps.com/map_v2.png?cl=ffffff&w=a&t=tt&d=lIAqix0OUQ3-odCYrKKkfjqRbakJACtJCPHfUkqRc48"
           /></a>
-        </div>
-
-        <div id = "counter" style="width: 160px;">
-          <p style="float:left;">Current:</p>
-          <a style="float:right;" href="https://statcounter.com"><img
-            class="statcounter"
-            src="https://c.statcounter.com/12660855/0/b2a6fe31/0/"
-            alt="Web Analytics"
-            referrerPolicy="no-referrer-when-downgrade"></a>
-          <!-- <a style="float:right;" title="Web Analytics"
-            href="https://statcounter.com/" target="_blank"><img
-            class="statcounter"
-            src="https://c.statcounter.com/12660855/0/b2a6fe31/0/"
-            alt="Web Analytics"
-            referrerPolicy="no-referrer-when-downgrade"></a> -->
+          <div id = "counter" style="width: 160px;">
+            <p style="float: left; font-size: 16px;">Current:</p>
+            <a style="float: right;" href="https://statcounter.com"><img
+              class="statcounter"
+              src="https://c.statcounter.com/12660855/0/b2a6fe31/0/"
+              alt="Web Analytics"
+              referrerPolicy="no-referrer-when-downgrade"></a>
+            <!-- <a style="float:right;" title="Web Analytics"
+              href="https://statcounter.com/" target="_blank"><img
+              class="statcounter"
+              src="https://c.statcounter.com/12660855/0/b2a6fe31/0/"
+              alt="Web Analytics"
+              referrerPolicy="no-referrer-when-downgrade"></a> -->
+          </div>
         </div>
 
 

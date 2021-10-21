@@ -24,7 +24,7 @@
             class="btn"
             type="primary"
             shape="round"
-            @click="toLibCityPaper"
+            @click="toPaper"
           >Paper</a-button>
         </div>
       </div>
@@ -104,6 +104,11 @@ export default {
     toQuickStart() {
       this.$router.push({
         name: "QuickStart",
+      });
+    },
+    toPaper() {
+      this.$router.push({
+        name: "Paper",
       });
     },
     toLibCityPaper() {

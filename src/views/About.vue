@@ -28,6 +28,27 @@
             <p></p>
             <br> -->
 
+            <p class="title">Cite</p>
+            <a-divider style="margin: 10px 0; background-image: linear-gradient(to right,  rgb(103, 179, 241),  rgb(103, 179, 241), #f6f6f6, #f6f6f6);"></a-divider>
+            <p>If you find LibCity useful for your research or development, please cite our paper.</p>
+            <div class="code">
+                <code>
+                    <p>@proceedings{libcity,</p>
+                    <p style="text-indent:2em">editor={Jingyuan Wang and Jiawei Jiang and Wenjun Jiang and Chao Li and Wayne Xin Zhao},</p>
+                    <p style="text-indent:2em">title={LibCity: An Open Library for Traffic Prediction},</p>
+                    <p style="text-indent:2em">booktitle={ {SIGSPATIAL}'21: 29th International Conference on Advances in Geographic Information Systems, Beijing, China, November 2-5, 2021 },</p>
+                    <p style="text-indent:2em">publisher={ {ACM} },</p>
+                    <p style="text-indent:2em">year={2021}</p>
+                    <p>}</p>
+                </code>
+            </div>
+            <div class="code">
+                <code>
+                    <p>Jingyuan Wang, Jiawei Jiang, Wenjun Jiang, Chao Li, and Wayne Xin Zhao. 2021. LibCity: An Open Library for Traffic Prediction. In Proceedings of the 29th ACM SIGSPATIAL International Conference on Advances in Geographic Information Systems. </p>
+                </code>
+            </div>
+            <br>
+
             <p class="title">License</p>
             <a-divider style="margin: 10px 0; background-image: linear-gradient(to right,  rgb(103, 179, 241),  rgb(103, 179, 241), #f6f6f6, #f6f6f6);"></a-divider>
             <p>LibCity uses <a href="https://github.com/LibCity/Bigscity-LibCity/blob/master/LICENSE.txt" target="_blank">Apache License 2.0</a>.</p>
@@ -70,6 +91,19 @@
     color: black;
     font-family: 'Open Sans', 'Microsoft YaHei', Arial, Helvetica, sans-serif;
     /* border: blue solid 3px; */
+}
+.code {
+    color: #f8f8f2;
+    background-color: #272822;
+    tab-size: 4;
+    overflow: auto;
+    width: 100%;
+    padding: 10px 20px;
+    margin: 0px 0px 16px 0px;
+    text-align: left;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    line-height: 1.5;
 }
 .title {
     font-size: 32px;
