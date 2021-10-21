@@ -106,14 +106,14 @@ export default {
         name: "QuickStart",
       });
     },
+    toPaperList() {
+      this.$router.push({
+        name: "PaperList",
+      });
+    },
     toPaper() {
       this.$router.push({
         name: "Paper",
-      });
-    },
-    toLibCityPaper() {
-      this.$router.push({
-        name: "LibCityPaper",
       });
     }
   }

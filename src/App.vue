@@ -108,9 +108,9 @@
         <!-- <a-menu-item
           key="6"
           style="width: 70px; font-size: 20px; textalign: center"
-          @click="menuItemClick('Paper')"
+          @click="menuItemClick('PaperList')"
         >
-          Paper
+          PaperList
         </a-menu-item> -->
 
         <a-menu-item

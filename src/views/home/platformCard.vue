@@ -28,7 +28,7 @@
       frb替换以上内容 -->
       <a-col :span="8">
         <div class="pcard">
-            <a-card title="Paper" :bordered="true" style="border-radius: 5px">
+            <a-card title="PaperList" :bordered="true" style="border-radius: 5px">
                 <p style="margin-bottom: 0px; height: 120px">LibCity offers more than 300 research papers on spatio-temporal data mining from top conferences or journals.</p>
                 <a-button style="padding-left: 180px; margin-top: 5px; font-size: 15px;" type="link"><a href="https://github.com/LibCity/Bigscity-LibCity-Paper" target="_blank">See More >></a></a-button>
             </a-card>

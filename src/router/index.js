@@ -11,19 +11,19 @@ const routes = [
     component: Home
   },
   // {
-  //   path: "/paper",
-  //   name: "Paper",
-  //   component: () => import("../views/Paper.vue")
+  //   path: "/paper_list",
+  //   name: "PaperList",
+  //   component: () => import("../views/PaperList.vue")
   // },
-  {
-    path: "/LibCity-An-Open-Library-For-Traffic-Prediction",
-    name: "LibCityPaper",
-    component: () => import("../views/LibCityPaper.vue")
-  },
+  // {
+  //   path: "/LibCity-An-Open-Library-For-Traffic-Prediction",
+  //   name: "LibCityPaper",
+  //   component: () => import("../views/LibCityPaper.vue")
+  // },
   {
     path: "/paper",
     name: "Paper",
-    component: () => import("../views/LibCityPaper.vue")
+    component: () => import("../views/Paper.vue")
   },
   {
     path: "/demo",
