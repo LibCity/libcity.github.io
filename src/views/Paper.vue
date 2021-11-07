@@ -6,14 +6,6 @@
             <a-divider style="margin: 10px 0; background-image: linear-gradient(to right,  rgb(103, 179, 241),  rgb(103, 179, 241), #f6f6f6, #f6f6f6);"></a-divider>
             <p> Our <a :href="`${path}LibCity_An_Open_Library_for_Traffic_Prediction.pdf`" download="LibCity_An_Open_Library_for_Traffic_Prediction.pdf">paper</a> is accepted by ACM SIGSPATIAL 2021! </p>
         </div>
-        <pdf
-        ref="pdf"
-        v-for="i in numPages" 
-        :key="i"  
-        :src="url.default" 
-        :page="i"
-        ></pdf>
-        <br>
         <div>
             <p> If you find LibCity useful for your research or development, please cite our paper.</p>
             <div class="code">
@@ -33,6 +25,14 @@
                 </code>
             </div>
         </div>
+        <br>
+        <pdf
+        ref="pdf"
+        v-for="i in numPages" 
+        :key="i"  
+        :src="url.default" 
+        :page="i"
+        ></pdf>
         <br>
     </div>
     <!-- <div>

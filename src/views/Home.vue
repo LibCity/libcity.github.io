@@ -26,6 +26,13 @@
             shape="round"
             @click="toPaper"
           >Paper</a-button>
+          <a-button
+            class="btn"
+            id="long_long_btn"
+            type="primary"
+            shape="round"
+            @click="toDemo"
+          >Chinese Tutorial</a-button>
         </div>
       </div>
     </div>
@@ -91,6 +98,11 @@ export default {
     platCard
   },
   methods: {
+    toDemo() {
+      this.$router.push({
+        name: "Demo",
+      });
+    },
     toNews() {
       this.$router.push({
         name: "News",
@@ -154,6 +166,9 @@ export default {
 }
 #long_btn {
   width: 160px;
+}
+#long_long_btn {
+  width: 200px;
 }
 .main {
   width: 100%;

@@ -4,6 +4,7 @@
             <br>
             <p class="title">Demo</p>
             <a-divider style="margin: 10px 0; background-image: linear-gradient(to right,  rgb(103, 179, 241),  rgb(103, 179, 241), #f6f6f6, #f6f6f6);"></a-divider>
+            <p> Here are our <a :href="`${path}LibCity-城市时空预测深度学习开源平台.pdf`" download="LibCity-城市时空预测深度学习开源平台.pdf">Presentation PPT</a> and <a :href="`${path}LibCity-中文Tutorial.pptx`" download="LibCity-中文Tutorial.pptx">Chinese Tutorial</a> on ACM SIGSPATIAL 2021. You can quickly download from here for more detailed information.</p>
             <p> Below is the demonstration video of LibCity. </p>
             <p> From this demo, you can see the whole pipeline from cloning code, environment configuration, downloading data, running model, completing training and model evaluation.</p>
         </div>
@@ -40,7 +41,8 @@ export default {
           remainingTimeDisplay: false,
           fullscreenToggle: true // 全屏按钮
         }
-      } 
+      },
+      path:process.env.BASE_URL,
     }
   }
 }

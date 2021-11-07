@@ -4,7 +4,7 @@
       <div style="padding-top: 20px;color: white;">
         <p style="margin: 20px 0 30px 130px; font-size: 60px">Data</p>
         <p style="margin: 0px 0 20px 130px; font-size: 30px">
-          LibCity provides 29 spatio-temporal datasets and introduces unified <br> 
+          LibCity provides 32 spatio-temporal datasets and introduces unified <br> 
           data structures to format representations of datas and the input of algorithms.
         </p>
       </div>
