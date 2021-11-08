@@ -4,10 +4,14 @@
             <br>
             <p class="title">Tutorial</p>
             <a-divider style="margin: 10px 0; background-image: linear-gradient(to right,  rgb(103, 179, 241),  rgb(103, 179, 241), #f6f6f6, #f6f6f6);"></a-divider>
-            <p> We had a presentation on ACM SIGSPATIAL 2021 Local Track and talked about introduction of traffic prediction, challenge of current research and introduction of LibCity. You can download <a :href="`${path}LibCity-Presentation.pdf`" download="LibCity-Presentation.pdf">LibCity Presentation Slide(English)</a> and <a :href="`${path}LibCity-城市时空预测深度学习开源平台.pdf`" download="LibCity-城市时空预测深度学习开源平台.pdf">LibCity Presentation Slide(Chinese)</a> here.</p>
-            <p> We also provided a Chinese tutorial for ACM SIGSPATIAL 2021 Local Track, which was about introduction of LibCity, tasks that LibCity supported and tutorial of LibCity. You can download <a :href="`${path}LibCity-中文Tutorial.pptx`" download="LibCity-中文Tutorial.pptx">LibCity Chinese Tutorial</a> here.</p>
-            <p> <a href="https://www.bilibili.com/video/BV1cS4y1d7hf?p=1" target="_blank">LibCity Presentation(P1)</a> and <a href="https://www.bilibili.com/video/BV1cS4y1d7hf?p=2" target="_blank">LibCity Tutorial(P2)</a> has been uploaded to bilibili (in Chinese).</p>
-            <iframe src="https://www.bilibili.com/video/BV1cS4y1d7hf?spm_id_from=333.999.0.0" width="1200" height="600" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+            <li>We had a presentation on ACM SIGSPATIAL 2021 Main Track to introduce LibCity. Here are the <a href="https://www.bilibili.com/video/BV19q4y1g7Rh/" target="_blank">Presentation Video(English)</a> and the <a :href="`${path}LibCity-Presentation.pdf`" download="LibCity-Presentation.pdf">Presentation Slide(English)</a>.</li>
+            <li>We also had a presentation on ACM SIGSPATIAL 2021 Local Track and talked about introduction of traffic prediction, challenge of current research,  introduction of LibCity, and the open source status of LibCity. You can download <a :href="`${path}LibCity-城市时空预测深度学习开源平台.pdf`" download="LibCity-城市时空预测深度学习开源平台.pdf">LibCity Presentation Slide(Chinese)</a> here.</li>
+            <li>We also provided a Chinese tutorial of LibCity for ACM SIGSPATIAL 2021 Local Track, which was about introduction of LibCity, tasks that LibCity supported and getting started tutorial with video display of LibCity. You can download <a :href="`${path}LibCity-中文Tutorial.pptx`" download="LibCity-中文Tutorial.pptx">LibCity Chinese Tutorial</a> here.</li>
+            <li><a href="https://www.bilibili.com/video/BV1cS4y1d7hf?p=1" target="_blank">LibCity Presentation(P1)</a> and <a href="https://www.bilibili.com/video/BV1cS4y1d7hf?p=2" target="_blank">LibCity Tutorial(P2)</a> has been uploaded to bilibili (in Chinese).</li>
+            <br>
+        </div>
+        <iframe src="https://www.bilibili.com/video/BV1cS4y1d7hf?spm_id_from=333.999.0.0" width="100%" height="600px" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+        <div>
             <br>
             <p> Below is the demonstration video of LibCity. </p>
             <p> From this demo, you can see the whole pipeline from cloning code, environment configuration, downloading data, running model, completing training and model evaluation.</p>
