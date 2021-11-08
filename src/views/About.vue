@@ -30,21 +30,38 @@
 
             <p class="title">Cite</p>
             <a-divider style="margin: 10px 0; background-image: linear-gradient(to right,  rgb(103, 179, 241),  rgb(103, 179, 241), #f6f6f6, #f6f6f6);"></a-divider>
-            <p>If you find LibCity useful for your research or development, please cite our paper.</p>
+            <p>If you find LibCity useful for your research or development, please cite our <a href="https://dl.acm.org/doi/10.1145/3474717.3483923" target="_blank">paper</a>.</p>
             <div class="code">
                 <code>
-                    <p>@proceedings{libcity,</p>
+                  <p>@inproceedings{10.1145/3474717.3483923,</p>
+                  <p style="text-indent:2em">author = {Wang, Jingyuan and Jiang, Jiawei and Jiang, Wenjun and Li, Chao and Zhao, Wayne Xin},</p>
+                  <p style="text-indent:2em">title = {LibCity: An Open Library for Traffic Prediction},</p>
+                  <p style="text-indent:2em">year = {2021},</p>
+                  <p style="text-indent:2em">isbn = {9781450386647},</p>
+                  <p style="text-indent:2em">publisher = {Association for Computing Machinery},</p>
+                  <p style="text-indent:2em">address = {New York, NY, USA},</p>
+                  <p style="text-indent:2em">url = {https://doi.org/10.1145/3474717.3483923},</p>
+                  <p style="text-indent:2em">doi = {10.1145/3474717.3483923},</p>
+                  <p style="text-indent:2em">booktitle = {Proceedings of the 29th International Conference on Advances in Geographic Information Systems},</p>
+                  <p style="text-indent:2em">pages = {145–148},</p>
+                  <p style="text-indent:2em">numpages = {4},</p>
+                  <p style="text-indent:2em">keywords = {Reproducibility, Traffic Prediction, Spatial-temporal System},</p>
+                  <p style="text-indent:2em">location = {Beijing, China},</p>
+                  <p style="text-indent:2em">series = {SIGSPATIAL '21}</p>
+                  <p>}</p>
+
+                    <!-- <p>@proceedings{libcity,</p>
                     <p style="text-indent:2em">editor={Jingyuan Wang and Jiawei Jiang and Wenjun Jiang and Chao Li and Wayne Xin Zhao},</p>
                     <p style="text-indent:2em">title={LibCity: An Open Library for Traffic Prediction},</p>
                     <p style="text-indent:2em">booktitle={ {SIGSPATIAL}'21: 29th International Conference on Advances in Geographic Information Systems, Beijing, China, November 2-5, 2021 },</p>
                     <p style="text-indent:2em">publisher={ {ACM} },</p>
                     <p style="text-indent:2em">year={2021}</p>
-                    <p>}</p>
+                    <p>}</p> -->
                 </code>
             </div>
             <div class="code">
                 <code>
-                    <p>Jingyuan Wang, Jiawei Jiang, Wenjun Jiang, Chao Li, and Wayne Xin Zhao. 2021. LibCity: An Open Library for Traffic Prediction. In Proceedings of the 29th ACM SIGSPATIAL International Conference on Advances in Geographic Information Systems. </p>
+                    <p>Jingyuan Wang, Jiawei Jiang, Wenjun Jiang, Chao Li, and Wayne Xin Zhao. 2021. LibCity: An Open Library for Traffic Prediction. In <i>Proceedings of the 29th International Conference on Advances in Geographic Information Systems</i> (<i>SIGSPATIAL '21</i>). Association for Computing Machinery, New York, NY, USA, 145–148. DOI:https://doi.org/10.1145/3474717.3483923</p>
                 </code>
             </div>
             <br>

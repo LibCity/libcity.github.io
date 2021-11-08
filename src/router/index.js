@@ -26,9 +26,9 @@ const routes = [
     component: () => import("../views/Paper.vue")
   },
   {
-    path: "/demo",
-    name: "Demo",
-    component: () => import("../views/Demo.vue")
+    path: "/tutorial",
+    name: "Tutorial",
+    component: () => import("../views/Tutorial.vue")
   },
   {
     path: "/ranking",

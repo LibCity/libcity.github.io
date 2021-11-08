@@ -24,15 +24,14 @@
             class="btn"
             type="primary"
             shape="round"
-            @click="toPaper"
-          >Paper</a-button>
+          ><a href="https://dl.acm.org/doi/10.1145/3474717.3483923" target="_blank">Paper</a></a-button>
           <a-button
             class="btn"
-            id="long_long_btn"
+            id="btn"
             type="primary"
             shape="round"
-            @click="toDemo"
-          >Chinese Tutorial</a-button>
+            @click="toTutorial"
+          >Tutorial</a-button>
         </div>
       </div>
     </div>
@@ -98,9 +97,9 @@ export default {
     platCard
   },
   methods: {
-    toDemo() {
+    toTutorial() {
       this.$router.push({
-        name: "Demo",
+        name: "Tutorial",
       });
     },
     toNews() {
