@@ -10,7 +10,11 @@
             <li><a href="https://www.bilibili.com/video/BV1cS4y1d7hf?p=1" target="_blank">LibCity Presentation(P1)</a> and <a href="https://www.bilibili.com/video/BV1cS4y1d7hf?p=2" target="_blank">LibCity Tutorial(P2)</a> has been uploaded to bilibili (in Chinese).</li>
             <br>
         </div>
-        <iframe src="https://player.bilibili.com/player.html?aid=721510946" width="100%" height="600vh" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" sandbox="allow-forms allow-scripts allow-same-origin allow-popups"></iframe>
+        <!-- <iframe src="//player.bilibili.com/player.html?aid=721510946&bvid=BV1cS4y1d7hf&cid=438043644&page=1&high_quality=1" width="100%" height="800vh" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" sandbox="allow-forms allow-scripts allow-same-origin allow-popups"> </iframe> -->
+        <iframe src="https://player.bilibili.com/player.html?aid=721510946" id="iframe" class="iframe" width="100%" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" sandbox="allow-forms allow-scripts allow-same-origin allow-popups"></iframe>
+        <!-- <div style="width:100%;height:0;padding:0;padding-bottom:calc(9/16*100%)">
+          <iframe src="https://player.bilibili.com/player.html?aid=721510946" class="iframe" width="100%" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" sandbox="allow-forms allow-scripts allow-same-origin allow-popups"></iframe>
+        </div> -->
         <div>
             <br>
             <p> Below is the demonstration video of LibCity. </p>
@@ -26,7 +30,7 @@
 export default {
   name: 'Tutorial',
   data () {
-    return {
+    return {   
       playerOptions: {
         playbackRates: [0.7, 1.0, 1.5, 2.0], // 播放速度
         autoplay: false, // 如果true,浏览器准备好时开始回放。
@@ -52,7 +56,17 @@ export default {
       },
       path:process.env.BASE_URL,
     }
-  }
+  },
+  mounted () {
+    /**
+     * iframe-宽高自适应显示   
+     */
+    const oIframe = document.getElementById('iframe');
+    const deviceWidth = document.documentElement.clientWidth;
+    const deviceHeight = document.documentElement.clientHeight;
+    // oIframe.style.width = (Number(deviceWidth)-420) + 'px'; //数字是页面布局宽度差值
+    oIframe.style.height = (Number(deviceHeight)-160) + 'px'; //数字是页面布局高度差
+  },
 }
 </script>
 
@@ -93,5 +107,14 @@ export default {
     font-weight: 700;
     font-family: 'Open Sans', 'Microsoft YaHei', Arial, Helvetica, sans-serif;
     margin-bottom: 0;
+}
+
+.iframe {
+  width: 100%;
+  /* position: relative;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; */
 }
 </style>
