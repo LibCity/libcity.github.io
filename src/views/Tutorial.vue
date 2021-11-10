@@ -10,7 +10,7 @@
             <li><a href="https://www.bilibili.com/video/BV1cS4y1d7hf?p=1" target="_blank">LibCity Presentation(P1)</a> and <a href="https://www.bilibili.com/video/BV1cS4y1d7hf?p=2" target="_blank">LibCity Tutorial(P2)</a> has been uploaded to bilibili (in Chinese).</li>
             <br>
         </div>
-        <iframe src="https://www.bilibili.com/video/BV1cS4y1d7hf?spm_id_from=333.999.0.0" width="100%" height="600px" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+        <iframe src="http://player.bilibili.com/player.html?aid=721510946" width="100%" height="600vh" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" sandbox="allow-forms allow-scripts allow-same-origin allow-popups"></iframe>
         <div>
             <br>
             <p> Below is the demonstration video of LibCity. </p>
