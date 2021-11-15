@@ -79,7 +79,7 @@
         mlink: '#',
         paper: 'Adaptive Graph Convolutional Recurrent Network for Traffic Forecasting',
         plink: 'https://arxiv.org/abs/2007.02842',
-        year: '2018',
+        year: '2020',
         step1: 14.17639446,
         step2: 16.22584724,
         step3: 17.62712097,

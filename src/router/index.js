@@ -20,11 +20,11 @@ const routes = [
   //   name: "LibCityPaper",
   //   component: () => import("../views/LibCityPaper.vue")
   // },
-  {
-    path: "/paper",
-    name: "Paper",
-    component: () => import("../views/Paper.vue")
-  },
+  // {
+  //   path: "/paper",
+  //   name: "Paper",
+  //   component: () => import("../views/Paper.vue")
+  // },
   {
     path: "/tutorial",
     name: "Tutorial",
