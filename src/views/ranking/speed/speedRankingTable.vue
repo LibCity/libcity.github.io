@@ -15,7 +15,8 @@
       <tbody>
           <tr v-for="item in speedModel" :key="item.model">
               <td width="6%">{{item.rank}}</td>
-              <td width="10%"><a :href="item.mlink">{{item.model}}</a></td>
+              <!-- <td width="10%"><a :href="item.mlink">{{item.model}}</a></td> -->
+              <td width="10%">{{item.model}}</td>
               <td width="43%"><a :href="item.plink" class="paper">{{item.paper}}</a></td>
               <td width="5%">{{item.year}}</td>
               <td width="9%">{{item.step3}}</td>

@@ -81,7 +81,7 @@
                     pip install -r requirements.txt
                 </code>
             </div>
-            <p>Now, you can use LibCity, more details please refer to the section <a href="https://libcity.github.io/Bigscity-LibCity-Website/#/quick_start">quick start</a>.</p>
+            <p>Now, you can use LibCity, more details please refer to the section <a href="https://libcity.ai/#/quick_start">Quick Start</a>.</p>
             <br>
         </div>
     </div>

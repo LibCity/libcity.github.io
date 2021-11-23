@@ -34,7 +34,8 @@
                 <tbody>
                     <tr v-for="item in rankingData" :key="item.model">
                         <td width="6%">{{item.rank}}</td>
-                        <td width="8%"><a :href="item.mlink" target="_blank">{{item.model}}</a></td>
+                        <!-- <td width="8%"><a :href="item.mlink" target="_blank">{{item.model}}</a></td> -->
+                        <td width="8%">{{item.model}}</td>
                         <td width="39%"><a :href="item.plink" class="paper" target="_blank">{{item.paper}}</a></td>
                         <td width="5%">{{item.year}}</td>
                         <td width="14%">{{item.step2}}</td>

@@ -22,11 +22,7 @@
           <a-icon
             type="crown"
             style="color: gold; font-size: 20px;"
-          /><a
-            :href="item.mlink"
-            target="_blank"
-            class="model"
-          >{{item.best}}</a>
+          />{{item.best}}
         </td>
         <td width="55%"><a
             class="paper"
