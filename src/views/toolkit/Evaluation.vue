@@ -41,10 +41,25 @@
                             <td>Trajectory Next-Location Prediction</td>
                             <td>TopK</td>
                         </tr>
+                        <tr>
+                            <td>Map Matching</td>
+                            <td>RMF、AN、AL</td>
+                        </tr>
+                        <tr>
+                            <td>Estimated Time of Arrival</td>
+                            <td>MAE、MSE、RMSE、MAPE、R2、EVAR</td>
+                        </tr>
                     </tbody>
                 </table>
                 <br>
 
+                <ul>
+                    <li><a href="https://bigscity-libcity-docs.readthedocs.io/en/latest/user_guide/evaluator/traffic_state_pred.html" target="_blank">Traffic State Prediction Evaluator</a></li>
+                    <li><a href="https://bigscity-libcity-docs.readthedocs.io/en/latest/user_guide/evaluator/traj_loc_pred.html" target="_blank">Trajectory Next-Location Prediction Evaluator</a></li>
+                    <li><a href="https://bigscity-libcity-docs.readthedocs.io/en/latest/user_guide/evaluator/map_matching.html" target="_blank">Map Matching Evaluator</a></li>
+                    <li><a href="https://bigscity-libcity-docs.readthedocs.io/en/latest/user_guide/evaluator/eta.html" target="_blank">Estimated Time of Arrival Evaluator</a></li>
+                </ul>
+                <br>
             </div>
         </div>
     </div>
