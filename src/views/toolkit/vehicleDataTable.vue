@@ -3,19 +3,27 @@
       <thead style="font-size: 16px">
           <tr>
               <th>DATASET</th>
+              <th>#GEO</th>
+              <th>#REL</th>
+              <th>#DYNA</th>
+              <th>TYPE</th>
               <th>PLACE</th>
               <th>DURATION</th>
-              <th>VEHICLE</th>
+              <th>INTERVAL</th>
               <th>LINK</th>
           </tr>
       </thead>
       <tbody>
           <tr v-for="item in content" :key="item.dataset">
-              <td width="20%"><a :href="item.plink" target="_blank">{{item.dataset}}</a></td>
-              <td width="25%">{{item.place}}</td>
-              <td width="30%">{{item.duration}}</td>
-              <td width="5%">{{item.vehicle}}</td>
-              <td width="20%"><a-button type="primary" shape="round"><a :href="item.source" target="_blank">Source</a></a-button></td>
+              <td width="14%"><a :href="item.plink" target="_blank">{{item.dataset}}</a></td>
+              <td width="4%">{{item.geo}}</td>
+              <td width="4%">{{item.rel}}</td>
+              <td width="6%">{{item.dyna}}</td>
+              <td width="6%">{{item.vehicle}}</td>
+              <td width="16%">{{item.place}}</td>
+              <td width="19%">{{item.duration}}</td>
+              <td width="8%">{{item.interval}}</td>
+              <td width="23%"><a-button type="primary" shape="round"><a :href="item.source" target="_blank">Source</a></a-button><a-button type="primary" shape="round" style="margin-left: 5px"><a :href="item.slink" target="_blank">Script</a></a-button></td>
           </tr>
       </tbody>
   </table>

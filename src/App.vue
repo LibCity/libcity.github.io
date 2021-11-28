@@ -131,14 +131,14 @@
 
         <a-menu-item
           key="11"
-          style="width: 75px; font-size: 20px; textalign: center"
+          style="width: 65px; font-size: 20px; textalign: center"
         >
           <a href="https://dl.acm.org/doi/10.1145/3474717.3483923" target="_blank">Paper</a>
         </a-menu-item>
 
         <a-menu-item
           key="9"
-          style="width: 75px; font-size: 20px; textalign: center"
+          style="width: 70px; font-size: 20px; textalign: center"
           @click="menuItemClick('About')"
         >
           About
