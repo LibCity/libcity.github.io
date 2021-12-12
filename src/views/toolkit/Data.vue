@@ -21,8 +21,8 @@
         
         <ul>
           <li><span style="font-weight: 700">Raw Data</span>: Original open source dataset. For each supported original data set, we provide scripts to convert it into <a href="https://bigscity-libcity-docs.readthedocs.io/en/latest/user_guide/data/atomic_files.html" target="_blank">atomic files</a>.</li>
-          <li><span style="font-weight: 700">Atomic Files</span>: Basic input elements for different traffic prediction tasks.</li>
-          <li><span style="font-weight: 700">Dataset</span>: Different <code style="color: #e83e8c; font-size: 90%">Dataset</code> classes are developed for each type of traffic prediction task, which are responsible for reading atomic files and performing some data preprocessing operations. See <a href="https://bigscity-libcity-docs.readthedocs.io/en/latest/user_guide/data/dataset_class.html" target="_blank">here</a> for detail.</li>
+          <li><span style="font-weight: 700">Atomic Files</span>: Basic input elements for different traffic prediction tasks. You can download <a :href="`${path}A Unified Storage Format of Traffic Data Atomic Files in LibCity.pdf`" download="A Unified Storage Format of Traffic Data Atomic Files in LibCity.pdf">A Unified Storage Format of Traffic Data Atomic Files in LibCity</a> here for details.</li>
+          <li><span style="font-weight: 700">Dataset</span>: Different <code style="color: #e83e8c; font-size: 90%">Dataset</code> classes are developed for each type of traffic prediction task, which are responsible for reading atomic files and performing some data preprocessing operations. See <a href="https://bigscity-libcity-docs.readthedocs.io/en/latest/user_guide/data/dataset_class.html" target="_blank">here</a> for details.</li>
           <li><span style="font-weight: 700">DataLoader</span>: The <code style="color: #e83e8c; font-size: 90%">Dataloader</code> class responsible for loading data, using the native <code style="color: #e83e8c; font-size: 90%">torch.utils.data.DataLoader</code> of <code style="color: #e83e8c; font-size: 90%">PyTorch</code>, it is responsible for returning the data to the model in the form of the internal data representation structure <a href="https://bigscity-libcity-docs.readthedocs.io/en/latest/user_guide/data/batch.html" target="_blank">Batch</a> class.</li>
         </ul>
         <br>
@@ -512,7 +512,8 @@
             return {
               condition,
               people,
-              vehicle
+              vehicle,
+              path:process.env.BASE_URL,
             };
         },
         components: {

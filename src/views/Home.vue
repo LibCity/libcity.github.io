@@ -40,6 +40,9 @@
         <feat-card class="feature"></feat-card>
       </div>
       <div class="video">
+        <div class="video-header">
+          <span class="block-title">VIDEO</span>
+        </div>
         <a-button-group class="lang-btn-group">
           <a-button id="english-btn" class="lang-btn" type="primary" disabled @click="changeVideoLang()">
             English Version
@@ -49,6 +52,7 @@
           </a-button>
         </a-button-group>
         <video-player class="video-player vjs-custom-skin" ref="videoPlayer" :playsline="false" :options="playerOptions"></video-player>
+        <div class="video-notes">* These statistics are updated to November 2021.</div>
       </div>
       <!-- <div class="latestnews">
         <div class="news-header"><span class="news-block-title">LATEST NEWS</span>
@@ -278,6 +282,18 @@ export default {
   min-width: 1000px;
   width: 80%;
   margin: auto;
+}
+.video-header {
+  min-width: 1000px;
+  width: 100%;
+  margin: auto;
+  text-align: left;
+}
+.video-notes {
+  text-align:left;
+  font-size: 16px;
+  height: 24px;
+  line-height: 24px;
 }
 .news {
   min-width: 1000px;
