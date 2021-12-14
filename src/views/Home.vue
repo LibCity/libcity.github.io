@@ -11,26 +11,27 @@
             class="btn"
             type="primary"
             shape="round"
-            @click="toInstallToolkit"
+            @click="toInstallToolkit()"
           >Install</a-button>
           <a-button
             class="btn"
             id="long_btn"
             type="primary"
             shape="round"
-            @click="toQuickStart"
+            @click="toQuickStart()"
           >Quick Start</a-button>
           <a-button
             class="btn"
             type="primary"
             shape="round"
-          ><a href="https://dl.acm.org/doi/10.1145/3474717.3483923" target="_blank">Paper</a></a-button>
+            @click="toPaper()"
+          >Paper</a-button>
           <a-button
             class="btn"
             id="btn"
             type="primary"
             shape="round"
-            @click="toTutorial"
+            @click="toTutorial()"
           >Tutorial</a-button>
         </div>
       </div>
