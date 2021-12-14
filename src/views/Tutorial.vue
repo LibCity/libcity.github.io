@@ -76,16 +76,12 @@ export default {
 </script>
 
 <style scoped >
-  .video-js .vjs-icon-placeholder {
-    width: 80%;
-    height: 80%;
-    display: block;
-  }
-  /* .video-player {
-    width: 50%;
-  } */
-
-  .container {
+.video-js .vjs-icon-placeholder {
+  width: 80%;
+  height: 80%;
+  display: block;
+}
+.container {
   margin: auto;
   width: 100%;
   height: auto;
@@ -98,14 +94,14 @@ export default {
   /* border: blue solid 1px; */
 }
 .content {
-    width: 80%;
-    height: auto;
-    margin: 50px auto 0 auto;
-    font-size: 20px;
-    line-height: 36px;
-    color: black;
-    font-family: 'Open Sans', 'Microsoft YaHei', Arial, Helvetica, sans-serif;
-    /* border: blue solid 3px; */
+  width: 80%;
+  height: auto;
+  margin: 50px auto 0 auto;
+  font-size: 20px;
+  line-height: 36px;
+  color: black;
+  font-family: 'Open Sans', 'Microsoft YaHei', Arial, Helvetica, sans-serif;
+  /* border: blue solid 3px; */
 }
 .title {
     font-size: 32px;

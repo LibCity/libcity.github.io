@@ -1,82 +1,59 @@
 <template>
+  <div class="container">
+    <div class="header">
+      <div style="padding-top: 20px;color: white;">
+        <p style="margin: 20px 0 30px 130px; font-size: 60px">Paper</p>
+        <p style="margin: 0px 0 20px 130px; font-size: 30px">
+          This page provides the related papers of LibCity.
+        </p>
+      </div>
+    </div>
     <div class="content">
         <div>
+            <p>
+                <a-button type="link" class="title" @click="toPaperDetail('LibCity-An-Open-Library-For-Traffic-Prediction')">LibCity: An Open Library for Traffic Prediction</a-button>
+            </p>
+            <p>Jingyuan Wang, Jiawei Jiang, Wenjun Jiang, Chao Li, Wayne Xin Zhao<br>
+            <b><i>In Proceedings of the 29th International Conference on Advances in Geographic Information Systems (SIGSPATIAL'21)</i></b>.</p>
+            <p><b>Abstract</b>: With the increase of traffic prediction models, there has become an urgent need to develop a standardized framework to implement and evaluate these methods. This paper presents LibCity, a unified, comprehensive, and extensible library for traffic prediction, which provides researchers with a credible experimental tool and a convenient development framework. In this library, we reproduce 42 traffic prediction models and collect 29 spatial-temporal datasets, which allows researchers to conduct comprehensive experiments in a convenient way. To accelerate the development of new models, we design unified model interfaces based on unified data formats, which effectively encapsulate the details of the implementation. To verify the effectiveness of our implementations, we also report the reproducibility comparison results of LibCity, and set up a performance leaderboard for the four kinds of traffic prediction tasks. Our library will contribute to the standardization and reproducibility in the field of traffic prediction. The open source link of LibCity is https://github.com/LibCity/Bigscity-LibCity.</p>
+            <a-divider style="margin: 10px 0; background-image: linear-gradient(to right,  rgb(103, 179, 241),  rgb(103, 179, 241), rgb(103, 179, 241), rgb(103, 179, 241));"></a-divider>
             <br>
-            <p class="title">Paper</p>
-            <a-divider style="margin: 10px 0; background-image: linear-gradient(to right,  rgb(103, 179, 241),  rgb(103, 179, 241), #f6f6f6, #f6f6f6);"></a-divider>
-            <p> Our <a :href="`${path}LibCity_An_Open_Library_for_Traffic_Prediction.pdf`" download="LibCity_An_Open_Library_for_Traffic_Prediction.pdf">paper</a> is accepted by ACM SIGSPATIAL 2021! </p>
         </div>
-        <div>
-            <p> If you find LibCity useful for your research or development, please cite our paper.</p>
-            <div class="code">
-                <code>
-                    <p>@proceedings{libcity,</p>
-                    <p style="text-indent:2em">editor={Jingyuan Wang and Jiawei Jiang and Wenjun Jiang and Chao Li and Wayne Xin Zhao},</p>
-                    <p style="text-indent:2em">title={LibCity: An Open Library for Traffic Prediction},</p>
-                    <p style="text-indent:2em">booktitle={ {SIGSPATIAL}'21: 29th International Conference on Advances in Geographic Information Systems, Beijing, China, November 2-5, 2021 },</p>
-                    <p style="text-indent:2em">publisher={ {ACM} },</p>
-                    <p style="text-indent:2em">year={2021}</p>
-                    <p>}</p>
-                </code>
-            </div>
-            <div class="code">
-                <code>
-                    <p>Jingyuan Wang, Jiawei Jiang, Wenjun Jiang, Chao Li, and Wayne Xin Zhao. 2021. LibCity: An Open Library for Traffic Prediction. In Proceedings of the 29th ACM SIGSPATIAL International Conference on Advances in Geographic Information Systems. </p>
-                </code>
-            </div>
-        </div>
-        <br>
-        <pdf
-        ref="pdf"
-        v-for="i in numPages" 
-        :key="i"  
-        :src="url.default" 
-        :page="i"
-        ></pdf>
-        <br>
     </div>
-    <!-- <div>
-        <p class="papertitle">Our <a :href="`${path}LibCity_An_Open_Library_for_Traffic_Prediction.pdf`" download="LibCity_An_Open_Library_for_Traffic_Prediction.pdf">paper</a> is accepted by ACM SIGSPATIAL 2021!</p>
-        <pdf
-        ref="pdf"
-        v-for="i in numPages" 
-        :key="i"  
-        :src="url.default" 
-        :page="i"
-        ></pdf>
-    </div> -->
+  </div>
 </template>
+
 <script>
-    import pdf from 'vue-pdf'
     export default {
-        components:{
-            pdf
-        },
-        data(){
+        data() {
             return {
-                // url: require("../assets/docs/LibCity_An_Open_Library_for_Traffic_Prediction.pdf"),
-                url: require("../../public/LibCity_An_Open_Library_for_Traffic_Prediction.pdf"),
-                numPages: null,
-                path:process.env.BASE_URL,
-            }
+            };
         },
-        mounted() {
-            this.getNumPages()
+        components: {
         },
         methods: {
-            getNumPages() {
-            let loadingTask = pdf.createLoadingTask(this.url.default)
-            loadingTask.promise.then(pdf => {
-                this.numPages = pdf.numPages
-            }).catch(err => {
-                console.error('pdf 加载失败', err);
-            })
+            toPaperDetail(paper) {
+                this.$router.push({
+                    name: paper,
+                });
             },
         }
-    }
+    };
 </script>
 
-<style>
+<style scoped>
+.container {
+  margin: auto;
+  width: 100%;
+  height: auto;
+  /* border: red solid 1px; */
+}
+.header {
+  width: 100%;
+  height: 250px;
+  background:  rgb(27, 140, 233) linear-gradient(to right,  rgb(27, 140, 233), rgb(11, 247, 188));
+  /* border: blue solid 1px; */
+}
 .content {
     width: 80%;
     height: auto;
@@ -91,28 +68,12 @@
     font-size: 32px;
     font-weight: 700;
     font-family: 'Open Sans', 'Microsoft YaHei', Arial, Helvetica, sans-serif;
-    margin-bottom: 0;
+    padding: 0;
+    margin-bottom: 0px;
+    line-height: 36px;
+    color: black;
 }
-.code {
-    color: #f8f8f2;
-    background-color: #272822;
-    tab-size: 4;
-    overflow: auto;
-    width: 100%;
-    padding: 10px 20px;
-    margin: 0px 0px 16px 0px;
-    text-align: left;
-    border: 1px solid #e5e5e5;
-    border-radius: 10px;
-    line-height: 1.5;
-}
-.papertitle {
-    height: 80px;
-    line-height: 80px;
-    font-size: 32px;
-    font-weight: 700;
-    font-family: 'Open Sans', 'Microsoft YaHei', Arial, Helvetica, sans-serif;
-    margin-bottom: 0;
-    text-align: center;
+.title:hover {
+    color: rgb(27, 140, 233);
 }
 </style>

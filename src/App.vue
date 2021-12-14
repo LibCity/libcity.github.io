@@ -132,8 +132,9 @@
         <a-menu-item
           key="11"
           style="width: 65px; font-size: 20px; textalign: center"
+          @click="menuItemClick('Paper')"
         >
-          <a href="https://dl.acm.org/doi/10.1145/3474717.3483923" target="_blank">Paper</a>
+          Paper
         </a-menu-item>
 
         <a-menu-item
@@ -607,11 +608,11 @@ export default {
         name: link,
       });
     },
-    // toPaper() {
-    //   this.$router.push({
-    //     name: "Paper",
-    //   })
-    // },
+    toPaper() {
+      this.$router.push({
+        name: "Paper",
+      })
+    },
     toAbout() {
       this.$router.push({
         name: "About",

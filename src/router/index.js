@@ -15,16 +15,16 @@ const routes = [
   //   name: "PaperList",
   //   component: () => import("../views/PaperList.vue")
   // },
-  // {
-  //   path: "/LibCity-An-Open-Library-For-Traffic-Prediction",
-  //   name: "LibCityPaper",
-  //   component: () => import("../views/LibCityPaper.vue")
-  // },
-  // {
-  //   path: "/paper",
-  //   name: "Paper",
-  //   component: () => import("../views/Paper.vue")
-  // },
+  {
+    path: "/paper/LibCity-An-Open-Library-For-Traffic-Prediction",
+    name: "LibCity-An-Open-Library-For-Traffic-Prediction",
+    component: () => import("../views/paper/LibCity-An-Open-Library-For-Traffic-Prediction.vue")
+  },
+  {
+    path: "/paper",
+    name: "Paper",
+    component: () => import("../views/Paper.vue")
+  },
   {
     path: "/tutorial",
     name: "Tutorial",
