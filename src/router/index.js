@@ -111,6 +111,11 @@ const routes = [
     component: () => import("../views/ranking/speed/NYCBike20140409.vue")
   },
   {
+    path: "/ranking/Foursquare-TKY",
+    name: "Foursquare-TKY",
+    component: () => import("../views/ranking/loc/Foursquare-TKY.vue")
+  },
+  {
     path: "/about",
     name: "About",
     component: () => import("../views/About.vue")

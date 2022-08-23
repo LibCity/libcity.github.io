@@ -18,11 +18,11 @@
         <br>
         <br>
 
-        <!-- <p class="task-name">Trajectory Next-Location Prediction</p>
+        <p class="task-name">Trajectory Next-Location Prediction</p>
         <a-divider style="margin: 10px 0; background-image: linear-gradient(to right,  rgb(103, 179, 241),  rgb(103, 179, 241), #f6f6f6, #f6f6f6);"></a-divider>
         <rank-table :rankdata="location"></rank-table>
         <br>
-        <br> -->
+        <br>
       </div>
     </div>
   </div>
@@ -117,23 +117,23 @@ const speed = [
 
 const location = [
   {
-    dataset: 'foursqaure-tky',
-    best: 'DeepMove',
-    paper: '[WWW2018]DeepMove: Predicting Human Mobility with Attentional Recurrent Networks',
+    dataset: 'Foursquare-TKY',
+    best: 'LSTPM',
+    paper: '[AAAI2020]Where to Go Next: Modeling Long- and Short-Term User Preferences for Point-of-Interest Recommendation',
     datasetlink: 'https://bigscity-libcity-docs.readthedocs.io/en/latest/user_guide/data/raw_data.html#foursquare',
     mlink: '#',
-    plink: 'https://dl.acm.org/doi/10.1145/3178876.3186058',
-    dlink: 'foursqaure-tky'
+    plink: 'https://ojs.aaai.org/index.php/AAAI/article/view/5353',
+    dlink: 'Foursquare-TKY'
   },
-  {
-    dataset: 'Gowalla',
-    best: 'DeepMove',
-    paper: '[WWW2018]DeepMove: Predicting Human Mobility with Attentional Recurrent Networks',
-    datasetlink: 'https://bigscity-libcity-docs.readthedocs.io/en/latest/user_guide/data/raw_data.html#gowalla',
-    mlink: '#',
-    plink: 'https://dl.acm.org/doi/10.1145/3178876.3186058',
-    dlink: 'Gowalla'
-  },
+  // {
+  //   dataset: 'Gowalla',
+  //   best: 'DeepMove',
+  //   paper: '[WWW2018]DeepMove: Predicting Human Mobility with Attentional Recurrent Networks',
+  //   datasetlink: 'https://bigscity-libcity-docs.readthedocs.io/en/latest/user_guide/data/raw_data.html#gowalla',
+  //   mlink: '#',
+  //   plink: 'https://dl.acm.org/doi/10.1145/3178876.3186058',
+  //   dlink: 'Gowalla'
+  // },
 ]
 
 export default {
