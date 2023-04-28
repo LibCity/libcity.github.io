@@ -21,6 +21,11 @@ const routes = [
     component: () => import("../views/paper/LibCity-An-Open-Library-For-Traffic-Prediction.vue")
   },
   {
+    path: "/paper/LibCity-Journal",
+    name: "LibCity-Journal",
+    component: () => import("../views/paper/LibCity-Journal.vue")
+  },
+  {
     path: "/paper",
     name: "Paper",
     component: () => import("../views/Paper.vue")
