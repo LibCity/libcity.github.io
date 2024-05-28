@@ -11,8 +11,8 @@
     </div>
 
     <div class="content">
-      <p style="font-size:28px;font-weight:700">Please refer to our latest paper <a style="font-size:28px;font-weight:700" href="https://arxiv.org/abs/2304.14343" target="_blank"><i>Towards Efficient and Comprehensive Urban Spatial-Temporal Prediction: A Unified Library and Performance Benchmark</i></a>.</p>
-      <!-- <div class="task-ranking">
+      <!-- <p style="font-size:28px;font-weight:700">Please refer to our latest paper <a style="font-size:28px;font-weight:700" href="https://arxiv.org/abs/2304.14343" target="_blank"><i>Towards Efficient and Comprehensive Urban Spatial-Temporal Prediction: A Unified Library and Performance Benchmark</i></a>.</p> -->
+      <div class="task-ranking">
         <p class="task-name">Traffic State Prediction</p>
         <a-divider style="margin: 10px 0; background-image: linear-gradient(to right,  rgb(103, 179, 241),  rgb(103, 179, 241), #f6f6f6, #f6f6f6);"></a-divider>
         <rank-table :rankdata="speed"></rank-table>
@@ -24,7 +24,7 @@
         <rank-table :rankdata="location"></rank-table>
         <br>
         <br>
-      </div> -->
+      </div>
     </div>
   </div>
 </template>
