@@ -5,7 +5,7 @@
                 <p style="margin: 20px 0 30px 130px; font-size: 60px">Model</p>
                 <p style="margin: 0px 0 20px 130px; font-size: 30px">
                     LibCity supports 9 mainstream spatio-temporal data mining tasks <br> 
-                    and implements 60 commonly used intelligence algorithms.
+                    and implements 82 commonly used intelligence algorithms.
                 </p>
             </div>
         </div>
@@ -26,7 +26,7 @@
                     <li>Map Matching</li>
                     <li>Road Network Representation Learning</li>
                 </ul>
-                <p>Besides, LibCity has already implemented 60 commonly used intelligence algorithms. We summary the models in the following tables: </p>
+                <p>Besides, LibCity has already implemented 82 commonly used intelligence algorithms. We summary the models in the following tables: </p>
 
                 <a-divider style="font-size: 24px">Traffic Flow Prediction</a-divider>
                 <model-table :content="flow"></model-table>
@@ -202,6 +202,142 @@
             paper: 'Spatio-Temporal Neural Networks for Space-Time Series Forecasting and Relations Discovery',
             plink: 'https://ieeexplore.ieee.org/document/8215543'
         },
+        {
+            model: 'ST-Norm',
+            mlink: '#',
+            from: 'KDD',
+            year: '2021',
+            paper: 'ST-Norm: Spatial and Temporal Normalization for Multi-variate Time Series Forecasting',
+            plink: 'https://dl.acm.org/doi/abs/10.1145/3447548.3467330'
+        },
+        {
+            model: 'STGODE',
+            mlink: '#',
+            from: 'KDD',
+            year: '2021',
+            paper: 'Spatial-Temporal Graph ODE Networks for Traffic Flow Forecasting',
+            plink: 'https://dl.acm.org/doi/abs/10.1145/3447548.3467430'
+        },
+        {
+            model: 'ESG',
+            mlink: '#',
+            from: 'KDD',
+            year: '2022',
+            paper: 'Learning the Evolutionary and Multi-scale Graph Structure for Multivariate Time Series Forecasting',
+            plink: 'https://dl.acm.org/doi/abs/10.1145/3534678.3539274'
+        },
+        {
+            model: 'FOGS',
+            mlink: '#',
+            from: 'IJCAI',
+            year: '2022',
+            paper: 'FOGS: First-Order Gradient Supervision with Learning-based Graph for Traffic Flow Forecasting',
+            plink: 'https://vbn.aau.dk/en/publications/fogs-first-order-gradient-supervision-with-learning-based-graph-f'
+        },
+        {
+            model: 'ST-TSNet',
+            mlink: '#',
+            from: 'IJCAI',
+            year: '2022',
+            paper: 'Spatial-temporal Transformer Network with Self-supervised Learning for Traffic Flow Prediction',
+            plink: 'https://strl2022.github.io/files/paper1.pdf'
+        },
+        {
+            model: 'SSTBAN',
+            mlink: '#',
+            from: 'ICDE',
+            year: '2023',
+            paper: 'Self-Supervised Spatial-Temporal Bottleneck Attentive Network for Efficient Long-term Traffic Forecasting',
+            plink: 'https://ieeexplore.ieee.org/abstract/document/10184658/'
+        },
+        {
+            model: 'ASTGNN',
+            mlink: '#',
+            from: 'KDD',
+            year: '2023',
+            paper: 'Localised adaptive spatial-temporal graph neural network',
+            plink: 'https://dl.acm.org/doi/abs/10.1145/3580305.3599418'
+        },
+        {
+            model: 'DSTAGNN',
+            mlink: '#',
+            from: 'PMLR',
+            year: '2022',
+            paper: 'Dstagnn: Dynamic spatial-temporal aware graph neural network for traffic flow forecasting',
+            plink: 'https://proceedings.mlr.press/v162/lan22a'
+        },
+        {
+            model: 'MultiSPANS',
+            mlink: '#',
+            from: 'WSDM',
+            year: '2024',
+            paper: 'Multispans: A multi-range spatial-temporal transformer network for traffic forecast via structural entropy optimization',
+            plink: 'https://dl.acm.org/doi/abs/10.1145/3616855.3635820'
+        },
+        {
+            model: 'PDFormer',
+            mlink: '#',
+            from: 'AAAI',
+            year: '2023',
+            paper: 'Pdformer: Propagation delay-aware dynamic long-range transformer for traffic flow prediction',
+            plink: 'https://ojs.aaai.org/index.php/AAAI/article/view/25556'
+        },
+        {
+            model: 'RGSL',
+            mlink: '#',
+            from: 'IJCAI',
+            year: '2022',
+            paper: 'Regularized graph structure learning with semantic knowledge for multi-variates time-series forecasting',
+            plink: 'https://arxiv.org/abs/2210.06126'
+        },
+        {
+            model: 'STG-NCDE',
+            mlink: '#',
+            from: 'AAAI',
+            year: '2022',
+            paper: 'Graph neural controlled differential equations for traffic forecasting',
+            plink: 'https://ojs.aaai.org/index.php/AAAI/article/view/20587'
+        },
+        {
+            model: 'STPGCN',
+            mlink: '#',
+            from: 'TITS',
+            year: '2022',
+            paper: 'Spatial-temporal position-aware graph convolution networks for traffic flow forecasting',
+            plink: 'https://ieeexplore.ieee.org/abstract/document/9945663/'
+        },
+        {
+            model: 'STSSL',
+            mlink: '#',
+            from: 'AAAI',
+            year: '2023',
+            paper: 'Spatio-temporal self-supervised learning for traffic flow prediction',
+            plink: 'https://ojs.aaai.org/index.php/AAAI/article/view/25555'
+        },
+        {
+            model: 'STWave',
+            mlink: '#',
+            from: 'ICDE',
+            year: '2023',
+            paper: 'When spatio-temporal meet wavelets: Disentangled traffic forecasting via efficient spectral graph attention networks',
+            plink: 'https://ieeexplore.ieee.org/abstract/document/10184591/'
+        },
+        {
+            model: 'SimST',
+            mlink: '#',
+            from: 'openreview',
+            year: '2023',
+            paper: 'SimST: A GNN-Free Spatio-Temporal Learning Framework for Traffic Forecasting',
+            plink: 'https://openreview.net/forum?id=2ppuWD3dkie'
+        },
+        {
+            model: 'TimeMixer',
+            mlink: '#',
+            from: 'ICLR',
+            year: '2024',
+            paper: 'Timemixer: Decomposable multiscale mixing for time series forecasting',
+            plink: 'https://arxiv.org/abs/2405.14616'
+        }
     ]
 
     const speed = [
@@ -316,6 +452,78 @@
             year: '2020',
             paper: 'Spatial-Temporal Transformer Networks for Traffic Flow Forecasting',
             plink: 'https://arxiv.org/abs/2001.02908' 
+        },
+        {
+            model: 'STAGGCN',
+            mlink: '#',
+            from: 'CIKM',
+            year: '2020',
+            paper: 'Spatio-temporal Adaptive Gated Graph Convolution Network for Urban Traffic Flow Forecasting',
+            plink: 'https://dl.acm.org/doi/abs/10.1145/3340531.3411894' 
+        },
+        {
+            model: 'DMSTGCN',
+            mlink: '#',
+            from: 'KDD',
+            year: '2021',
+            paper: 'Dynamic and Multi-faceted Spatio-temporal Deep Learning for Traffic Speed Forecasting',
+            plink: 'https://dl.acm.org/doi/abs/10.1145/3447548.3467275' 
+        },
+        {
+            model: 'STID',
+            mlink: '#',
+            from: 'CIKM',
+            year: '2022',
+            paper: 'Spatial-Temporal Identity: A Simple yet Effective Baseline for Multivariate Time Series Forecasting',
+            plink: 'https://dl.acm.org/doi/abs/10.1145/3511808.3557702' 
+        },
+        {
+            model: 'D2STGNN',
+            mlink: '#',
+            from: 'VLDB',
+            year: '2022',
+            paper: 'Decoupled Dynamic Spatial-Temporal Graph Neural Network for Traffic Forecasting',
+            plink: 'https://arxiv.org/abs/2206.09112' 
+        },
+        {
+            model: 'HIEST',
+            mlink: '#',
+            from: 'CIKM',
+            year: '2023',
+            paper: 'Rethinking sensors modeling: Hierarchical information enhanced traffic forecasting',
+            plink: 'https://dl.acm.org/doi/abs/10.1145/3583780.3614910' 
+        },
+        {
+            model: 'MegaCRN',
+            mlink: '#',
+            from: 'AAAI',
+            year: '2023',
+            paper: 'Spatio-temporal meta-graph learning for traffic forecasting',
+            plink: 'https://ojs.aaai.org/index.php/AAAI/article/view/25976' 
+        },
+        {
+            model: 'STAEFormer',
+            mlink: '#',
+            from: 'CIKM',
+            year: '2023',
+            paper: 'Spatio-temporal adaptive embedding makes vanilla transformer sota for traffic forecasting',
+            plink: 'https://dl.acm.org/doi/abs/10.1145/3583780.3615160' 
+        },
+        {
+            model: 'TESTAM',
+            mlink: '#',
+            from: 'ICLR',
+            year: '2024',
+            paper: 'TESTAM: A Time-Enhanced Spatio-Temporal Attention Model with Mixture of Experts',
+            plink: 'https://arxiv.org/abs/2403.02600' 
+        },
+        {
+            model: 'Trafformer',
+            mlink: '#',
+            from: 'AAAI',
+            year: '2023',
+            paper: 'Trafformer: unify time and space in traffic prediction',
+            plink: 'https://ojs.aaai.org/index.php/AAAI/article/view/25980' 
         },
     ]
 
@@ -468,6 +676,14 @@
             paper: 'When Will You Arrive? Estimating Travel Time Based on Deep Neural Networks',
             plink: 'https://ojs.aaai.org/index.php/AAAI/article/view/11877'
         },
+        {
+            model: 'TTPNet',
+            mlink: '#',
+            from: 'TKDE',
+            year: '2020',
+            paper: 'TTPNet: A Neural Network for Travel Time Prediction Based on Tensor Decomposition and Graph Embedding',
+            plink: 'https://ieeexplore.ieee.org/abstract/document/9261122'
+        },
     ]
 
     const mm = [
@@ -513,6 +729,38 @@
             year: '2015',
             paper: 'LINE: Large-scale Information Network Embedding',
             plink: 'https://arxiv.org/abs/1503.03578'
+        },
+        {
+            model: 'DeepWalk',
+            mlink: '#',
+            from: 'KDD',
+            year: '2014',
+            paper: 'DeepWalk: Online Learning of Social Representations',
+            plink: 'https://dl.acm.org/doi/abs/10.1145/2623330.2623732'
+        },
+        {
+            model: 'Node2Vec',
+            mlink: '#',
+            from: 'KDD',
+            year: '2016',
+            paper: 'node2vec: Scalable Feature Learning for Networks',
+            plink: 'https://dl.acm.org/doi/abs/10.1145/2939672.2939754'
+        },
+        {
+            model: 'GAT',
+            mlink: '#',
+            from: 'ICLR',
+            year: '2018',
+            paper: 'Graph Attention Networks',
+            plink: 'https://arxiv.org/abs/1710.10903'
+        },
+        {
+            model: 'GeomGCN',
+            mlink: '#',
+            from: 'ICLR',
+            year: '2020',
+            paper: 'Geom-GCN: Geometric Graph Convolutional Networks',
+            plink: 'https://arxiv.org/abs/2002.05287'
         },
     ]
 
