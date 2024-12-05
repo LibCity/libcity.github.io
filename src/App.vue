@@ -264,7 +264,7 @@
             >文档</a
           >
         </a-menu-item>
-        <!-- 
+        <!--
         <a-menu-item
           key="6"
           style="width: 90px; font-size: 20px; textalign: center"
@@ -368,7 +368,7 @@
           <dl>
             <dt>
               <a-button class="footer-btn" type="link"
-                ><a style="font-size: 16px" href="https://www.bigcity.ai/"
+                ><a style="font-size: 16px" href="http://www.bigscity.com"
                   >BIGSCity</a
                 ></a-button
               >

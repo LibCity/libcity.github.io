@@ -4,7 +4,7 @@
             <div style="padding-top: 20px;color: white;">
                 <p style="margin: 20px 0 30px 130px; font-size: 60px">Model</p>
                 <p style="margin: 0px 0 20px 130px; font-size: 30px">
-                    LibCity supports 9 mainstream spatio-temporal data mining tasks <br> 
+                    LibCity supports 9 mainstream spatio-temporal data mining tasks <br>
                     and implements 82 commonly used intelligence algorithms.
                 </p>
             </div>
@@ -337,6 +337,14 @@
             year: '2024',
             paper: 'Timemixer: Decomposable multiscale mixing for time series forecasting',
             plink: 'https://arxiv.org/abs/2405.14616'
+        },
+        {
+            model: 'FreTS',
+            mlink: '#',
+            from: 'NIPS',
+            year: '2023',
+            paper: 'Frequency-domain MLPs are More Effective Learners in Time Series Forecasting',
+            plink: 'https://proceedings.neurips.cc/paper_files/paper/2023/hash/f1d16af76939f476b5f040fd1398c0a3-Abstract-Conference.html'
         }
     ]
 
@@ -347,7 +355,7 @@
             from: 'ICLR',
             year: '2018',
             paper: 'Diffusion Convolutional Recurrent Neural Network: Data-Driven Traffic Forecasting',
-            plink: 'https://arxiv.org/abs/1707.01926' 
+            plink: 'https://arxiv.org/abs/1707.01926'
         },
         {
             model: 'STGCN',
@@ -355,7 +363,7 @@
             from: 'IJCAI',
             year: '2018',
             paper: 'Spatio-Temporal Graph Convolutional Networks: A Deep Learning Framework for Traffic Forecasting',
-            plink: 'https://arxiv.org/abs/1709.04875' 
+            plink: 'https://arxiv.org/abs/1709.04875'
         },
         {
             model: 'GWNET',
@@ -363,7 +371,7 @@
             from: 'IJCAI',
             year: '2019',
             paper: 'Graph Wavenet for Deep Spatial-Temporal Graph Modeling',
-            plink: 'https://arxiv.org/abs/1906.00121' 
+            plink: 'https://arxiv.org/abs/1906.00121'
         },
         {
             model: 'MTGNN',
@@ -371,7 +379,7 @@
             from: 'SIGKDD',
             year: '2020',
             paper: 'Connecting the Dots: Multivariate Time Series Forecasting with Graph Neural Networks',
-            plink: 'https://arxiv.org/abs/2005.11650' 
+            plink: 'https://arxiv.org/abs/2005.11650'
         },
         {
             model: 'T-GCN',
@@ -395,7 +403,7 @@
             from: 'arXiv',
             year: '2020',
             paper: 'On the Inclusion of Spatial Information for Spatio-Temporal Neural Networks',
-            plink: 'https://arxiv.org/abs/2007.07559' 
+            plink: 'https://arxiv.org/abs/2007.07559'
         },
         {
             model: 'GMAN',
@@ -403,7 +411,7 @@
             from: 'AAAI',
             year: '2020',
             paper: 'GMAN:A Graph Multi-Attention Network for Traffic Prediction',
-            plink: 'https://arxiv.org/abs/1911.08415' 
+            plink: 'https://arxiv.org/abs/1911.08415'
         },
         {
             model: 'GTS',
@@ -411,7 +419,7 @@
             from: 'ICLR',
             year: '2021',
             paper: 'Discrete Graph Structure Learning for Forecasting Multiple Time Series',
-            plink: 'https://arxiv.org/abs/2101.06861' 
+            plink: 'https://arxiv.org/abs/2101.06861'
         },
         {
             model: 'STAG-GCN',
@@ -419,7 +427,7 @@
             from: 'CIKM',
             year: '2020',
             paper: 'Spatiotemporal Adaptive Gated Graph Convolution Network for Urban Traffic Flow Forecasting',
-            plink: 'https://dl.acm.org/doi/10.1145/3340531.3411894' 
+            plink: 'https://dl.acm.org/doi/10.1145/3340531.3411894'
         },
         {
             model: 'HGCN',
@@ -427,7 +435,7 @@
             from: 'AAAI',
             year: '2021',
             paper: 'Hierarchical Graph Convolution Networks for Traffic Forecasting',
-            plink: 'https://ojs.aaai.org/index.php/AAAI/article/view/16088' 
+            plink: 'https://ojs.aaai.org/index.php/AAAI/article/view/16088'
         },
         {
             model: 'ST-MGAT',
@@ -443,7 +451,7 @@
             from: 'SIGSPATIAL',
             year: '2020',
             paper: 'Graph Convolutional Networks with Kalman Filtering for Traffic Prediction',
-            plink: 'https://dl.acm.org/doi/abs/10.1145/3397536.3422257' 
+            plink: 'https://dl.acm.org/doi/abs/10.1145/3397536.3422257'
         },
         {
             model: 'STTN',
@@ -451,7 +459,7 @@
             from: 'arXiv',
             year: '2020',
             paper: 'Spatial-Temporal Transformer Networks for Traffic Flow Forecasting',
-            plink: 'https://arxiv.org/abs/2001.02908' 
+            plink: 'https://arxiv.org/abs/2001.02908'
         },
         {
             model: 'STAGGCN',
@@ -459,7 +467,7 @@
             from: 'CIKM',
             year: '2020',
             paper: 'Spatio-temporal Adaptive Gated Graph Convolution Network for Urban Traffic Flow Forecasting',
-            plink: 'https://dl.acm.org/doi/abs/10.1145/3340531.3411894' 
+            plink: 'https://dl.acm.org/doi/abs/10.1145/3340531.3411894'
         },
         {
             model: 'DMSTGCN',
@@ -467,7 +475,7 @@
             from: 'KDD',
             year: '2021',
             paper: 'Dynamic and Multi-faceted Spatio-temporal Deep Learning for Traffic Speed Forecasting',
-            plink: 'https://dl.acm.org/doi/abs/10.1145/3447548.3467275' 
+            plink: 'https://dl.acm.org/doi/abs/10.1145/3447548.3467275'
         },
         {
             model: 'STID',
@@ -475,7 +483,7 @@
             from: 'CIKM',
             year: '2022',
             paper: 'Spatial-Temporal Identity: A Simple yet Effective Baseline for Multivariate Time Series Forecasting',
-            plink: 'https://dl.acm.org/doi/abs/10.1145/3511808.3557702' 
+            plink: 'https://dl.acm.org/doi/abs/10.1145/3511808.3557702'
         },
         {
             model: 'D2STGNN',
@@ -483,7 +491,7 @@
             from: 'VLDB',
             year: '2022',
             paper: 'Decoupled Dynamic Spatial-Temporal Graph Neural Network for Traffic Forecasting',
-            plink: 'https://arxiv.org/abs/2206.09112' 
+            plink: 'https://arxiv.org/abs/2206.09112'
         },
         {
             model: 'HIEST',
@@ -491,7 +499,7 @@
             from: 'CIKM',
             year: '2023',
             paper: 'Rethinking sensors modeling: Hierarchical information enhanced traffic forecasting',
-            plink: 'https://dl.acm.org/doi/abs/10.1145/3583780.3614910' 
+            plink: 'https://dl.acm.org/doi/abs/10.1145/3583780.3614910'
         },
         {
             model: 'MegaCRN',
@@ -499,7 +507,7 @@
             from: 'AAAI',
             year: '2023',
             paper: 'Spatio-temporal meta-graph learning for traffic forecasting',
-            plink: 'https://ojs.aaai.org/index.php/AAAI/article/view/25976' 
+            plink: 'https://ojs.aaai.org/index.php/AAAI/article/view/25976'
         },
         {
             model: 'STAEFormer',
@@ -507,7 +515,7 @@
             from: 'CIKM',
             year: '2023',
             paper: 'Spatio-temporal adaptive embedding makes vanilla transformer sota for traffic forecasting',
-            plink: 'https://dl.acm.org/doi/abs/10.1145/3583780.3615160' 
+            plink: 'https://dl.acm.org/doi/abs/10.1145/3583780.3615160'
         },
         {
             model: 'TESTAM',
@@ -515,7 +523,7 @@
             from: 'ICLR',
             year: '2024',
             paper: 'TESTAM: A Time-Enhanced Spatio-Temporal Attention Model with Mixture of Experts',
-            plink: 'https://arxiv.org/abs/2403.02600' 
+            plink: 'https://arxiv.org/abs/2403.02600'
         },
         {
             model: 'Trafformer',
@@ -523,7 +531,7 @@
             from: 'AAAI',
             year: '2023',
             paper: 'Trafformer: unify time and space in traffic prediction',
-            plink: 'https://ojs.aaai.org/index.php/AAAI/article/view/25980' 
+            plink: 'https://ojs.aaai.org/index.php/AAAI/article/view/25980'
         },
     ]
 
