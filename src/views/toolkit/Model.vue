@@ -5,7 +5,7 @@
                 <p style="margin: 20px 0 30px 130px; font-size: 60px">Model</p>
                 <p style="margin: 0px 0 20px 130px; font-size: 30px">
                     LibCity supports 9 mainstream spatio-temporal data mining tasks <br>
-                    and implements 82 commonly used intelligence algorithms.
+                    and implements 83 commonly used intelligence algorithms.
                 </p>
             </div>
         </div>
